@@ -481,7 +481,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li>
+                            <!-- <li>
                                 <a class="link" href="#">Кешбэк</a>
                                 
                                 <div class="bottom__links bottom__links-hover">
@@ -576,7 +576,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                            </li>
+                            </li> -->
                             <li>
                                 <a class="link" href="#">Товары по купонам</a>
                                 
@@ -820,7 +820,7 @@
                 </ul>
             </div>
 
-            <div class="bottom__sub-menue sub__menue5">
+            <!-- <div class="bottom__sub-menue sub__menue5">
                 <ul>
                     <li><a href="#">Все</a></li>
                     <li><a href="#">Игры</a></li>
@@ -894,7 +894,7 @@
                         </div>
                     </li>
                 </ul>
-            </div>
+            </div> -->
 
             <div class="bottom__sub-menue sub__menue6">
                 <ul>
@@ -1046,13 +1046,17 @@
                     @foreach($skidki as $val)
                     <div class="main__content">
                         <div class="card__img">
-                            <img src="./img/skidkiImg/{{$val->imgName}}" alt="">
-                            <div class="card__discount big">
-                                <a href="#">{{$val->discount}}%</a>
+                            <a target="_blank" href="{{$val->sitesUrl}}"><img src="{{$val->imageUrl}}" alt=""></a>
+                            @if($val->discount != null)
+                            <div class="card__discount big">                            
+                                <a href="#">{{$val->discount}}%</a>                            
                             </div>
-                            <div class="card__holidays">
-                                <a href="#">{{$val->marker}}</a>
+                            @endif
+                            @if($val->marker != null)
+                            <div class="card__holidays">                           
+                                <a href="#">{{$val->marker}}</a>                            
                             </div>
+                            @endif
 
                         </div>
                         <div class="card__title">
@@ -1154,77 +1158,37 @@
                     </div>
                     <div class="cards services">
 
+                        
+                     @foreach($popRestoran as $val)                                   
                         <div class="main__content">
                             <div class="card__img">
-                                <img src="./img/fa82a77f81f786eaa0efde4b973a5e9b.jpg" alt="">
-                                <div class="card__discount big">
-                                    <a href="#">-70%</a>
+                                <a target="_blank" href="{{$val->sitesUrl}}"><img id="restoranImg" style="margin-left:10px" src="{{$val->imageUrl}}" alt=""></a>
+                                @if($val->discount != null)
+                                <div class="card__discount big">                            
+                                    <a href="#">{{$val->discount}}%</a>                            
                                 </div>
+                                @endif
+                               @if($val->marker != null)
                                 <div class="card__holidays">
-                                    <a href="#">новогодние праздники</a>
+                                    <a href="#">{{$val->marker}}</a>
                                 </div>
+                                @endif
 
                             </div>
                             <div class="card__title">
-                                <a href="#">Посещение аквапарка в комплексе «Фэнтази парк»</a>
+                                <a href="#">{{$val->description}}</a>
                             </div>
                             <div class="card__lcation">
-                                <span class="metro">Марьино</span>
-                                <span class="shop">Куплено 5 090</span>
+                                <span class="metro">{{$val->name}}</span>
+                                <span class="shop">Куплено {{$val->count}}</span>
                             </div>
                             <div class="card_price">
-                                <a href="#" class="old__price">1 700 руб.</a>
-                                <a href="#" class="new__price">748 руб.</a>
+                                <a href="#" class="old__price">{{$val->oldPrice}} руб.</a>
+                                <a href="#" class="new__price">{{$val->newPrice}} руб.</a>
                             </div>
                         </div>
-
-                        <div class="main__content">
-                            <div class="card__img">
-                                <img src="./img/fa82a77f81f786eaa0efde4b973a5e9b.jpg" alt="">
-                                <div class="card__discount big">
-                                    <a href="#">-70%</a>
-                                </div>
-                                <div class="card__holidays">
-                                    <a href="#">новогодние праздники</a>
-                                </div>
-
-                            </div>
-                            <div class="card__title">
-                                <a href="#">Посещение аквапарка в комплексе «Фэнтази парк»</a>
-                            </div>
-                            <div class="card__lcation">
-                                <span class="metro">Марьино</span>
-                                <span class="shop">Куплено 5 090</span>
-                            </div>
-                            <div class="card_price">
-                                <a href="#" class="old__price">1 700 руб.</a>
-                                <a href="#" class="new__price">748 руб.</a>
-                            </div>
-                        </div>
-
-                        <div class="main__content">
-                            <div class="card__img">
-                                <img src="./img/fa82a77f81f786eaa0efde4b973a5e9b.jpg" alt="">
-                                <div class="card__discount big">
-                                    <a href="#">-70%</a>
-                                </div>
-                                <div class="card__holidays">
-                                    <a href="#">новогодние праздники</a>
-                                </div>
-
-                            </div>
-                            <div class="card__title">
-                                <a href="#">Посещение аквапарка в комплексе «Фэнтази парк»</a>
-                            </div>
-                            <div class="card__lcation">
-                                <span class="metro">Марьино</span>
-                                <span class="shop">Куплено 5 090</span>
-                            </div>
-                            <div class="card_price">
-                                <a href="#" class="old__price">1 700 руб.</a>
-                                <a href="#" class="new__price">748 руб.</a>
-                            </div>
-                        </div>
+                    @endforeach
+                        
                     </div>
                 </div>
 

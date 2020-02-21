@@ -437,7 +437,7 @@
 
 .wrapper .contanier .cards {
   position: relative;
-  width: 76%;
+  width: 85%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1338,4 +1338,14 @@ margin: 0 205px;
 .slider_shop img{
   object-fit: contain;
 
+}
+
+.card__img img{
+  width: 309px;
+  height: 174px;
+  margin: 0 10px 0 10px;
+}
+
+#restoranImg{
+  width: 260px;
 }

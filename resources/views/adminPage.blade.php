@@ -11,7 +11,7 @@
 <div class="list-group">
   <a href="{{route('adminPage')}}" class="list-group-item list-group-item-action active">Скидки</a>
   <a href="{{route('setSitsPage')}}" class="list-group-item list-group-item-action">Сайты</a>
-  <a href="" class="list-group-item list-group-item-action">Популярные рестораны</a>
+  <a href="{{route('getPopularRestoran')}}" class="list-group-item list-group-item-action">Популярные рестораны</a>
   <a href="" class="list-group-item list-group-item-action">Отели</a>
   <a href="" class="list-group-item list-group-item-action">Туры</a>
   <a href="" class="list-group-item list-group-item-action">Товары по купонам</a>
@@ -74,7 +74,17 @@
         <label for="materialLoginFormPassword">новая цена</label>
       </div>
 
-      <!-- input file -->
+      <div class="md-form">
+        <input type="text" name="sitesUrl" id="materialLoginFormPassword" class="form-control">
+        <label for="materialLoginFormPassword">URL сайта</label>
+      </div>
+
+      <div class="md-form">
+        <input type="text" name="imageUrl" id="materialLoginFormPassword" class="form-control">
+        <label for="materialLoginFormPassword">URL картинки</label>
+      </div>
+
+      <!-- input file
       <div class="input-group">
          <div class="input-group-prepend">
          <span class="input-group-text" id="inputGroupFileAddon01">Загрузить</span>
@@ -84,7 +94,7 @@
            aria-describedby="inputGroupFileAddon01">
          <label class="custom-file-label" for="inputGroupFile01">Выберите файл</label>
             </div>
-      </div>
+      </div> -->
       
 
       <!-- Sign in button -->
@@ -97,8 +107,63 @@
 
 </div>
 <!-- Material form login -->
- <div class="cards">
-   <!-- aystex linelu e carder@ -->
+ <div class="cards">   
+
+ @foreach($skidki as $val)
+    <div class="adminsBlokLists">
+        <div class="row">
+        <div class="col-sm-12 col-lg-6">
+         <div class="slide"><img src="{{$val->imageUrl}}" alt=""></div>
+        </div>
+        <div class="col-sm-12 col-lg-6">
+         <button type="button" class="btn btn-success">Изменить</button>
+         <form action="{{route('deleteSkidki')}}" method="post">
+         @csrf
+         <input type="hidden" name="id" value="{{$val->id}}">
+         <button type="submit" class="btn btn-danger">Удалить</button>
+         </form>
+         
+        </div>
+        </div>
+        <div class="updatePanel">
+        <form action="{{route('updateSkidki')}}" method="post">
+          @csrf
+          <input type="hidden" name="id" value="{{$val->id}}">
+          <div class="form-row">
+           <div class="col-lg-6 col-sm-12">
+            <input type="text"  class="form-control" id="email" placeholder="скидка" name="discount">
+           </div>
+           <div class="col-lg-6 col-sm-12">
+            <input type="text" class="form-control" placeholder="маркер" name="marker">
+           </div>
+            <div class="col-lg-6 col-sm-12">
+            <input type="text" class="form-control" placeholder="описание" name="description">
+           </div>
+            <div class="col-lg-6 col-sm-12">
+            <input type="text" class="form-control" placeholder="имя" name="name">
+           </div>
+            <div class="col-lg-6 col-sm-12">
+            <input type="text" class="form-control" placeholder="каличество покупок" name="count">
+           </div>
+            <div class="col-lg-6 col-sm-12">
+            <input type="text" class="form-control" placeholder="старая цена" name="oldPrice">
+           </div>
+            <div class="col-lg-6 col-sm-12">
+            <input type="text" class="form-control" placeholder="новая цена" name="newPrice">
+           </div>
+            <div class="col-lg-6 col-sm-12">
+            <input type="text" class="form-control" placeholder="адрес сайта" name="sitesUrl">
+           </div>
+            <div class="col-lg-6 col-sm-12">
+            <input type="text" class="form-control" placeholder="адрес картинки" name="imageUrl">
+            <button type="submit" class="btn btn-success">сохранить</button>
+          </div>
+         </div>
+       </form>
+        </div>
+             
+      </div>
+    @endforeach
  </div>
 
 </div>

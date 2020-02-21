@@ -18,13 +18,17 @@ Route::post('/checkAdmin','AdminController@checkAdmin')->name('checkAdmin');
 //skidki list
 Route::get('/adminPage','AdminController@adminPage')->name('adminPage');
 Route::post('/setSkidki','AdminController@setSkidki')->name('setSkidki');
+Route::post('/updateSkidki','AdminController@updateSkidki')->name('updateSkidki');
+Route::post('/deleteSkidki','AdminController@deleteSkidki')->name('deleteSkidki');
 //sites list
 Route::get('/setSitsPage','AdminController@setSitsPage')->name('setSitsPage');
 Route::post('/setSitsList','AdminController@setSitsList')->name('setSitsList');
 Route::post('/updateSitsList','AdminController@updateSitsList')->name('updateSitsList');
-
-
-
-
+Route::post('/deleteSitsList','AdminController@deleteSitsList')->name('deleteSitsList');
+//popular restoran
+Route::get('/getPopularRestoran','AdminController@getPopularRestoran')->name('getPopularRestoran');
+Route::post('/setPopRestoran','AdminController@setPopRestoran')->name('setPopRestoran');
+Route::post('/updatePopRestoran','AdminController@updatePopRestoran')->name('updatePopRestoran');
+Route::post('/deletePopRestoran','AdminController@deletePopRestoran')->name('deletePopRestoran');
 
 

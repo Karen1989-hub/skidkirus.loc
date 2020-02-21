@@ -10,22 +10,22 @@
 <h2>Меню</h2>
 <div class="list-group">
   <a href="{{route('adminPage')}}" class="list-group-item list-group-item-action">Скидки</a>
-  <a href="{{route('setSitsPage')}}" class="list-group-item list-group-item-action active">Сайты</a>
-  <a href="{{route('getPopularRestoran')}}" class="list-group-item list-group-item-action">Популярные рестораны</a>
+  <a href="{{route('setSitsPage')}}" class="list-group-item list-group-item-action">Сайты</a>
+  <a href="{{route('getPopularRestoran')}}" class="list-group-item list-group-item-action active">Популярные рестораны</a>
   <a href="" class="list-group-item list-group-item-action">Отели</a>
   <a href="" class="list-group-item list-group-item-action">Туры</a>
   <a href="" class="list-group-item list-group-item-action">Товары по купонам</a>
-  <a href="" class="list-group-item list-group-item-action">Популярные магазины</a> 
+  <a href="" class="list-group-item list-group-item-action">Популярные магазины</a>  
 </div>
 </div>
 <!-- nav menu end -->
 
 <!-- controler panel -->
 <div class="col-sm-8 col-lg-9 border">
-<h2>Панел сайтов</h2>
+<h2>Популярные рестораны</h2>
 
 <!-- Material form login -->
-<div class="card w-75 formBlock">
+<div class="card  w-75 formBlock">
 
   <h5 class="card-header info-color white-text text-center py-4">
     <strong>Параметры нового слота</strong>
@@ -35,7 +35,7 @@
   <div class="card-body px-lg-5 pt-0 formBg">
 
     <!-- Form -->
-    <form class="text-center" style="color: #757575;" action="{{route('setSitsList')}}" method="post" enctype='multipart/form-data'>
+    <form class="text-center" style="color: #757575;" action="{{route('setPopRestoran')}}" method="post" enctype='multipart/form-data'>
     @csrf
       <!-- skidka -->
       <div class="md-form">
@@ -76,24 +76,30 @@
 
       <div class="md-form">
         <input type="text" name="sitesUrl" id="materialLoginFormPassword" class="form-control">
-        <label for="materialLoginFormPassword">адрес сайта</label>
+        <label for="materialLoginFormPassword">URL сайта</label>
       </div>
 
       <div class="md-form">
         <input type="text" name="imageUrl" id="materialLoginFormPassword" class="form-control">
-        <label for="materialLoginFormPassword">адрес картинки</label>
+        <label for="materialLoginFormPassword">URL картинки</label>
       </div>
 
-
-
-
-      
+      <!-- input file
+      <div class="input-group">
+         <div class="input-group-prepend">
+         <span class="input-group-text" id="inputGroupFileAddon01">Загрузить</span>
+        </div>
+         <div class="custom-file">
+         <input type="file" name="imgName" class="custom-file-input" id="inputGroupFile01"
+           aria-describedby="inputGroupFileAddon01">
+         <label class="custom-file-label" for="inputGroupFile01">Выберите файл</label>
+            </div>
+      </div> -->
       
 
       <!-- Sign in button -->
       <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">создать</button>
      
-
     </form>
     <!-- Form -->
 
@@ -101,16 +107,16 @@
 
 </div>
 <!-- Material form login -->
-<div class="cards">
-    @foreach($sites as $val)
-      <div class="adminsBlokLists">
+ <div class="cards">
+    @foreach($popRestoran as $val)
+    <div class="adminsBlokLists">
         <div class="row">
         <div class="col-sm-12 col-lg-6">
          <div class="slide"><img src="{{$val->imageUrl}}" alt=""></div>
         </div>
         <div class="col-sm-12 col-lg-6">
          <button type="button" class="btn btn-success">Изменить</button>
-         <form action="{{route('deleteSitsList')}}" method="post">
+         <form action="{{route('deletePopRestoran')}}" method="post">
          @csrf
          <input type="hidden" name="id" value="{{$val->id}}">
          <button type="submit" class="btn btn-danger">Удалить</button>
@@ -119,7 +125,7 @@
         </div>
         </div>
         <div class="updatePanel">
-        <form action="{{route('updateSitsList')}}" method="post">
+        <form action="{{route('updatePopRestoran')}}" method="post">
           @csrf
           <input type="hidden" name="id" value="{{$val->id}}">
           <div class="form-row">
@@ -158,12 +164,14 @@
       </div>
     @endforeach
  </div>
+
 </div>
 <!-- controler panel end-->
 
 </div>
-
+ 
 @endsection
 @section('footer')
 @parent
 @endsection
+

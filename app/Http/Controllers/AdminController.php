@@ -6,9 +6,11 @@ use Illuminate\Http\Request;
 use App\Admin;
 use App\Skidki;
 use App\Site;
+use App\PopRestoran;
 
 class AdminController extends Controller
 {
+    
     public function index(){
         return view('admin');
     }
@@ -18,7 +20,7 @@ class AdminController extends Controller
         $password = $request->input('password');
         $row = Admin::all();
         if($row[0]->login==$userName && $row[0]->password==$password){
-            return view('adminPage');
+            return redirect('adminPage');
         } else {
            return back();
         }       
@@ -62,27 +64,51 @@ class AdminController extends Controller
         $imageUrl = $request->input('imageUrl');    
         
         $update = Site::find($id);
-        
-        $update -> discount = $discount;
-        $update -> marker = $marker;
-        $update -> description = $description;
-        $update -> name = $name;
-        $update -> count = $count;
-        $update -> oldPrice = $oldPrice;
-        $update -> newPrice = $newPrice;
-        $update -> sitesUrl = $sitesUrl;
-        $update -> imageUrl = $imageUrl;
-        $update -> save();
+        if($discount != ""){
+           $update -> discount = $discount;
+        }
+         if($marker != ""){
+           $update -> marker = $marker;
+        }
+         if($description != ""){
+           $update -> description = $description;
+        }
+         if($name != ""){
+           $update -> name = $name;
+        }
+         if($count != ""){
+           $update -> count = $count;
+        }
+         if($oldPrice != ""){
+           $update -> oldPrice = $oldPrice;
+        }
+         if($newPrice != ""){
+           $update -> newPrice = $newPrice;
+        }
+         if($sitesUrl != ""){
+           $update -> sitesUrl = $sitesUrl;
+        }
+         if($imageUrl != ""){
+           $update -> imageUrl = $imageUrl;
+        }    
+          $update -> save();
 
-        return back();
+        return back();                          
+      
     }
-    public function(){
-        
+
+    public function deleteSitsList(Request $request){
+      $id = $request->input('id');
+      $delete = Site::find($id);
+      $delete -> delete();
+
+      return back();
     }
+    
     public function adminPage(){
-        $skidki = Skidki::all();
-
-        $arr = ['skidki'=>$skidki];
+        $skidki = Skidki::all();        
+       
+        $arr = ['skidki'=>$skidki,'test'=>"karen"];
         return view('adminPage',$arr);
     } 
 
@@ -94,13 +120,148 @@ class AdminController extends Controller
         $count = $request->input('count');
         $oldPrice = $request->input('oldPrice');
         $newPrice = $request->input('newPrice');
-        $imgName = $request->file('imgName');
+        $sitesUrl = $request->input('sitesUrl');
+        $imageUrl = $request->input('imageUrl');
         
-         $imgName->move('img/skidkiImg',$imgName->getClientOriginalName());
+         //$imgName->move('img/skidkiImg',$imgName->getClientOriginalName());
          Skidki::create(['discount'=>$discount,'marker'=>$marker,'description'=>$description,
         'name'=>$name,'count'=>$count,'oldPrice'=>$oldPrice,'newPrice'=>$newPrice,
-        'imgName'=>$imgName->getClientOriginalName()]);
+        'sitesUrl'=>$sitesUrl,'imageUrl'=>$imageUrl]);
         
         return back();
+    }
+
+    public function updateSkidki(Request $request){
+        $id = $request->input('id');        
+         $discount = $request->input('discount');
+        $marker = $request->input('marker');
+        $description = $request->input('description');
+        $name = $request->input('name');
+        $count = $request->input('count');
+        $oldPrice = $request->input('oldPrice');
+        $newPrice = $request->input('newPrice');       
+        $sitesUrl = $request->input('sitesUrl');
+        $imageUrl = $request->input('imageUrl');    
+        
+        $update = Skidki::find($id);
+        if($discount != ""){
+           $update -> discount = $discount;
+        }
+         if($marker != ""){
+           $update -> marker = $marker;
+        }
+         if($description != ""){
+           $update -> description = $description;
+        }
+         if($name != ""){
+           $update -> name = $name;
+        }
+         if($count != ""){
+           $update -> count = $count;
+        }
+         if($oldPrice != ""){
+           $update -> oldPrice = $oldPrice;
+        }
+         if($newPrice != ""){
+           $update -> newPrice = $newPrice;
+        }
+         if($sitesUrl != ""){
+           $update -> sitesUrl = $sitesUrl;
+        }
+         if($imageUrl != ""){
+           $update -> imageUrl = $imageUrl;
+        }    
+          $update -> save();
+
+        return back();                          
+      
+    }
+
+     public function deleteSkidki(Request $request){
+      $id = $request->input('id');
+      $delete = Skidki::find($id);
+      $delete -> delete();
+
+      return back();
+    }
+
+    //popular restoran
+    public function getPopularRestoran(){
+       $popRestoran = PopRestoran::all();
+      //dd($popRestoran);
+       $arr = ['popRestoran'=>$popRestoran];
+      return view('getPopRestor',$arr);
+    }
+
+    public function setPopRestoran(Request $request){
+        $discount = $request->input('discount');
+        $marker = $request->input('marker');
+        $description = $request->input('description');
+        $name = $request->input('name');
+        $count = $request->input('count');
+        $oldPrice = $request->input('oldPrice');
+        $newPrice = $request->input('newPrice');
+        $sitesUrl = $request->input('sitesUrl');
+        $imageUrl = $request->input('imageUrl');
+        
+         //$imgName->move('img/skidkiImg',$imgName->getClientOriginalName());
+         PopRestoran::create(['discount'=>$discount,'marker'=>$marker,'description'=>$description,
+        'name'=>$name,'count'=>$count,'oldPrice'=>$oldPrice,'newPrice'=>$newPrice,
+        'sitesUrl'=>$sitesUrl,'imageUrl'=>$imageUrl]);
+      return back();
+    }
+
+    public function updatePopRestoran(Request $request){
+        $id = $request->input('id');        
+        $discount = $request->input('discount');
+        $marker = $request->input('marker');
+        $description = $request->input('description');
+        $name = $request->input('name');
+        $count = $request->input('count');
+        $oldPrice = $request->input('oldPrice');
+        $newPrice = $request->input('newPrice');       
+        $sitesUrl = $request->input('sitesUrl');
+        $imageUrl = $request->input('imageUrl');    
+        
+        $update = PopRestoran::find($id);
+        if($discount != ""){
+           $update -> discount = $discount;
+        }
+         if($marker != ""){
+           $update -> marker = $marker;
+        }
+         if($description != ""){
+           $update -> description = $description;
+        }
+         if($name != ""){
+           $update -> name = $name;
+        }
+         if($count != ""){
+           $update -> count = $count;
+        }
+         if($oldPrice != ""){
+           $update -> oldPrice = $oldPrice;
+        }
+         if($newPrice != ""){
+           $update -> newPrice = $newPrice;
+        }
+         if($sitesUrl != ""){
+           $update -> sitesUrl = $sitesUrl;
+        }
+         if($imageUrl != ""){
+           $update -> imageUrl = $imageUrl;
+        }    
+          $update -> save();
+
+        return back();                          
+      
+    }
+
+    public function deletePopRestoran(Request $request){
+      $id = $request->input('id');
+      $delete = PopRestoran::find($id);
+      $delete -> delete();
+
+      return back();
     }
 }

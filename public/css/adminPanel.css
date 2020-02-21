@@ -33,7 +33,9 @@
 }
 
 .adminsBlokLists>.row .btn{
-    margin-top: 10%;
+    margin-top: 8%;
+    margin-left: 8%;
+    float: left;
 }
 
 .updatePanel{
@@ -44,4 +46,9 @@
 
 .updatePanel input {
     margin-bottom: 10px;
+}
+
+.card__img img{
+    width: 200px;
+    height: 100px;
 }

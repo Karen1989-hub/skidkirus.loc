@@ -22,7 +22,8 @@ class CreateSkidkisTable extends Migration
             $table->string('count')->nullable();
             $table->string('oldPrice')->nullable();
             $table->string('newPrice')->nullable();
-            $table->string('imgName')->nullable();
+            $table->string('sitesUrl')->nullable();
+            $table->string('imageUrl')->nullable();
             $table->timestamps();
         });
     }

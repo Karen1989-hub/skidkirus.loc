@@ -48,12 +48,12 @@
         bottom__menue.forEach(e => e.style.display='none')
 
     })
-    links[5].addEventListener('click',() => {
-        menu.forEach(e => e.style.display='none')
-        menu[5].style.display='flex';
-        bottom__menue.forEach(e => e.style.display='none')
+    // links[5].addEventListener('click',() => {
+    //     menu.forEach(e => e.style.display='none')
+    //     menu[5].style.display='flex';
+    //     bottom__menue.forEach(e => e.style.display='none')
 
-    })
+    // })
 
 
 
