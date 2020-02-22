@@ -1365,7 +1365,7 @@
 
                 <div class="cards__bg cards__bg-stores">
                     <div class="contanier__menue-title">
-                        <a href="#" id="menue__title">Популярные магазины </a>
+                        <a href="#" id="menue__title">Популярные магазины2 </a>
                         <a href="#" id="menue__title-info">ВСЕ (999)</a>
                     </div>
                     <section class="slider">
