@@ -24,6 +24,7 @@
             <a href="{{route('adminPage')}}"><div class="activPage">Скидки</div></a>
             <a href="{{route('setSitsPage')}}"><div>Сайты</div></a>
             <a href="{{route('getPopularRestoran')}}"><div>Популярные рестораны</div></a>
+            <a href="{{route('getPopHotel')}}"><div>Отели</div></a>
         </div>
         <div class="big" id="null1">
             <div class="menuHeading1">Другие объявление</div>

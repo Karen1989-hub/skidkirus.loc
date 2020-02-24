@@ -24,6 +24,7 @@
             <a href="{{route('adminPage')}}"><div>Скидки</div></a>
             <a href="{{route('setSitsPage')}}"><div>Сайты</div></a>
             <a href="{{route('getPopularRestoran')}}"><div class="activPage">Популярные рестораны</div></a>
+            <a href="{{route('getPopHotel')}}"><div>Отели</div></a>
         </div>
         <div class="big" id="null1">
             <div class="menuHeading1">Другие объявление</div>
@@ -94,22 +95,21 @@
         <label for="materialLoginFormPassword">URL сайта</label>
       </div>
 
-      <div class="md-form">
-        <input type="text" name="imageUrl" id="materialLoginFormPassword" class="form-control">
-        <label for="materialLoginFormPassword">URL картинки</label>
-      </div>
+{{--      <div class="md-form">--}}
+{{--        <input type="text" name="imageUrl" id="materialLoginFormPassword" class="form-control">--}}
+{{--        <label for="materialLoginFormPassword">URL картинки</label>--}}
+{{--      </div>--}}
 
-      <!-- input file
-      <div class="input-group">
-         <div class="input-group-prepend">
-         <span class="input-group-text" id="inputGroupFileAddon01">Загрузить</span>
-        </div>
-         <div class="custom-file">
-         <input type="file" name="imgName" class="custom-file-input" id="inputGroupFile01"
-           aria-describedby="inputGroupFileAddon01">
-         <label class="custom-file-label" for="inputGroupFile01">Выберите файл</label>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroupFileAddon01">Загрузить</span>
             </div>
-      </div> -->
+            <div class="custom-file">
+                <input type="file" name="imgName2" class="custom-file-input" id="inputGroupFile01"
+                       aria-describedby="inputGroupFileAddon01">
+                <label class="custom-file-label" for="inputGroupFile01">Выберите файл</label>
+            </div>
+        </div>
 
 
       <!-- Sign in button -->
@@ -127,11 +127,11 @@
     <div class="adminsBlokLists">
         <div class="row">
         <div class="col-sm-12 col-lg-6">
-         <div class="slide"><img src="{{$val->imageUrl}}" alt=""></div>
+         <div class="slide"><img src="img/popRestoranImg/{{$val->imageUrl}}" alt=""></div>
         </div>
         <div class="col-sm-12 col-lg-6">
          <button type="button" class="btn btn-success">Изменить</button>
-         <form action="{{route('deletePopRestoran')}}" method="post">
+         <form action="{{route('deletePopRestoran')}}" method="post" >
          @csrf
          <input type="hidden" name="id" value="{{$val->id}}">
          <button type="submit" class="btn btn-danger">Удалить</button>
@@ -140,37 +140,58 @@
         </div>
         </div>
         <div class="updatePanel">
-        <form action="{{route('updatePopRestoran')}}" method="post">
+        <form action="{{route('updatePopRestoran')}}" method="post" enctype='multipart/form-data'>
           @csrf
           <input type="hidden" name="id" value="{{$val->id}}">
           <div class="form-row">
            <div class="col-lg-6 col-sm-12">
-            <input type="text"  class="form-control" id="email" placeholder="скидка" name="discount">
+               <span>скидка</span>
+            <input type="text"  class="form-control" id="email" placeholder="{{$val->discount}}" name="discount">
            </div>
            <div class="col-lg-6 col-sm-12">
-            <input type="text" class="form-control" placeholder="маркер" name="marker">
+               <span>маркер</span>
+            <input type="text" class="form-control" placeholder="{{$val->marker}}" name="marker">
            </div>
             <div class="col-lg-6 col-sm-12">
-            <input type="text" class="form-control" placeholder="описание" name="description">
+                <span>описание</span>
+            <input type="text" class="form-control" placeholder="{{$val->description}}" name="description">
            </div>
             <div class="col-lg-6 col-sm-12">
-            <input type="text" class="form-control" placeholder="имя" name="name">
+                <span>имя</span>
+            <input type="text" class="form-control" placeholder="{{$val->name}}" name="name">
            </div>
             <div class="col-lg-6 col-sm-12">
-            <input type="text" class="form-control" placeholder="каличество покупок" name="count">
+                <span>каличество покупок</span>
+            <input type="text" class="form-control" placeholder="{{$val->count}}" name="count">
            </div>
             <div class="col-lg-6 col-sm-12">
-            <input type="text" class="form-control" placeholder="старая цена" name="oldPrice">
+                <span>старая цена</span>
+            <input type="text" class="form-control" placeholder="{{$val->oldPrice}}" name="oldPrice">
            </div>
             <div class="col-lg-6 col-sm-12">
-            <input type="text" class="form-control" placeholder="новая цена" name="newPrice">
+                <span>новая цена</span>
+            <input type="text" class="form-control" placeholder="{{$val->newPrice}}" name="newPrice">
            </div>
             <div class="col-lg-6 col-sm-12">
-            <input type="text" class="form-control" placeholder="адрес сайта" name="sitesUrl">
+                <span>адрес сайта</span>
+            <input type="text" class="form-control" placeholder="{{$val->sitesUrl}}" name="sitesUrl">
            </div>
-            <div class="col-lg-6 col-sm-12">
-            <input type="text" class="form-control" placeholder="адрес картинки" name="imageUrl">
-            <button type="submit" class="btn btn-success">сохранить</button>
+              <div class="col-lg-6 col-sm-12">
+{{--                  <input type="text" class="form-control" placeholder="адрес картинки" name="imageUrl">--}}
+
+                  <div class="input-group">
+                      <div class="input-group-prepend">
+                          <span class="input-group-text" id="inputGroupFileAddon01">Загрузить</span>
+                      </div>
+                      <div class="custom-file">
+                          <input type="file" name="imgName3" class="custom-file-input" id="inputGroupFile01"
+                                 aria-describedby="inputGroupFileAddon01">
+                          <label class="custom-file-label" for="inputGroupFile01">Выберите файл</label>
+                      </div>
+                  </div>
+
+
+                  <button type="submit" class="btn btn-success">сохранить</button>
           </div>
          </div>
        </form>

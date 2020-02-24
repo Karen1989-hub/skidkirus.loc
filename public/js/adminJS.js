@@ -13,7 +13,12 @@ $( document ).ready(function() {
 $('.adminsBlokLists .btn-success').click(function(){
     $(this).parent().parent().parent().toggleClass('height500');
 });
-//update panel open/closed end
+
+$('.adminsBlokLists #popHotelUpdate').click(function(){
+    $(this).parent().parent().parent().toggleClass('height250');
+});
+
+//update panel open/closed end   /
 
 
 //menu lists anim
@@ -28,7 +33,7 @@ $('.menuHeading').click(function () {
 });
 
 $('.menuHeading1').click(function () {
-    if($(this).attr('id')=="null1"){
+    if($(this).parent().attr('id')=="null1"){
         $(this).parent().attr("id","height");
     } else {
         $(this).parent().attr("id","null1");

@@ -20,9 +20,14 @@
 }
 
 .height500{
-    height: 500px!important;
+    height: 550px!important;
     transition-duration: 0.5s;
 }
+.height250{
+    height: 250px!important;
+    transition-duration: 0.5s;
+}
+
 .adminsBlokLists>.row .slide{
     width: 150px;
     height: 100px;
@@ -80,7 +85,7 @@
     background: #F6F6F6;
 }
 #height{
-    height: 200px!important;
+    height: 250px!important;
     transition-duration: 0.5s;
 }
 .menuHeading{

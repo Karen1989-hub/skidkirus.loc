@@ -24,6 +24,7 @@
             <a href="{{route('adminPage')}}"><div>Скидки</div></a>
             <a href="{{route('setSitsPage')}}"><div class="activPage">Сайты</div></a>
             <a href="{{route('getPopularRestoran')}}"><div>Популярные рестораны</div></a>
+            <a href="{{route('getPopHotel')}}"><div>Отели</div></a>
         </div>
         <div class="big" id="null1">
             <div class="menuHeading1">Другие объявление</div>
@@ -139,31 +140,42 @@
           <input type="hidden" name="id" value="{{$val->id}}">
           <div class="form-row">
            <div class="col-lg-6 col-sm-12">
-            <input type="text"  class="form-control" id="email" placeholder="скидка" name="discount">
+               <span>скидка</span>
+            <input type="text"  class="form-control" id="email" placeholder="{{$val->discount}}" name="discount">
            </div>
            <div class="col-lg-6 col-sm-12">
-            <input type="text" class="form-control" placeholder="маркер" name="marker">
+               <span>маркер</span>
+            <input type="text" class="form-control" placeholder="{{$val->marker}}" name="marker">
            </div>
             <div class="col-lg-6 col-sm-12">
-            <input type="text" class="form-control" placeholder="описание" name="description">
+                <span>описание</span>
+            <input type="text" class="form-control" placeholder="{{$val->description}}" name="description">
            </div>
             <div class="col-lg-6 col-sm-12">
-            <input type="text" class="form-control" placeholder="имя" name="name">
+                <span>имя</span>
+            <input type="text" class="form-control" placeholder="{{$val->name}}" name="name">
            </div>
             <div class="col-lg-6 col-sm-12">
-            <input type="text" class="form-control" placeholder="каличество покупок" name="count">
+                <span>каличество покупок</span>
+            <input type="text" class="form-control" placeholder="{{$val->count}}" name="count">
            </div>
             <div class="col-lg-6 col-sm-12">
-            <input type="text" class="form-control" placeholder="старая цена" name="oldPrice">
+                <span>старая цена</span>
+            <input type="text" class="form-control" placeholder="{{$val->oldPrice}}" name="oldPrice">
            </div>
             <div class="col-lg-6 col-sm-12">
-            <input type="text" class="form-control" placeholder="новая цена" name="newPrice">
+                <span>новая цена</span>
+            <input type="text" class="form-control" placeholder="{{$val->newPrice}}" name="newPrice">
            </div>
             <div class="col-lg-6 col-sm-12">
-            <input type="text" class="form-control" placeholder="адрес сайта" name="sitesUrl">
+                <span>адрес сайта</span>
+            <input type="text" class="form-control" placeholder="{{$val->sitesUrl}}" name="sitesUrl">
            </div>
             <div class="col-lg-6 col-sm-12">
-            <input type="text" class="form-control" placeholder="адрес картинки" name="imageUrl">
+                <span>адрес картинки</span>
+            <input type="text" class="form-control" placeholder="{{$val->imageUrl}}" name="imageUrl">
+
+
             <button type="submit" class="btn btn-success">сохранить</button>
           </div>
          </div>

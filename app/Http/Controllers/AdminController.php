@@ -7,6 +7,7 @@ use App\Admin;
 use App\Skidki;
 use App\Site;
 use App\PopRestoran;
+use App\PopHotel;
 
 class AdminController extends Controller
 {
@@ -212,12 +213,13 @@ class AdminController extends Controller
         $oldPrice = $request->input('oldPrice');
         $newPrice = $request->input('newPrice');
         $sitesUrl = $request->input('sitesUrl');
-        $imageUrl = $request->input('imageUrl');
+        $imgName = $request->file('imgName2');
 
-         //$imgName->move('img/skidkiImg',$imgName->getClientOriginalName());
+        $imgName->move('img/popRestoranImg',$imgName->getClientOriginalName());
          PopRestoran::create(['discount'=>$discount,'marker'=>$marker,'description'=>$description,
         'name'=>$name,'count'=>$count,'oldPrice'=>$oldPrice,'newPrice'=>$newPrice,
-        'sitesUrl'=>$sitesUrl,'imageUrl'=>$imageUrl]);
+        'sitesUrl'=>$sitesUrl,'imageUrl'=>$imgName->getClientOriginalName()]);
+
       return back();
     }
 
@@ -231,7 +233,7 @@ class AdminController extends Controller
         $oldPrice = $request->input('oldPrice');
         $newPrice = $request->input('newPrice');
         $sitesUrl = $request->input('sitesUrl');
-        $imageUrl = $request->input('imageUrl');
+        $imgName = $request->file('imgName3');
 
         $update = PopRestoran::find($id);
         if($discount != ""){
@@ -258,9 +260,24 @@ class AdminController extends Controller
          if($sitesUrl != ""){
            $update -> sitesUrl = $sitesUrl;
         }
-         if($imageUrl != ""){
-           $update -> imageUrl = $imageUrl;
+//         if($imageUrl != ""){
+//           $update -> imageUrl = $imageUrl;
+//        }
+
+        if($imgName != null){
+            if($imgName->getClientOriginalName() != ""){
+                //delete old image
+                $popRest = PopRestoran::find($id);
+                $oldImg = $popRest->imageUrl;
+                unlink("img/popRestoranImg/$oldImg");
+                //delete old image end
+
+                $update -> imageUrl = $imgName->getClientOriginalName();
+                $imgName->move('img/popRestoranImg',$imgName->getClientOriginalName());
+            }
         }
+
+
           $update -> save();
 
         return back();
@@ -274,4 +291,22 @@ class AdminController extends Controller
 
       return back();
     }
+
+    public function getPopHotel(){
+        $popHotel = PopHotel::all();
+
+        $arr = ['popHotel'=>$popHotel];
+        return view('setPopHotel',$arr);
+    }
+
+    public function setPopHotel(Request $request){
+        $popHotel = $request->file('popHotelImg');
+
+        $popHotel->move('img/popHotelImg',$popHotel->getClientOriginalName());
+        PopHotel::create(['popHotelImg'=>$popHotel->getClientOriginalName()]);
+
+        return back();
+    }
+
+
 }

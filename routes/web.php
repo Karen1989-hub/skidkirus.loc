@@ -30,5 +30,8 @@ Route::get('/getPopularRestoran','AdminController@getPopularRestoran')->name('ge
 Route::post('/setPopRestoran','AdminController@setPopRestoran')->name('setPopRestoran');
 Route::post('/updatePopRestoran','AdminController@updatePopRestoran')->name('updatePopRestoran');
 Route::post('/deletePopRestoran','AdminController@deletePopRestoran')->name('deletePopRestoran');
+//poplar Hotel img
+Route::get('/getPopHotel',"AdminController@getPopHotel")->name('getPopHotel');
+Route::post('/setPopHotel','AdminController@setPopHotel')->name('setPopHotel');
 
 

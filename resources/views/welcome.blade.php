@@ -1166,7 +1166,7 @@
                      @foreach($popRestoran as $val)
                         <div class="main__content">
                             <div class="card__img">
-                                <a target="_blank" href="{{$val->sitesUrl}}"><img id="restoranImg" style="margin-left:10px" src="{{$val->imageUrl}}" alt=""></a>
+                                <a target="_blank" href="{{$val->sitesUrl}}"><img id="restoranImg" style="margin-left:10px" src="img/popRestoranImg/{{$val->imageUrl}}" alt=""></a>
                                 @if($val->discount != null)
                                 <div class="card__discount big">
                                     <a href="#">{{$val->discount}}%</a>
@@ -1202,18 +1202,9 @@
                 </div>
                 <div class="cards__bg">
                     <section class="slider">
-                        <img class="hotel__slider-img" src="./img/tur1.jpg">
-                        <img class="hotel__slider-img" src="./img/tur2.jpg">
-                        <img class="hotel__slider-img" src="./img/tur3.jpg">
-                        <img class="hotel__slider-img" src="./img/tur4.jpg">
-                        <img class="hotel__slider-img" src="./img/tur1.jpg">
-                        <img class="hotel__slider-img" src="./img/tur2.jpg">
-                        <img class="hotel__slider-img" src="./img/tur1.jpg">
-                        <img class="hotel__slider-img" src="./img/tur2.jpg">
-                        <img class="hotel__slider-img" src="./img/tur3.jpg">
-                        <img class="hotel__slider-img" src="./img/tur4.jpg">
-                        <img class="hotel__slider-img" src="./img/tur1.jpg">
-                        <img class="hotel__slider-img" src="./img/tur2.jpg">
+                        @foreach($popHotel as $val)
+                        <img class="hotel__slider-img" src="./img/popHotelImg/{{$val->popHotelImg}}">
+                        @endforeach
                     </section>
                 </div>
 
