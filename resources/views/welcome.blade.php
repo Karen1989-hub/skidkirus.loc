@@ -40,17 +40,17 @@
                         <a class="login fancybox" href="#one"> Вход </a>
                         <div id="one" style="display:none">
                             <div class="form">
-      
+
                                 <ul class="tab-group">
                                   <li class="tab active"><a href="#signup">Регистрация</a></li>
                                   <li class="tab"><a href="#login">Вход</a></li>
                                 </ul>
-                                
+
                                 <div class="tab-content">
-                                  <div id="signup">   
-                                    
+                                  <div id="signup">
+
                                     <form action="/" method="post">
-                                    
+
                                     <div class="top-row">
                                       <div class="field-wrap">
                                         <label>
@@ -58,7 +58,7 @@
                                         </label>
                                         <input class="field-wrap-input" type="text" required autocomplete="off" />
                                       </div>
-                                  
+
                                       <div class="field-wrap">
                                         <label>
                                           Фамилия<span class="req">*</span>
@@ -66,56 +66,56 @@
                                         <input type="text"required autocomplete="off"/>
                                       </div>
                                     </div>
-                          
+
                                     <div class="field-wrap">
                                       <label>
                                         Email<span class="req">*</span>
                                       </label>
                                       <input type="email"required autocomplete="off"/>
                                     </div>
-                                    
+
                                     <div class="field-wrap">
                                       <label>
                                         Пароль<span class="req">*</span>
                                       </label>
                                       <input type="password"required autocomplete="off"/>
                                     </div>
-                                    
-                                    <button type="submit" class="button button-block"/>Зарегистрироваться</button>
-                                    
+
+                                    <button type="submit" class="button button-block">Зарегистрироваться</button>
+
                                     </form>
-                          
+
                                   </div>
-                                  
-                                  <div id="login">   
+
+                                  <div id="login">
                                     <h1 style="    color: white;
                                     ">Добро пожаловать</h1>
-                                    
+
                                     <form action="/" method="post">
-                                    
+
                                       <div class="field-wrap">
                                       <label>
                                         Email <span class="req">*</span>
                                       </label>
                                       <input type="email"required autocomplete="off"/>
                                     </div>
-                                    
+
                                     <div class="field-wrap">
                                       <label>
                                         Пароль<span class="req">*</span>
                                       </label>
                                       <input type="password"required autocomplete="off"/>
                                     </div>
-                                    
-                                    
-                                    <button class="button button-block"/>Вход</button>
-                                    
+
+
+                                    <button class="button button-block">Вход</button>
+
                                     </form>
-                          
+
                                   </div>
-                                  
+
                                 </div><!-- tab-content -->
-                                
+
                           </div> <!-- /form -->
                         </div>
                     </div>
@@ -124,7 +124,7 @@
                         <ul>
                             <li>
                                 <a class="link" href="#">Услуги</a>
-                                
+
                                 <div class="bottom__links bottom__links-hover">
                                     <div class="links">
                                         <ul>
@@ -247,7 +247,7 @@
                             </li>
                             <li>
                                 <a class="link" href="#">Отели</a>
-                                
+
                                 <div class="bottom__links bottom__links-hover">
                                     <div class="links">
                                         <ul>
@@ -321,9 +321,7 @@
                                             </a>
                                         </ul>
                                         <ul>
-                                            <a href="#">
-                                                <h3>Абхазия</h3>
-                                            </a>
+                                            <a href="#"><h3>Абхазия</h3></a>
                                         </ul>
                                     </div>
                                     <div class="links">
@@ -424,7 +422,7 @@
                             </li>
                             <li>
                                 <a class="link" href="#">Туры </a>
-                                
+
                                 <div class="bottom__links bottom__links-hover">
                                     <div class="links">
                                         <ul>
@@ -440,7 +438,7 @@
                             </li>
                             <li>
                                 <a class="link" href="#">Магазины</a>
-                                
+
                                 <div class="bottom__links bottom__links-hover">
                                     <div class="links">
                                         <ul>
@@ -483,7 +481,7 @@
                             </li>
                             <!-- <li>
                                 <a class="link" href="#">Кешбэк</a>
-                                
+
                                 <div class="bottom__links bottom__links-hover">
 
                                     <div class="links">
@@ -579,7 +577,7 @@
                             </li> -->
                             <li>
                                 <a class="link" href="#">Товары по купонам</a>
-                                
+
                                 <div class="bottom__links bottom__links-hover">
                                     <div class="links">
                                         <ul>
@@ -727,7 +725,7 @@
                         <div class="sub__links">
                             <ul>
                                 <li>
-                                    <a href="#"></a>Адлер</a>
+                                    <a href="#">Адлер</a>
                                 </li>
                                 <li><a href="#">Анапа</a></li>
                                 <li><a href="#">Кисловодск</a></li>
@@ -751,7 +749,7 @@
                         <div class="sub__links">
                             <ul>
                                 <li>
-                                    <a href="#"></a>Крым</a>
+                                    <a href="#">Крым</a>
                                 </li>
                                 <li><a href="#">Абхазия</a></li>
                                 <li><a href="#">Другие города</a></li>
@@ -1041,20 +1039,26 @@
 
                 <!-- navbar end -->
 
-                <div class="cards">
+                <div class="cards w-75">
                     <!-- card start -->
                     @foreach($skidki as $val)
                     <div class="main__content">
                         <div class="card__img">
-                            <a target="_blank" href="{{$val->sitesUrl}}"><img src="{{$val->imageUrl}}" alt=""></a>
+                            <a target="_blank" href="
+                            @if($val->sitesUrl != null)
+                            {{$val->sitesUrl}}
+                                @else
+                                #
+                                @endif
+                                "><img src="img/skidkiImg/{{$val->imageUrl}}" alt=""></a>
                             @if($val->discount != null)
-                            <div class="card__discount big">                            
-                                <a href="#">{{$val->discount}}%</a>                            
+                            <div class="card__discount big">
+                                <a href="#">{{$val->discount}}%</a>
                             </div>
                             @endif
                             @if($val->marker != null)
-                            <div class="card__holidays">                           
-                                <a href="#">{{$val->marker}}</a>                            
+                            <div class="card__holidays">
+                                <a href="#">{{$val->marker}}</a>
                             </div>
                             @endif
 
@@ -1072,10 +1076,10 @@
                         </div>
                     </div>
                     @endforeach
-                    <!-- card end -->           
+                    <!-- card end -->
 
-                    
-                
+
+
                     <div class="contanier__menue-title hotel__title">
                         <a href="#" id="menue__title">Сайты</a>
                         <a href="#" id="menue__title-info">ВСЕ (555)</a>
@@ -1088,9 +1092,9 @@
                             <div class="card__img">
                                 <a target="_blank" href="{{$val->sitesUrl}}"><img src="{{$val->imageUrl}}" alt=""></a>
                                 @if($val->discount != null)
-                                <div class="card__discount small">                                
-                                    <a href="#">{{$val->discount}}%</a>                        
-                                
+                                <div class="card__discount small">
+                                    <a href="#">{{$val->discount}}%</a>
+
                                 </div>
                                 @endif
                                 @if($val->marker != null)
@@ -1113,20 +1117,20 @@
                         </div>
                         @endforeach
 
-                     
-                
-                
-                
+
+
+
+
                         </div>
                         <!-- Add Pagination -->
                         <div class="swiper-pagination"></div>
                         <!-- Add Arrows -->
-                      
+
                       </div>
-                    
+
                       <!-- Swiper JS -->
                       <script src="../package/js/swiper.min.js"></script>
-                    
+
                       <!-- Initialize Swiper -->
                       <script>
                         var swiper = new Swiper('.swiper-container', {
@@ -1144,8 +1148,8 @@
                             prevEl: '.swiper-button-prev',
                           },
                         });
-                      </script>             
-                               
+                      </script>
+
 
                 </div>
 
@@ -1158,14 +1162,14 @@
                     </div>
                     <div class="cards services">
 
-                        
-                     @foreach($popRestoran as $val)                                   
+
+                     @foreach($popRestoran as $val)
                         <div class="main__content">
                             <div class="card__img">
                                 <a target="_blank" href="{{$val->sitesUrl}}"><img id="restoranImg" style="margin-left:10px" src="{{$val->imageUrl}}" alt=""></a>
                                 @if($val->discount != null)
-                                <div class="card__discount big">                            
-                                    <a href="#">{{$val->discount}}%</a>                            
+                                <div class="card__discount big">
+                                    <a href="#">{{$val->discount}}%</a>
                                 </div>
                                 @endif
                                @if($val->marker != null)
@@ -1188,7 +1192,7 @@
                             </div>
                         </div>
                     @endforeach
-                        
+
                     </div>
                 </div>
 
@@ -1213,14 +1217,14 @@
                     </section>
                 </div>
 
-               
+
 
                 <div class="contanier__menue-title tur__title">
                     <a href="#" id="menue__title">Туры</a>
                     <a href="#" id="menue__title-info">ВСЕ (555)</a>
                 </div>
 
-                <div class="cards tur">
+                <div class="cards tur w-75">
 
                     <div class="main__content tur__content">
                         <div class="card__img tur__img">
@@ -1282,16 +1286,16 @@
                     </div>
 
                 </div>
-               
+
 
                 <div class="contanier__menue-title">
                     <a href="#" id="menue__title">Товары по купонам </a>
                     <a href="#" id="menue__title-info">ВСЕ (999)</a>
                 </div>
 
-                <div class="cards">
+                <div class="cards w-75">
 
-                    
+
                     <div class="main__content">
                         <div class="card__img">
                             <img src="./img/fa82a77f81f786eaa0efde4b973a5e9b.jpg" alt="">
@@ -1333,7 +1337,7 @@
                             <a href="#" class="new__price">748 руб.</a>
                         </div>
                     </div>
-                    
+
                     <div class="main__content">
                         <div class="card__img">
                             <img src="./img/fa82a77f81f786eaa0efde4b973a5e9b.jpg" alt="">
@@ -1407,7 +1411,7 @@
                                             <i class="fa fa-instagram" aria-hidden="true"></i>
                                         </div>
                                     </a>
-            
+
                                 </li>
                                 <li class="mx-2">
                                     <a href="https://vk.com/it_wave_it" target="_blank">
@@ -1438,8 +1442,8 @@
         <script src="{{asset('src/slider.js')}}"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 
-        <script> 
-        
+        <script>
+
 $(document).ready(function() {
     $("a.fancybox").fancybox()
   });

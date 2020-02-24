@@ -1349,3 +1349,11 @@ margin: 0 205px;
 #restoranImg{
   width: 260px;
 }
+
+@media (max-width: 560px) {
+    .card__img img{
+        width: 150px;
+        height: 85px;
+        margin: 0 10px 0 10px;
+    }
+}

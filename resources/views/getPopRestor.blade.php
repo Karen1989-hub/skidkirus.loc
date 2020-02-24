@@ -8,15 +8,30 @@
 <!-- nav menu  -->
 <div class="col-sm-4 col-lg-3 border">
 <h2>Меню</h2>
-<div class="list-group">
-  <a href="{{route('adminPage')}}" class="list-group-item list-group-item-action">Скидки</a>
-  <a href="{{route('setSitsPage')}}" class="list-group-item list-group-item-action">Сайты</a>
-  <a href="{{route('getPopularRestoran')}}" class="list-group-item list-group-item-action active">Популярные рестораны</a>
-  <a href="" class="list-group-item list-group-item-action">Отели</a>
-  <a href="" class="list-group-item list-group-item-action">Туры</a>
-  <a href="" class="list-group-item list-group-item-action">Товары по купонам</a>
-  <a href="" class="list-group-item list-group-item-action">Популярные магазины</a>  
-</div>
+{{--<div class="list-group">--}}
+{{--  <a href="{{route('adminPage')}}" class="list-group-item list-group-item-action">Скидки</a>--}}
+{{--  <a href="{{route('setSitsPage')}}" class="list-group-item list-group-item-action">Сайты</a>--}}
+{{--  <a href="{{route('getPopularRestoran')}}" class="list-group-item list-group-item-action active">Популярные рестораны</a>--}}
+{{--  <a href="" class="list-group-item list-group-item-action">Отели</a>--}}
+{{--  <a href="" class="list-group-item list-group-item-action">Туры</a>--}}
+{{--  <a href="" class="list-group-item list-group-item-action">Товары по купонам</a>--}}
+{{--  <a href="" class="list-group-item list-group-item-action">Популярные магазины</a>--}}
+{{--</div>--}}
+
+    <div class="nav">
+        <div class="big" id="null">
+            <div class="menuHeading">Топ объявление</div>
+            <a href="{{route('adminPage')}}"><div>Скидки</div></a>
+            <a href="{{route('setSitsPage')}}"><div>Сайты</div></a>
+            <a href="{{route('getPopularRestoran')}}"><div class="activPage">Популярные рестораны</div></a>
+        </div>
+        <div class="big" id="null1">
+            <div class="menuHeading1">Другие объявление</div>
+            <div>text</div>
+            <div>text</div>
+            <div>text</div>
+        </div>
+    </div>
 </div>
 <!-- nav menu end -->
 
@@ -95,11 +110,11 @@
          <label class="custom-file-label" for="inputGroupFile01">Выберите файл</label>
             </div>
       </div> -->
-      
+
 
       <!-- Sign in button -->
       <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">создать</button>
-     
+
     </form>
     <!-- Form -->
 
@@ -121,7 +136,7 @@
          <input type="hidden" name="id" value="{{$val->id}}">
          <button type="submit" class="btn btn-danger">Удалить</button>
          </form>
-         
+
         </div>
         </div>
         <div class="updatePanel">
@@ -160,7 +175,7 @@
          </div>
        </form>
         </div>
-             
+
       </div>
     @endforeach
  </div>
@@ -169,7 +184,7 @@
 <!-- controler panel end-->
 
 </div>
- 
+
 @endsection
 @section('footer')
 @parent

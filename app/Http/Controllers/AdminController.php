@@ -10,7 +10,7 @@ use App\PopRestoran;
 
 class AdminController extends Controller
 {
-    
+
     public function index(){
         return view('admin');
     }
@@ -23,8 +23,8 @@ class AdminController extends Controller
             return redirect('adminPage');
         } else {
            return back();
-        }       
-    }       
+        }
+    }
 
     public function setSitsPage(){
         $sites = Site::all();
@@ -40,29 +40,29 @@ class AdminController extends Controller
         $name = $request->input('name');
         $count = $request->input('count');
         $oldPrice = $request->input('oldPrice');
-        $newPrice = $request->input('newPrice');       
+        $newPrice = $request->input('newPrice');
         $sitesUrl = $request->input('sitesUrl');
-        $imageUrl = $request->input('imageUrl');       
-              
+        $imageUrl = $request->input('imageUrl');
+
         Site::create(['discount'=>$discount,'marker'=>$marker,'description'=>$description,
         'name'=>$name,'count'=>$count,'oldPrice'=>$oldPrice,'newPrice'=>$newPrice,
         'sitesUrl'=>$sitesUrl,'imageUrl'=>$imageUrl]);
-        
+
         return back();
-    }    
+    }
 
     public function updateSitsList(Request $request){
-        $id = $request->input('id');        
+        $id = $request->input('id');
          $discount = $request->input('discount');
         $marker = $request->input('marker');
         $description = $request->input('description');
         $name = $request->input('name');
         $count = $request->input('count');
         $oldPrice = $request->input('oldPrice');
-        $newPrice = $request->input('newPrice');       
+        $newPrice = $request->input('newPrice');
         $sitesUrl = $request->input('sitesUrl');
-        $imageUrl = $request->input('imageUrl');    
-        
+        $imageUrl = $request->input('imageUrl');
+
         $update = Site::find($id);
         if($discount != ""){
            $update -> discount = $discount;
@@ -90,11 +90,11 @@ class AdminController extends Controller
         }
          if($imageUrl != ""){
            $update -> imageUrl = $imageUrl;
-        }    
+        }
           $update -> save();
 
-        return back();                          
-      
+        return back();
+
     }
 
     public function deleteSitsList(Request $request){
@@ -104,13 +104,12 @@ class AdminController extends Controller
 
       return back();
     }
-    
+
     public function adminPage(){
-        $skidki = Skidki::all();        
-       
-        $arr = ['skidki'=>$skidki,'test'=>"karen"];
+        $skidki = Skidki::all();
+        $arr = ['skidki'=>$skidki];
         return view('adminPage',$arr);
-    } 
+    }
 
     public function setSkidki(Request $request){
         $discount = $request->input('discount');
@@ -121,28 +120,29 @@ class AdminController extends Controller
         $oldPrice = $request->input('oldPrice');
         $newPrice = $request->input('newPrice');
         $sitesUrl = $request->input('sitesUrl');
-        $imageUrl = $request->input('imageUrl');
-        
-         //$imgName->move('img/skidkiImg',$imgName->getClientOriginalName());
+        //$imageUrl = $request->input('imageUrl');
+        $imgName = $request->file('imgName');
+
+         $imgName->move('img/skidkiImg',$imgName->getClientOriginalName());
          Skidki::create(['discount'=>$discount,'marker'=>$marker,'description'=>$description,
         'name'=>$name,'count'=>$count,'oldPrice'=>$oldPrice,'newPrice'=>$newPrice,
-        'sitesUrl'=>$sitesUrl,'imageUrl'=>$imageUrl]);
-        
+        'sitesUrl'=>$sitesUrl,'imageUrl'=>$imgName->getClientOriginalName()]);
+
         return back();
     }
 
     public function updateSkidki(Request $request){
-        $id = $request->input('id');        
+        $id = $request->input('id');
          $discount = $request->input('discount');
         $marker = $request->input('marker');
         $description = $request->input('description');
         $name = $request->input('name');
         $count = $request->input('count');
         $oldPrice = $request->input('oldPrice');
-        $newPrice = $request->input('newPrice');       
+        $newPrice = $request->input('newPrice');
         $sitesUrl = $request->input('sitesUrl');
-        $imageUrl = $request->input('imageUrl');    
-        
+        $imgName = $request->file('imgName2');
+
         $update = Skidki::find($id);
         if($discount != ""){
            $update -> discount = $discount;
@@ -168,13 +168,23 @@ class AdminController extends Controller
          if($sitesUrl != ""){
            $update -> sitesUrl = $sitesUrl;
         }
-         if($imageUrl != ""){
-           $update -> imageUrl = $imageUrl;
-        }    
+         if($imgName != null){
+             if($imgName->getClientOriginalName() != ""){
+                 //delete old image
+                 $skidki = Skidki::find($id);
+                 $oldImg = $skidki->imageUrl;
+                 unlink("img/skidkiImg/$oldImg");
+                 //delete old image end
+
+                 $update -> imageUrl = $imgName->getClientOriginalName();
+                 $imgName->move('img/skidkiImg',$imgName->getClientOriginalName());
+             }
+         }
+
           $update -> save();
 
-        return back();                          
-      
+        return back();
+
     }
 
      public function deleteSkidki(Request $request){
@@ -203,7 +213,7 @@ class AdminController extends Controller
         $newPrice = $request->input('newPrice');
         $sitesUrl = $request->input('sitesUrl');
         $imageUrl = $request->input('imageUrl');
-        
+
          //$imgName->move('img/skidkiImg',$imgName->getClientOriginalName());
          PopRestoran::create(['discount'=>$discount,'marker'=>$marker,'description'=>$description,
         'name'=>$name,'count'=>$count,'oldPrice'=>$oldPrice,'newPrice'=>$newPrice,
@@ -212,17 +222,17 @@ class AdminController extends Controller
     }
 
     public function updatePopRestoran(Request $request){
-        $id = $request->input('id');        
+        $id = $request->input('id');
         $discount = $request->input('discount');
         $marker = $request->input('marker');
         $description = $request->input('description');
         $name = $request->input('name');
         $count = $request->input('count');
         $oldPrice = $request->input('oldPrice');
-        $newPrice = $request->input('newPrice');       
+        $newPrice = $request->input('newPrice');
         $sitesUrl = $request->input('sitesUrl');
-        $imageUrl = $request->input('imageUrl');    
-        
+        $imageUrl = $request->input('imageUrl');
+
         $update = PopRestoran::find($id);
         if($discount != ""){
            $update -> discount = $discount;
@@ -250,11 +260,11 @@ class AdminController extends Controller
         }
          if($imageUrl != ""){
            $update -> imageUrl = $imageUrl;
-        }    
+        }
           $update -> save();
 
-        return back();                          
-      
+        return back();
+
     }
 
     public function deletePopRestoran(Request $request){
