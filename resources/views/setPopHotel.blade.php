@@ -59,7 +59,7 @@
                             </div>
                         </div>
                         <div class="updatePanel">
-                            <form action="{{route('updateSitsList')}}" method="post">
+                            <form action="{{route('updatePopHotel')}}" method="post" enctype='multipart/form-data'>
                                 @csrf
                                 <input type="hidden" name="id" value="{{$val->id}}">
                                 <div class="form-row">
@@ -75,7 +75,7 @@
                                                 <span class="input-group-text" id="inputGroupFileAddon01">Загрузить</span>
                                             </div>
                                             <div class="custom-file">
-                                                <input type="file" name="imgName2" class="custom-file-input" id="inputGroupFile01"
+                                                <input type="file" name="popHotelImg" class="custom-file-input" id="inputGroupFile01"
                                                        aria-describedby="inputGroupFileAddon01">
                                                 <label class="custom-file-label" for="inputGroupFile01">Выберите файл</label>
                                             </div>

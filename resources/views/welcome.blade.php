@@ -11,6 +11,11 @@
         <link rel="stylesheet" href="{{asset('style/main.css')}}" />
         <link rel="stylesheet" href="{{asset('style/style.css')}}" />
         <link rel="stylesheet" href="{{asset('style/slider.css')}}">
+        <link rel="stylesheet" href="{{asset('style/blog.css')}}">
+        <link rel="stylesheet" href="{{asset('style/for-businees.css')}}">
+        <link rel="stylesheet" href="{{asset('style/how-work.css')}}">
+
+
         <link rel="stylesheet" href="https://wave-it.ru/lessons/css/plugin/bootstrap.min.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/v4-shims.css">
@@ -479,6 +484,10 @@
                                     </div>
                                 </div>
                             </li>
+                            <li><a class="link" href="{{route('getBlog')}}">Блог</a></li>
+                            <li><a class="link" href="{{route('gethowWork')}}">Как работает Biglion</a></li>
+
+
                             <!-- <li>
                                 <a class="link" href="#">Кешбэк</a>
 
@@ -779,7 +788,7 @@
 
             <div class="bottom__sub-menue sub__menue4">
                 <ul>
-                    <li><a href="#">Все</a></li>
+                    <li><a href="#">Все2</a></li>
                     <li><a href="#">Все бренды</a></li>
                     <li><a href="#">BOMBBAR</a></li>
                     <li><a href="#">MODIS</a></li>
@@ -1043,7 +1052,7 @@
                     <!-- card start -->
                     @foreach($skidki as $val)
                     <div class="main__content">
-                        <div class="card__img">
+                        <div class="card__img sites">
                             <a target="_blank" href="
                             @if($val->sitesUrl != null)
                             {{$val->sitesUrl}}
@@ -1068,7 +1077,7 @@
                         </div>
                         <div class="card__lcation">
                             <span class="metro">{{$val->name}}</span>
-                            <span class="shop">Куплено {{$val->count}}</span>
+                            <span class="shop">Вход {{$val->count}}</span>
                         </div>
                         <div class="card_price">
                             <a href="#" class="old__price">{{$val->oldPrice}} руб.</a>
@@ -1089,7 +1098,7 @@
                         <div class="swiper-wrapper">
                         @foreach($sites as $val)
                            <div class="swiper-slide main__content">
-                            <div class="card__img">
+                            <div class="card__img sites" >
                                 <a target="_blank" href="{{$val->sitesUrl}}"><img src="{{$val->imageUrl}}" alt=""></a>
                                 @if($val->discount != null)
                                 <div class="card__discount small">
@@ -1108,7 +1117,7 @@
                             </div>
                             <div class="card__lcation">
                                 <span class="metro">{{$val->name}}</span>
-                                <span class="shop">Куплено {{$val->count}}</span>
+                                <span class="shop">Вход {{$val->count}}</span>
                             </div>
                             <div class="card_price">
                                 <a href="#" class="old__price">{{$val->oldPrice}} руб.</a>
@@ -1165,8 +1174,8 @@
 
                      @foreach($popRestoran as $val)
                         <div class="main__content">
-                            <div class="card__img">
-                                <a target="_blank" href="{{$val->sitesUrl}}"><img id="restoranImg" style="margin-left:10px" src="img/popRestoranImg/{{$val->imageUrl}}" alt=""></a>
+                            <div class="card__img popRestoran">
+                                <a target="_blank" href="{{$val->sitesUrl}}"><img class="restoranImg" style="margin-left:10px" src="img/popRestoranImg/{{$val->imageUrl}}" alt=""></a>
                                 @if($val->discount != null)
                                 <div class="card__discount big">
                                     <a href="#">{{$val->discount}}%</a>
@@ -1184,7 +1193,7 @@
                             </div>
                             <div class="card__lcation">
                                 <span class="metro">{{$val->name}}</span>
-                                <span class="shop">Куплено {{$val->count}}</span>
+                                <span class="shop">Вход {{$val->count}}</span>
                             </div>
                             <div class="card_price">
                                 <a href="#" class="old__price">{{$val->oldPrice}} руб.</a>
@@ -1381,48 +1390,124 @@
 
             </div>
 
-            <footer class="footer" id="footer">
-                <div class="container">
-                    <div class="d-flex justify-content-around align-items-center flex-wrap">
-                        <div class="logo my-2">
-                            <img src="https://wave-it.ru/public/public/uploads/settings/logos/GwRbOyuwiX.png">
-                        </div>
-                        <div class="social my-2">
-                            <ul class="d-flex justiofy-content-center ">
-                                <li class="mx-2">
-                                    <a href="https://www.facebook.com/it.wave.it/" target="_blank">
-                                        <div>
-                                            <i class="fa fa-facebook" aria-hidden="true"></i>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="mx-2">
-                                    <a href="https://www.instagram.com/wave_it.ru/" target="_blank">
-                                        <div>
-                                            <i class="fa fa-instagram" aria-hidden="true"></i>
-                                        </div>
-                                    </a>
+            <footer class="footer pd_0" id="footer">
+                <div class="footer_frstpart footer_blog">
+                    <div class=" footer_menu_blog">
+                        <div class="foot1">
+                            <div class="footer_contact">
+                                <a href="tel:+7(800) 2000-649" class="phone">8 (800) 2000-649</a>
+                                <p class="contact_description">
+                                    Для звонка из Москвы<br>
+                                    и регионов России
+                                </p>
+                                <a href="/company/contact_us" class="btn-contact">Связаться с нами</a>
+                            </div>
 
-                                </li>
-                                <li class="mx-2">
-                                    <a href="https://vk.com/it_wave_it" target="_blank">
-                                        <div>
-                                            <i class="fa fa-vk" aria-hidden="true"></i>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
+                            <div class="menu_block">
+                                <div class="menu_block_header">Компания</div>
+                                <ul class="blaock_header_link_list">
+                                    <li>
+                                        <a href="{{route('gethowWork')}}">Как работает Biglion</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">Вакансии</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{route('getBlog')}}">Блог</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <ul class="menu my-2">
-                            <li>
-                                <a href="tel: +79150238800">
-                                    <i class="fa fa-mobile mr-1" aria-hidden="true"></i>
-                                    +79150238800
-                                </a>
-                            </li>
-                            <li><i class="fa fa-envelope mr-1" aria-hidden="true"></i>info@wave-it.ru</li>
-                            <li><i class="fa fa-map-marker mr-1" aria-hidden="true"></i>РФ, г. Москва, ул. Воздвиженка, 10</li>
-                        </ul>
+                        <div class="foot2">
+                            <div class="menu_block">
+                                <div class="menu_block_header">Информация</div>
+                                <ul class="blaock_header_link_list">
+                                    <li>
+                                        <a href="#">Вопросы и ответы</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" >Отзывы</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="menu_block last_block">
+                                <div class="menu_block_header">Партнерам</div>
+                                <ul class="blaock_header_link_list">
+                                    <li>
+                                        <a href="for-businees.html" >Для Вашего бизнеса</a>
+
+                                    </li>
+                                    <li>
+                                        <a href="#">Франчайзинг</a>
+
+                                    </li>
+                                    <li>
+                                        <a href="#">Партнёрская программа</a>
+
+                                    </li>
+                                    <li>
+                                        <a href="#">Все акции</a>
+
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" footer_info footer_info_blog">
+                        <div class="frst_sect">
+                            <div class="footer_info_left">
+                                <p class="copyright"> © 2010-2020 BIGLION </p>
+                                <ul class="links">
+                                    <li><a href="#">Обработка персональных данных</a></li>
+                                    <li><a href="#">Пользовательское соглашение</a></li>
+                                    <li><a href="#">Публичная оферта</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="footer_info_center">
+
+                                <div class="icons_info">
+                                    <i class="fas fa-shield-alt"></i>
+
+                                    <i class="fas fa-lock"></i>
+                                </div>
+
+
+                                <p class="text"> Гарантия, поддержка<br>24 часа и возврат средств </p>
+                            </div>
+                        </div>
+                        <div class="footer_info_right">
+
+                            <div class="social my-2">
+                                <ul class="d-flex justiofy-content-center ">
+                                    <li class="mx-2">
+                                        <a href="https://www.facebook.com/it.wave.it/" target="_blank" >
+                                            <div class="soc_div facebook">
+                                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="mx-2">
+                                        <a href="https://www.instagram.com/wave_it.ru/" target="_blank">
+                                            <div class="soc_div inst">
+                                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                                            </div>
+                                        </a>
+
+                                    </li>
+                                    <li class="mx-2">
+                                        <a href="https://vk.com/it_wave_it" target="_blank">
+                                            <div class="soc_div vk">
+                                                <i class="fa fa-vk" aria-hidden="true"></i>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </footer>

@@ -42,6 +42,86 @@
 <div class="col-sm-8 col-lg-9 border">
 <h2>Панел скидок</h2>
 
+    <!-- Material form login -->
+    <div class="cards">
+
+        @foreach($skidki as $val)
+            <div class="adminsBlokLists">
+                <div class="row">
+                    <div class="col-sm-12 col-lg-6">
+                        <div class="slide"><img src="img/skidkiImg/{{$val->imageUrl}}" alt=""></div>
+                    </div>
+                    <div class="col-sm-12 col-lg-6">
+                        <button type="button" class="btn btn-success">Изменить</button>
+                        <form action="{{route('deleteSkidki')}}" method="post">
+                            @csrf
+                            <input type="hidden" name="id" value="{{$val->id}}">
+                            <button type="submit" class="btn btn-danger">Удалить</button>
+                        </form>
+
+                    </div>
+                </div>
+                <div class="updatePanel">
+                    <form action="{{route('updateSkidki')}}" method="post" enctype='multipart/form-data'>
+                        @csrf
+                        <input type="hidden" name="id" value="{{$val->id}}">
+                        <div class="form-row">
+                            <div class="col-lg-6 col-sm-12">
+                                <span>скидка</span>
+                                <input type="text"  class="form-control" placeholder="{{$val->discount}}" name="discount">
+                            </div>
+                            <div class="col-lg-6 col-sm-12">
+                                <span>маркер</span>
+                                <input type="text" class="form-control" placeholder="{{$val->marker}}" name="marker">
+                            </div>
+                            <div class="col-lg-6 col-sm-12">
+                                <span>описание</span>
+                                <input type="text" class="form-control" placeholder="{{$val->description}}" name="description">
+                            </div>
+                            <div class="col-lg-6 col-sm-12">
+                                <span>имя</span>
+                                <input type="text" class="form-control" placeholder="{{$val->name}}" name="name">
+                            </div>
+                            <div class="col-lg-6 col-sm-12">
+                                <span>каличество покупок</span>
+                                <input type="text" class="form-control" placeholder="{{$val->count}}" name="count">
+                            </div>
+                            <div class="col-lg-6 col-sm-12">
+                                <span>старая цена</span>
+                                <input type="text" class="form-control" placeholder="{{$val->oldPrice}}" name="oldPrice">
+                            </div>
+                            <div class="col-lg-6 col-sm-12">
+                                <span>новая цена</span>
+                                <input type="text" class="form-control" placeholder="{{$val->newPrice}}" name="newPrice">
+                            </div>
+                            <div class="col-lg-6 col-sm-12">
+                                <span>адрес сайта</span>
+                                <input type="text" class="form-control" placeholder="{{$val->sitesUrl}}" name="sitesUrl">
+                            </div>
+                            <div class="col-lg-6 col-sm-12">
+                                {{--<input type="text" class="form-control" placeholder="адрес картинки" name="imageUrl">--}}
+                                {{--                input file--}}
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroupFileAddon01">Загрузить</span>
+                                    </div>
+                                    <div class="custom-file">
+                                        <input type="file" name="imgName2" class="custom-file-input" id="inputGroupFile01"
+                                               aria-describedby="inputGroupFileAddon01">
+                                        <label class="custom-file-label" for="inputGroupFile01">Выберите файл</label>
+                                    </div>
+                                </div>
+
+                                <button type="submit" class="btn btn-success">сохранить</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        @endforeach
+    </div>
+
 <!-- Material form login -->
 <div class="card  w-75 formBlock">
 
@@ -124,85 +204,7 @@
   </div>
 
 </div>
-<!-- Material form login -->
- <div class="cards">
 
- @foreach($skidki as $val)
-    <div class="adminsBlokLists">
-        <div class="row">
-        <div class="col-sm-12 col-lg-6">
-         <div class="slide"><img src="img/skidkiImg/{{$val->imageUrl}}" alt=""></div>
-        </div>
-        <div class="col-sm-12 col-lg-6">
-         <button type="button" class="btn btn-success">Изменить</button>
-         <form action="{{route('deleteSkidki')}}" method="post">
-         @csrf
-         <input type="hidden" name="id" value="{{$val->id}}">
-         <button type="submit" class="btn btn-danger">Удалить</button>
-         </form>
-
-        </div>
-        </div>
-        <div class="updatePanel">
-        <form action="{{route('updateSkidki')}}" method="post" enctype='multipart/form-data'>
-          @csrf
-          <input type="hidden" name="id" value="{{$val->id}}">
-          <div class="form-row">
-              <div class="col-lg-6 col-sm-12">
-                  <span>скидка</span>
-                  <input type="text"  class="form-control" placeholder="{{$val->discount}}" name="discount">
-              </div>
-              <div class="col-lg-6 col-sm-12">
-                  <span>маркер</span>
-                  <input type="text" class="form-control" placeholder="{{$val->marker}}" name="marker">
-              </div>
-              <div class="col-lg-6 col-sm-12">
-                  <span>описание</span>
-                  <input type="text" class="form-control" placeholder="{{$val->description}}" name="description">
-              </div>
-              <div class="col-lg-6 col-sm-12">
-                  <span>имя</span>
-                  <input type="text" class="form-control" placeholder="{{$val->name}}" name="name">
-              </div>
-              <div class="col-lg-6 col-sm-12">
-                  <span>каличество покупок</span>
-                  <input type="text" class="form-control" placeholder="{{$val->count}}" name="count">
-              </div>
-              <div class="col-lg-6 col-sm-12">
-                  <span>старая цена</span>
-                  <input type="text" class="form-control" placeholder="{{$val->oldPrice}}" name="oldPrice">
-              </div>
-              <div class="col-lg-6 col-sm-12">
-                  <span>новая цена</span>
-                  <input type="text" class="form-control" placeholder="{{$val->newPrice}}" name="newPrice">
-              </div>
-              <div class="col-lg-6 col-sm-12">
-                  <span>адрес сайта</span>
-                  <input type="text" class="form-control" placeholder="{{$val->sitesUrl}}" name="sitesUrl">
-              </div>
-              <div class="col-lg-6 col-sm-12">
-                  {{--<input type="text" class="form-control" placeholder="адрес картинки" name="imageUrl">--}}
-{{--                input file--}}
-                  <div class="input-group">
-                      <div class="input-group-prepend">
-                          <span class="input-group-text" id="inputGroupFileAddon01">Загрузить</span>
-                      </div>
-                      <div class="custom-file">
-                          <input type="file" name="imgName2" class="custom-file-input" id="inputGroupFile01"
-                                 aria-describedby="inputGroupFileAddon01">
-                          <label class="custom-file-label" for="inputGroupFile01">Выберите файл</label>
-                      </div>
-                  </div>
-
-                  <button type="submit" class="btn btn-success">сохранить</button>
-              </div>
-         </div>
-       </form>
-        </div>
-
-      </div>
-    @endforeach
- </div>
 
 </div>
 <!-- controler panel end-->

@@ -308,5 +308,44 @@ class AdminController extends Controller
         return back();
     }
 
+    public function updatePopHotel(Request $request){
+        $id = $request->input('id');
+
+        //$sitesUrl = $request->input('sitesUrl');
+        $popHotelImg = $request->file('popHotelImg');
+
+        $update = PopHotel::find($id);
+
+        //($sitesUrl != ""){
+         //   $update -> sitesUrl = $sitesUrl;
+        //}
+//         if($imageUrl != ""){
+//           $update -> imageUrl = $imageUrl;
+//        }
+
+        if($popHotelImg != null){
+            if($popHotelImg->getClientOriginalName() != ""){
+                //delete old image
+                $popHotel = PopHotel::find($id);
+                $oldImg = $popHotel->popHotelImg;
+                unlink("img/popHotelImg/$oldImg");
+                //delete old image end
+
+                $update -> popHotelImg = $popHotelImg->getClientOriginalName();
+                $popHotelImg->move('img/popHotelImg',$popHotelImg->getClientOriginalName());
+            }
+        }
+
+        $update -> save();
+        return back();
+    }
+
+    public function deletePopHotel(Request $request){
+        $id = $request->input('id');
+        $delete = PopHotel::find($id);
+        $delete -> delete();
+
+        return back();
+    }
 
 }

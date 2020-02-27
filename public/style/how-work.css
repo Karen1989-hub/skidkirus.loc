@@ -1,0 +1,361 @@
+.how_container{
+    width: 76%;
+    margin: 0 auto;
+    padding-left: 35px;
+    box-sizing: border-box;
+}
+.how{
+    padding-top:40px;
+}
+.how_title{
+    text-align: left;
+    color:
+    #202438;
+    font-weight: 900;
+    font-size: 36px;
+    padding: 0 0 20px;
+}
+.how_text{
+    color: #202438;
+    font-weight: 500;
+    font-size: 16px;
+}
+.how_title_second{
+    font-weight: 900;
+    font-size: 24px;
+    text-align: left;
+    margin-top: 55px;
+    margin-bottom: 20px;
+}
+.how_icons{
+    /* display:flex;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #202438; */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 0 0;
+    max-width: 527px;
+}
+.categories_img{
+    border-radius: 50%;
+    height:60px;
+    width:60px;
+    text-align:center;
+}
+.cat_img_1{
+    border:2px solid #f06292
+}
+.cat_img_1:hover{
+    background-color:#f06292;
+}
+
+.cat_img_2{
+    border:2px solid #00bfa5
+}
+.cat_img_2:hover{
+  background-color: #00bfa5
+}
+.cat_img_3{
+    border:2px solid #03a9f4;
+}
+.cat_img_3:hover{
+    background-color:  #03a9f4;
+}
+.cat_img_4{
+    border:2px solid #ffa000;
+}
+.cat_img_4:hover{
+    background-color: #ffa000;
+}
+.cat_img_5:hover{
+    background-color: #7c4dff;
+}
+.cat_img_5{
+    border:2px solid #7c4dff;
+}
+.cat_img_6{
+    border:2px solid #1976d2;
+}
+.cat_img_6:hover{
+    background-color:#1976d2;
+}
+.cat_img_7{
+    border:2px solid #388e3c
+}
+.cat_img_7:hover{
+    background-color: #388e3c
+}
+.cat_img_8{
+    border:2px solid #303f9f;
+}
+.cat_img_8:hover{
+    background-color: #303f9f;
+}
+.cat_img_9{
+    border:2px solid #afb42b;
+}
+.cat_img_9:hover{
+    background-color:#afb42b;
+}
+.cat_img_10{
+    border:2px solid #0097a7;
+}
+.cat_img_10:hover{
+    background-color: #0097a7;
+}
+.cat_img_11{
+    border:2px solid #7cb342;
+}
+.cat_img_11:hover{
+    background-color: #7cb342;
+}
+.footer_menu,.footer_info{
+    justify-content: space-between !important;
+}
+
+.how_categories_icons{
+    display:flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: -20px;
+}
+
+.how_icons :nth-child(2){
+    margin-left:45px;
+}
+.how_icons :nth-child(3){
+    margin-left:45px;
+}
+.how_categories_icons_item{
+    display:block;
+    text-decoration: none;
+    color:black;
+    width:80px;
+    margin-right:5px;
+    margin-bottom: 20px;
+    
+}
+.how_shops_section{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.how_shops_section_item{
+    width:225px;
+}
+.item_title{
+    margin-bottom: 6px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.item_text{
+    color:
+    rgba(32, 36, 56, 0.4);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px
+}
+.mobile_image{
+    display:flex;
+}
+.mobile_image :nth-child(2){
+    margin-left: 50px;
+}
+.mobile_image_div{
+    width: 149px;
+    height: 49px;
+    background-color: black;
+    color:white;
+    border-radius: 8px;
+}
+.mobile_image_link{
+    text-decoration: none;
+}
+
+.mobile_image_text1 {
+    display: block;
+    color:
+    #c4c5ca;
+    font-size: 14px;
+    text-align: right;
+    padding-right: 15px;
+}
+.mobile_image_text2{
+    display: block;
+    padding-right: 15px;
+}
+.mobile{
+    display:flex;
+}
+.mobile_second_section{
+    background: url("../img/mobile-app.png/") no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    flex: 0 0 auto;
+    height: 406px;
+    width: 408px;
+
+}
+.icons_item_text{
+    color:
+#202438;
+display: block;
+font-weight: 500;
+font-size: 11px;
+line-height: 16px;
+margin-top: 4px;
+text-align: center;
+margin-right: 22px
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .mobile_second_section{
+        max-width: 350px;
+        margin-top:16px;
+    }
+    .mobile_text{
+        padding-right: 15px;
+    }
+    .mobile_image_text2{
+        padding-right: 0px;
+    }
+    .mobile_image {
+        padding-bottom: 30px;
+    
+    }
+}
+@media screen and (max-width:995px){
+    .mobile_second_section{
+        margin-top:39px;
+
+}
+}
+
+@media screen and (max-width:880px){
+    .mobile_second_section{
+        margin-top:17px;
+    }
+}
+@media screen and (max-width:865px){
+    .mobile_second_section{
+        max-width: 300px;
+        margin-top:14px;
+    }
+    
+    .mobile_image :nth-child(2) {
+        font-size: 14px;
+        margin-right: 7px;
+    
+    }
+   
+}
+
+@media screen and (max-width:800px){
+
+    .mobile_second_section{
+        height: 280px;
+        width: 280px;
+        margin: 0 auto
+    }
+    .mobile{
+        flex-direction: column;
+    }
+    .mobile_image {
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+    .mobile_image_link{
+        margin-bottom: 12px
+    }
+    .mobile_image :nth-child(2) {
+        margin-left:0px;
+    }
+    .mobile_image_text1 {
+        font-size: 14px;
+        text-align: right;
+        padding-right: 15px;
+    
+    }
+    .mobile_image_text {
+        font-size: 14px;
+        text-align: right;
+        padding-right: 15px;
+    }
+    .how_icons{
+        max-width: 280px;
+    }
+    .how_icons_item {
+        font-size: 14px;
+        line-height: 16px;
+    
+    }
+}
+@media screen and (max-width:700px){
+    .how_icons_item {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+}
+@media screen and (max-width:575px){
+    .how_icons_item {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .how_icons{
+        flex-wrap: wrap;
+        flex-direction: column; 
+    }
+    .how_icons :nth-child(2) {
+        margin-left:0px;
+        
+    }
+    .how_icons :nth-child(3) {
+        margin-left: 0px;
+    }
+
+}
+@media screen and (max-width:520px){
+    .mobile_second_section{
+        height: 280px;
+        width: 280px
+    }
+    .mobile{
+        flex-direction: column;
+    }
+    .how_title {
+        font-size: 30px;
+        padding: 0 0 8px;
+    
+    }
+    .how_title_second {
+        font-size: 21px;
+        margin-bottom: 22px;
+    
+    }
+    
+
+}
+
+@media screen and (max-width:420px){
+    .mobile_second_section{
+        height: 205px;
+        width: 231px;
+    }
+    .how_title {
+        font-size: 26px;
+        padding: 0 0 8px;
+    }
+    .how_text {
+        font-size: 14px;
+    }
+    
+}
+

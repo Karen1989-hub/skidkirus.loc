@@ -1,0 +1,830 @@
+.forbusiness_container{
+    width: 76%;
+    margin: 0 auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    transition: .3s;
+    padding-bottom: 163px;
+    padding-top: 125px;
+    position: relative;
+}
+.forbusiness_container .bigilon_btn{
+    background:#ff7f00;
+    color:#ffffff;
+    display: inline-flex;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    border: none;
+    border-radius: 12px;
+    padding: 0 20px;
+    font-weight: 400;
+}
+.title_bigilon{
+    font-size: 56px;
+    line-height: 64px;
+    color:#000;
+    font-weight: 300;
+    text-align: left;
+    margin-bottom: 26px;
+}
+.bigilon_image{
+     position: absolute;
+    right: -297px;
+    top: 61px;
+    height: 571px;
+    width: 717px;
+    transition: .3s;
+    overflow: hidden;
+    margin: 0 10%;
+    padding-right: 14%;
+}
+.about_bigilon{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 20px;
+    margin-top:50px;
+}
+.about_title{
+    font-size: 40px;
+    line-height: 48px;
+    color:
+    #000;
+    font-weight: 300;
+    margin-bottom: 26px;
+}
+.forbusiness_success{
+    background:rgba(32, 36, 56, 0.02);
+    padding: 60px 0 60px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+.cont{
+    width: 76%;
+    margin: 0 auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    transition: .3s;
+}
+.forbusiness_success_list{
+  
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    justify-content: space-between
+}
+.forbusiness_success_list b{
+    display: block;
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 8px;
+}
+.succes_list_item{
+    width: 27%;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color:
+    #202438;
+    margin-bottom: 100px;
+}
+.forbusiness_resultat .about_title{
+    color:#ffffff;
+}
+.forbusiness_resultat{
+    padding: 50px 0 70px;
+    background:#ff7f00;
+}
+.forbusiness_resultat_item{
+    padding: 34px 28px 28px;
+    padding-bottom: 28px;
+    background:
+    #ffffff;
+    border-radius: 8px;
+    margin-bottom: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: Raleway, sans-serif;
+    box-shadow: 0px 34px 54px
+    rgba(0, 0, 0, 0.21);
+    max-width: 48.5%;
+}
+.register_contact a:hover{
+    text-decoration:none;
+    color:inherit;
+}
+.footer_blog .footer_menu_blog{
+    justify-content: space-around !important;
+}
+.footer_blog .footer_info{
+    justify-content: space-around !important;
+}
+.item_title{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 15px;
+    padding-left: 60px;
+    /* position: relative; */
+}
+.forbusiness_resultat_list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.for_busines_table{
+    margin-top: 38px;
+    box-shadow: 0px -8px 26px -22px
+    rgba(0, 0, 0, 0.12);
+    background:
+    #ffffff;
+    width: 984px;
+    border-spacing: 0;
+}
+.forbusiness_table table{
+    border-collapse: collapse;
+}
+.forbusiness_table tr{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+.forbusiness_table th{
+    padding: 16px 21px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    vertical-align: middle;
+}
+.forbusiness_table th:nth-child(2){
+    background:
+    #ff7f00;
+    color:
+    #ffffff;
+}
+.forbusiness_table td:first-child{
+    padding-top:32px;
+    padding-right:24px;
+    padding-bottom: 30px;
+    padding-left:24px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    
+}
+.forbusiness_table th{
+    padding: 16px 21px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+}
+.forbusiness_table td{
+    vertical-align: middle;
+}
+.forbusinees_preview{
+    background: url("../img/lion-bg.png") top right no-repeat, linear-gradient(122.65deg, #232323 19.55%,
+#404040 91.92%);
+    background-size: auto, auto;
+background-size: auto 100%;
+padding: 66px 0 52px;
+color:white;
+}
+.forbusinees_preview .about_title{
+    color:#fff;
+}
+.forbusiness_slider ul li{
+    text-decoration: none;
+    display: inline-block;
+}
+.forbusiness_slider_ul{
+    padding-top: 32px;
+    padding-bottom: 72px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    transition-property: transform;
+    box-sizing: content-box;
+    transform: translate3d(0, 0, 0);
+}
+
+.forbusiness_slider{
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+
+.slider_ul_item{
+    display: inline-block;
+    vertical-align: top;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color:#ffffff;
+    flex-shrink: 0;
+    width: 427px;
+    margin-right: 300px
+}
+.slider_ul_item_title{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 18px;
+}
+.forbusiness_slider{
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+.forbusiness_slider_ul{
+    padding-top: 32px;
+    padding-bottom: 72px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    transition-property: transform;
+    box-sizing: content-box;
+    }
+.slider1{
+    display:flex;
+}
+.dot{
+    background-color: #ffffff;
+    width:10px;
+    height:10px;
+    border-radius: 50%;
+    display:inline-block;
+    margin-right: 11px;
+    cursor: pointer;
+}
+.slider_dot{
+    text-align: center;
+}
+.forbusinees_partners .about_title {
+    margin-top:30px;
+}
+.forbusinees_registr{
+    padding-top:55px;
+    padding-bottom: 50px;
+    background: rgba(0, 0, 0, 0.05);
+}
+.footer_for_businees .footer_info{
+    justify-content: space-between !important;
+}
+.footer_for_businees .footer_menu_blog {
+    justify-content: space-between !important;
+}
+
+.registr_form label{
+    display:block;
+    position: static !important;
+    font-size: 14px !important;
+    color:
+    rgba(32, 36, 56, 0.4);
+    margin-bottom: 16px;
+    margin-top: 18px;
+    cursor: pointer !important;
+}
+.registr_form input{
+    width: 100%;
+    line-height: 38px;
+    border: solid 1px
+    rgba(32, 36, 56, 0.2);
+    border-radius: 4px;
+    padding: 0 40px 0 13px;
+    color:
+    #202438;
+    font-size: 16px;
+}
+.reg_form{
+    display: inline-block;
+vertical-align: top;
+width: 60%;
+max-width: 584px;
+margin-right: 120px;
+padding: 32px;
+background:
+#ffffff;
+box-shadow: 0px 11px 22px
+rgba(0, 0, 0, 0.1);
+border-radius: 20px;
+font-weight: 600;
+font-size: 14px;
+line-height: 16px;
+}
+.reg_textarea{
+    width:100%;
+    border: solid 1px
+    rgba(32, 36, 56, 0.2);
+    border-radius: 4px;
+}
+.sent_btn{
+    background:#ff7f00;
+    color:#ffffff;
+    margin-top: 30px;
+    border:none;
+    text-align:center;
+    cursor: pointer;
+    width:47%;
+    border-radius: 11px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+.radion_dot{
+ 
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 1px solid rgba(32, 36, 56, 0.2);
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+
+}
+.radio_text{
+    vertical-align: middle;
+}
+.succes_list_item:nth-child(5) {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 40px;
+}
+.reg_radio{
+    display: none;;
+}
+.reg_radio:checked + .radion_dot{
+    border-color:
+    #43d167;
+    background:
+    rgba(67, 209, 103, 0.1);
+}
+.select{
+    box-sizing: content-box;
+    display: block;
+    position: relative;
+    width: 100%;
+    min-height: 48px;
+    text-align: left;
+    color:
+    #35495e;
+}
+.register_contact{
+    display: inline-block;
+}
+.register_contact a{
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 24px;
+    color:
+    rgba(0, 0, 0, 0.8);
+    margin-bottom: 8px;
+    display: block;
+}
+.register_contact_title{
+    font-size: 24px;
+    line-height: 48px;
+    margin-bottom: 12px;
+    color:black;
+    font-weight: 800;
+}
+.register_contact_sec_title,.title_email{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 16px;
+    color:black;
+    font-weight: 800;
+}
+.title_email{
+    margin-top:30px;
+}
+
+
+@media screen and (max-width:1500px){
+    .image_partners {
+        max-width: 100%;
+    }
+    .bigilon_image{
+        right: -329px;
+    }
+    .title_bigilon {
+        font-size: 45px;
+    }
+}
+@media screen and (max-width:1480px){
+   
+    .bigilon_image{
+        right: -316px;
+    }
+}
+@media screen and (max-width:1460px){
+    
+    .bigilon_image{
+        right: -308px;
+        width: 652px;
+    }
+}
+@media screen and (max-width:1435px){
+    
+    .bigilon_image{
+         right: -294px;
+        width: 652px;
+    }
+    .title_bigilon {
+        font-size: 49px;
+    }
+    .title_bigilon {
+        font-size: 44px;
+        line-height: 55px;
+    
+    }
+}
+@media screen and (max-width:1400px){
+
+    .title_bigilon {
+        font-size: 28px;
+        line-height: 44px;
+    
+    }
+
+    .bigilon_image{ 
+        right: -193px;
+        height: 486px;
+        width: 700px;
+    } 
+     .bg_image{
+        max-width:100%;
+    } 
+   
+    
+    
+   
+}
+
+@media screen and (max-width:1150px){
+   
+    .title_bigilon {
+
+        font-size: 22px;
+        line-height: 37px;
+    
+    } 
+   
+}
+
+
+@media screen and (max-width:1100px){
+    .bigilon_image{
+        margin-top: 215px;
+        left: -10%;
+        height: 100%;
+        width: 100%;
+        padding-left: 3px;
+        
+    }
+    .bg_image{
+        margin-left: 41px;
+        max-width: 100%;
+    }
+    .about_bigilon{
+        padding-top: 250px;
+    }
+    .forbusiness_container .bigilon_btn{
+        display: block !important;
+
+        text-align: center;
+    }
+    .title_bigilon{
+        text-align: center;
+    }
+    .forbusiness_container{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        padding-top:70px;
+    }
+    .title_bigilon {
+        font-size: 41px;
+        line-height: 48px;
+    
+    }
+    .forbusiness_table th {
+
+        padding: 5px 12px;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 20px; 
+    
+    }
+    .forbusiness_table td:first-child {
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 5px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 17px;
+    
+    }
+    
+   
+    .forbusiness_resultat .cont{
+        /* padding-left: 38px;
+        padding-right: 38px;
+        width: 100%;
+        max-width: 100%; */
+    }
+    .forbusinees_preview .cont{
+        /* padding-left: 38px;
+        padding-right: 38px;
+        width: 100%;
+        max-width: 100%; */
+
+    }
+    .forbusinees_registr .cont{
+        /* padding-left: 38px;
+        padding-right: 38px;
+        width: 100%;
+        max-width: 100%; */
+        
+    }
+    .about_bigilon .cont{
+        /* padding-left: 38px;
+        padding-right: 38px;
+        width: 100%;
+        max-width: 100%; */
+    }
+    /* .bigilon_image{
+        
+        right: -253px;
+        height: 516px;
+        width: 750px;
+    } */
+    
+    .forbusiness_success .cont {
+        /* padding-left: 38px;
+        padding-right: 38px;
+        width: 100%;
+        max-width: 100%; */
+    }
+    .forbusinees_partners .cont {
+        /* padding-left: 38px;
+        padding-right: 38px;
+        width: 100%;
+        max-width: 100%; */
+    }
+    .image_partners {
+        max-width: 100%;
+    }
+    .forbusiness_container {
+        /* padding-left: 38px;
+        padding-right: 38px;
+        width: 100%;
+        max-width: 100%; */
+    }
+    .for_busines_table {
+        width: 100%;
+        max-width: 100%;
+    }
+    .forbusiness_table{
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    
+}
+@media screen and (max-width:850px){
+    .forbusiness_table th {
+        padding: 12px 10px;
+        font-weight: 600;
+        font-size: 12px;
+    
+    }
+    
+    .forbusiness_table td:first-child {
+        padding-top: 0px;
+        font-size: 12px;
+        padding-right: 0px;
+
+        padding-bottom: 0px;
+
+        padding-left: 9px;
+    }
+    .reg_form {
+        max-width: 100%;
+        width: 100%;
+        margin-right: 0;
+        order: 1;
+    }
+    .register_contact{
+        display:block;
+        text-align: center;
+        padding-top:20px;
+    }
+
+}
+
+@media screen and (max-width:600px){
+    .forbusiness_table th {
+        padding: 11px 4px;
+        font-weight: 600;
+        font-size: 12px;
+    
+    }
+    .title_bigilon {
+        font-size: 31px;
+        line-height: 48px;
+    
+    }
+   
+   
+
+}
+
+@media screen and (max-width:800px){
+    .bigilon_image{
+        margin-top: 215px;
+        left: -10%;
+        margin-top: 177px;
+        height: 87%;
+    }
+    .forbusiness_container{
+        padding-top: 38px;
+    }
+    .forbusiness_resultat_item{
+        width: 100%;
+        max-width: 100%;
+    }
+    .title_bigilon {
+        font-size: 36px;
+        line-height: 48px;
+    }
+    .forbusiness_success_list b {
+        font-size: 20px;
+        margin-bottom: 4px;
+    
+    }
+      
+    
+    .about_title{
+        font-size: 24px;
+        line-height: 40px;
+    }
+    .succes_list_item:nth-child(5) {
+        width: 100%;
+        order: 0;
+        margin-top: 0;
+        margin-bottom: 36px;
+    }
+    .about_bigilon {
+        padding-top: 151px;
+    }
+    .succes_list_item 
+    { 
+        order: 1; width: 34%; margin-bottom: 22px; /*! font-size: 12px; */ line-height: 16px;
+    }
+    
+
+}
+
+   
+ 
+    @media screen and (max-width: 565px) {
+        .title_bigilon {
+            font-size: 28px;
+            line-height: 42px;
+        
+        }
+        /* .bigilon_image{ top: auto; bottom: 40px; height: 208px; width: 704px;
+    } */
+}
+@media screen and (max-width:500px){
+    .forbusiness_container .bigilon_btn {
+        display: inline-flex;
+        height: 36px ;
+        line-height: 35px ;
+        font-size: 13px;
+        border-radius: 12px;
+        padding: 0 14px;
+       
+    }
+   
+    .forbusiness_table th {
+        padding: 11px 2px;
+        font-weight: 600;
+        font-size: 12px;
+    
+    }
+    .bigilon_image{
+        margin-top: 158px !important;
+        height: 56% !important;
+        left: -12% !important;
+       
+    }
+    .forbusiness_table td:first-child {
+        padding-top: 0px;
+        font-size: 12px;
+        padding-right: 0px;
+
+        padding-bottom: 0px;
+
+        padding-left: 0px;
+    }
+    .about_title{
+        margin-top: -45px;
+    }
+   
+   
+
+}
+
+
+
+@media screen and (max-width:480px){
+    .item_title {
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 22px;
+        margin-bottom: 15px;
+        padding-left: 0px;
+        position: relative;
+        text-align: center;
+    }
+    .succes_list_item:nth-child(5) {
+        font-weight: bold;
+        font-size: 29px;
+        line-height: 34px;
+    }
+    .forbusiness_container .bigilon_btn {
+        display: inline-flex;
+        height: 28px;
+        line-height: 28px;
+        font-size: 12px;
+        border-radius: 12px;
+        padding: 0 12px;
+    
+    }
+    .title_bigilon {
+        font-size: 19px;
+        line-height: 35px;
+    
+    }
+    .about_bigilon {
+        text-align: center;
+        padding-top: 56px !important;
+        font-size: 14px !important;
+        line-height: 30px !important;
+    }
+    .forbusiness_success {
+        font-size: 14px;
+        line-height: 26px;
+        text-align: center;
+    
+    }
+    .succes_list_item 
+    {
+        font-size: 14px !important;
+        line-height: 12px !important;
+    
+    }
+    .forbusiness_pro p {
+        font-size: 14px;
+    }
+    .slider_text p{
+        font-size:14px;
+    }
+    .slider_dot {
+        margin-top: -78px;
+    
+    }
+    .register_contact_title {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:400px){
+    .bg_image {
+        margin-left: 30px;
+    
+    }
+    .about_title {
+        font-size: 19px;
+        line-height: 30px;
+    }
+}
+    

@@ -19,4 +19,11 @@ class HomeController extends Controller
         $arr = ['skidki'=>$skidki,'sites'=>$sites,'popRestoran'=>$popRestoran,'popHotel'=>$popHotel];
         return view('welcome',$arr);
     }
+
+    public function getBlog(){
+        return view('blog');
+    }
+    public  function gethowWork(){
+        return view('hawWork');
+    }
 }

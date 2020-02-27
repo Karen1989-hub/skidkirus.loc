@@ -21,6 +21,7 @@
 <!-- my styles -->
 <link rel="stylesheet" href="{{asset('css/adminPanel.css')}}">
 
+
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 

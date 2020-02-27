@@ -33,5 +33,10 @@ Route::post('/deletePopRestoran','AdminController@deletePopRestoran')->name('del
 //poplar Hotel img
 Route::get('/getPopHotel',"AdminController@getPopHotel")->name('getPopHotel');
 Route::post('/setPopHotel','AdminController@setPopHotel')->name('setPopHotel');
+Route::post('/updatePopHotel','AdminController@updatePopHotel')->name('updatePopHotel');
+//blog
+Route::get('/getBlog','HomeController@getBlog')->name('getBlog');
+//howWork
+Route::get('/gethowWork','HomeController@gethowWork')->name('gethowWork');
 
 
