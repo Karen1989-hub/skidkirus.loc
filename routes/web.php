@@ -34,9 +34,25 @@ Route::post('/deletePopRestoran','AdminController@deletePopRestoran')->name('del
 Route::get('/getPopHotel',"AdminController@getPopHotel")->name('getPopHotel');
 Route::post('/setPopHotel','AdminController@setPopHotel')->name('setPopHotel');
 Route::post('/updatePopHotel','AdminController@updatePopHotel')->name('updatePopHotel');
+//turs
+Route::get('/getPopTours','AdminController@getPopTours')->name('getPopTours');
+Route::post('/setPopTours','AdminController@setPopTours')->name('setPopTours');
+Route::post('/updatePopTours','AdminController@updatePopTours')->name('updatePopTours');
+Route::post('/deletePopTours','AdminController@deletePopTours')->name('deletePopTours');
 //blog
 Route::get('/getBlog','HomeController@getBlog')->name('getBlog');
 //howWork
 Route::get('/gethowWork','HomeController@gethowWork')->name('gethowWork');
+//all tours
+Route::get('/getAllTours','AdminController@getAllTours')->name('getAllTours');
+Route::post('/setAllTours','AdminController@setAllTours')->name('setAllTours');
+Route::post('/updateAllTours','AdminController@updateAllTours')->name('updateAllTours');
+Route::post('/deleteAllTours','AdminController@deleteAllTours')->name('deleteAllTours');
+
+
+
+Route::get('pages',function (){
+    return view('layout/singlPagesMaket');
+});
 
 

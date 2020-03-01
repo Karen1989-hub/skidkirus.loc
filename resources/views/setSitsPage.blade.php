@@ -25,10 +25,11 @@
             <a href="{{route('setSitsPage')}}"><div class="activPage">Сайты</div></a>
             <a href="{{route('getPopularRestoran')}}"><div>Популярные рестораны</div></a>
             <a href="{{route('getPopHotel')}}"><div>Отели</div></a>
+            <a href="{{route('getPopTours')}}"><div>Туры</div></a>
         </div>
         <div class="big" id="null1">
             <div class="menuHeading1">Другие объявление</div>
-            <div>text</div>
+            <a href="{{route('getAllTours')}}"><div>Все туры</div></a>
             <div>text</div>
             <div>text</div>
         </div>

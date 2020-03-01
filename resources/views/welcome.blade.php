@@ -431,6 +431,7 @@
                                 <div class="bottom__links bottom__links-hover">
                                     <div class="links">
                                         <ul>
+                                            <li><a href="#">Все</a></li>
                                             <li><a href="#">Россия</a></li>
                                             <li><a href="#">Турция</a></li>
                                             <li><a href="#">Европа</a></li>
@@ -488,7 +489,7 @@
                             <li><a class="link" href="{{route('gethowWork')}}">Как работает Biglion</a></li>
 
 
-                            <!-- <li>
+                             <li>
                                 <a class="link" href="#">Кешбэк</a>
 
                                 <div class="bottom__links bottom__links-hover">
@@ -583,7 +584,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                            </li> -->
+                            </li>
                             <li>
                                 <a class="link" href="#">Товары по купонам</a>
 
@@ -612,320 +613,6 @@
 
                 </nav>
             </header>
-            <div class="bottom__sub-menue sub__menue1">
-                <ul>
-                    <li><a href="#">Все</a></li>
-                    <li><a href="#">Красота</a>
-                        <div class="sub__links">
-                            <ul>
-                                <li><a href="#">Уход за волосами</a></li>
-                                <li><a href="#">Барбершопы</a></li>
-                                <li><a href="#">Эпиляция</a></li>
-                                <li><a href="#">Косметология</a></li>
-                                <li><a href="#">SPA, массаж</a></li>
-                                <li><a href="#">Маникюр, педикюр</a></li>
-                                <li><a href="#">Коррекция фигуры</a></li>
-                                <li><a href="#">Другое</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li><a href="#">Здоровые</a>
-                        <div class="sub__links">
-                            <ul>
-                                <li><a href="#">Стоматология</a></li>
-                                <li><a href="#">Диагностика, обследование</a></li>
-                                <li><a href="#">Коррекция зрения</a></li>
-                                <li><a href="#">Другое</a></li>
-                                <li><a href="#">Лазерная коррекция зрения</a></li>
-                                <li><a href="#">Лечебный массаж</a></li>
-                            </ul>
-                        </div>
-                    </li>
-
-                    <li>
-                        <a href="#">Ресеоран и кафе</a>
-                        <div class="sub__links">
-                            <ul>
-                                <li><a href="#">Рестораны</a></li>
-                                <li><a href="#">Доставка еды</a></li>
-                                <li><a href="#">Банкеты</a></li>
-                                <li><a href="#">Новые рестораны на Biglion</a></li>
-                            </ul>
-                        </div>
-
-                    </li>
-                    <li>
-                        <a href="#">Развлечения</a>
-                        <div class="sub__links">
-                            <ul>
-                                <li><a href="#">Квесты</a></li>
-                                <li><a href="#">Экскурсии и выставки</a></li>
-                                <li><a href="#">Другое</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#">Обучение</a>
-                        <div class="sub__links">
-                            <ul>
-                                <li><a href="#">Иностранные языки</a></li>
-                                <li><a href="#">Профессиональное образование</a></li>
-                                <li><a href="#">Другое</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-
-                        <a href="#">Авто</a>
-                        <div class="sub__links">
-                            <ul>
-                                <li><a href="#">Шиномонтаж</a></li>
-                                <li><a href="#">Другое</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li><a href="#">Фитнес</a></li>
-                    <li><a href="#">Концерты</a></li>
-                    <li><a href="#">Дети</a></li>
-                    <li>
-                        <a href="#">Разное</a>
-                        <div class="sub__links">
-                            <ul>
-                                <li><a href="#">Фотосессии</a></li>
-                                <li><a href="#">Другое</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="bottom__sub-menue sub__menue2">
-                <ul>
-                    <li><a href="#">Все</a></li>
-                    <li><a href="#">Новогодние праздники</a></li>
-                    <li><a href="#">Москва и область</a>
-                        <div class="sub__links">
-                            <ul>
-                                <li><a href="#">Отели в Подмосковье на ближайшие выходные</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li><a href="#">Санкт-Петербург и область</a></li>
-                    <li><a href="#">Карелия</a></li>
-                    <li><a href="#">Селигер</a></li>
-                    <li>
-                        <a href="#">Золотое кольцо</a>
-                        <div class="sub__links">
-                            <ul>
-                                <li><a href="#">Углич</a></li>
-                                <li><a href="#">Владимир</a></li>
-                                <li><a href="#">Иваново</a></li>
-                                <li><a href="#">Кострома</a></li>
-                                <li><a href="#">Переславль-Залесский</a></li>
-                                <li><a href="#">Ростов</a></li>
-                                <li><a href="#">Сергиев Посад</a></li>
-                                <li><a href="#">Суздаль</a></li>
-                                <li><a href="#">Ярославль</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#">Юг России</a>
-                        <div class="sub__links">
-                            <ul>
-                                <li>
-                                    <a href="#">Адлер</a>
-                                </li>
-                                <li><a href="#">Анапа</a></li>
-                                <li><a href="#">Кисловодск</a></li>
-                                <li><a href="#">Геленджик</a></li>
-                                <li><a href="#">Ессентуки</a></li>
-                                <li><a href="#">Сочи</a></li>
-                                <li><a href="#">Ставрополь</a></li>
-                                <li><a href="#">Краснодар</a></li>
-                                <li><a href="#">Майкоп</a></li>
-                                <li><a href="#">Нальчик</a></li>
-                                <li><a href="#">Пятигорск</a></li>
-                                <li><a href="#">Ростов-на-Дону</a></li>
-                                <li><a href="#">Элиста</a></li>
-                                <li><a href="#">Кавказ</a></li>
-                                <li><a href="#">Туапсе</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#">Ещё</a>
-                        <div class="sub__links">
-                            <ul>
-                                <li>
-                                    <a href="#">Крым</a>
-                                </li>
-                                <li><a href="#">Абхазия</a></li>
-                                <li><a href="#">Другие города</a></li>
-                                <li><a href="#">Поволжье</a></li>
-                                <li><a href="#">Алтай</a></li>
-                                <li><a href="#">Байкал</a></li>
-                                <li><a href="#">Урал</a></li>
-                                <li><a href="#">Сибирь</a></li>
-                                <li><a href="#">Популярные санатории</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="bottom__sub-menue sub__menue3">
-                <ul>
-                    <li><a href="#">Все</a></li>
-                    <li><a href="#">Россия</a></li>
-                    <li><a href="#">Турция</a></li>
-                    <li><a href="#">Европа</a></li>
-                    <li><a href="#">Пляжный отдых</a></li>
-                    <li><a href="#">Другие страны</a></li>
-                    <li><a href="#">Туры на север из СПб</a></li>
-                </ul>
-            </div>
-
-            <div class="bottom__sub-menue sub__menue4">
-                <ul>
-                    <li><a href="#">Все2</a></li>
-                    <li><a href="#">Все бренды</a></li>
-                    <li><a href="#">BOMBBAR</a></li>
-                    <li><a href="#">MODIS</a></li>
-                    <li><a href="#">FiNN FLARE</a></li>
-                    <li><a href="#">Pampers</a></li>
-                    <li><a href="#">ИЛЬ ДЕ БОТЭ</a></li>
-                    <li><a href="#">Плеер.ру</a></li>
-                    <li><a href="#">ЛитРес</a></li>
-                    <li><a href="#">Домовой</a></li>
-                    <li><a href="#">Book24</a></li>
-                    <li><a href="#">Райтон</a></li>
-                    <li>
-                        <a href="#"> Ещё</a>
-                        <div class="sub__links">
-                            <ul>
-                                <li><a href="#">Линзмастер</a></li>
-                                <li><a href="#">Орматек</a></li>
-                                <li><a href="#">Холодильник.РУ</a></li>
-                                <li><a href="#">Матрас.ру</a></li>
-                                <li><a href="#">М.Видео</a></li>
-                                <li><a href="#">iHerb</a></li>
-                                <li><a href="#">O’STIN</a></li>
-                                <li><a href="#">TOY.RU</a></li>
-                                <li><a href="#">Фран</a></li>
-                                <li><a href="#">Связной</a></li>
-                                <li><a href="#">Бронницкий ювелир</a></li>
-                                <li><a href="#">Все инструменты</a></li>
-                                <li><a href="#">Yves Rocher</a></li>
-                                <li><a href="#">Puma</a></li>
-                                <li><a href="#">re:Store</a></li>
-                                <li><a href="#">TheOutlet.ru</a></li>
-                                <li><a href="#">Созвездие красоты</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- <div class="bottom__sub-menue sub__menue5">
-                <ul>
-                    <li><a href="#">Все</a></li>
-                    <li><a href="#">Игры</a></li>
-                    <li><a href="#">Путешествия</a>
-                        <div class="sub__links">
-                            <ul>
-                                <li><a href="#"> Бронирование отелей</a></li>
-                                <li><a href="#">Заказ билетов</a></li>
-                                <li><a href="#">Подбор тура</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li><a href="#">Для детей</a></li>
-                    <li>
-                        <a href="#">Для дома</a>
-                        <div class="sub__links">
-                            <ul>
-                                <li><a href="#">Для дома</a></li>
-                                <li><a href="#">Для сада</a></li>
-                                <li><a href="#">Мебель</a></li>
-                                <li><a href="#">Зоомагазины</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li> <a href="#">Еда</a></li>
-                    <li>
-                        <a href="#">Развлечения</a>
-                        <div class="sub__links">
-                            <ul>
-                                <li><a href="#">Книги</a></li>
-                                <li><a href="#">Товары для творчества</a></li>
-                                <li><a href="#">Спорт</a></li>
-                                <li><a href="#">Товары для взрослых</a></li>
-                                <li><a href="#">Развлечения</a></li>
-                                <li><a href="#">Подарки и цветы</a></li>
-                                <li><a href="#">Концерты</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#">Одежда, обувь, аксессуары</a>
-                        <div class="sub__links">
-                            <ul>
-                                <li><a href="#">Одежда</a></li>
-                                <li><a href="#">Ювелирные украшения</a></li>
-                                <li><a href="#">Обувь</a></li>
-                                <li><a href="#">Аксессуары</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#">Услуги</a>
-                        <div class="sub__links">
-                            <ul>
-                                <li><a href="#">Образование</a></li>
-                                <li><a href="#">Хостинг</a></li>
-                                <li><a href="#">Провайдер</a></li>
-                                <li><a href="#">Страхование</a></li>
-                                <li><a href="#">Кредиты и займы</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li> <a href="#">Авто</a></li>
-                    <li>
-                        <a href="#">Ещё</a>
-                        <div class="sub__links">
-                            <ul>
-                                <li><a href="#">Красота & Здоровье</a></li>
-                                <li><a href="#">Электроника и техника</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-            </div> -->
-
-            <div class="bottom__sub-menue sub__menue6">
-                <ul>
-                    <li><a href="#">Все</a></li>
-                    <li><a href="#">Мебель и ремонт</a></li>
-                    <li><a href="#">Товары для дома</a></li>
-                    <li><a href="#">Бытовая техника и электроника</a></li>
-                    <li><a href="#">Здоровье</a></li>
-                    <li><a href="#">Продукты питания</a></li>
-                    <li><a href="#">Красота</a></li>
-                    <li><a href="#">Обувь и одежда</a></li>
-                    <li><a href="#">Ещё</a>
-                        <div class="sub__links">
-                            <ul>
-                                <li><a href="#">Товары для детей</a></li>
-                                <li><a href="#">Сувенирная продукция</a></li>
-                                <li><a href="#">Цветы</a></li>
-                                <li><a href="#">Воздушные шары</a></li>
-                                <li><a href="#">18+</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-            </div>
 
             <div class="contanier">
 
@@ -1225,65 +912,23 @@
                 </div>
 
                 <div class="cards tur w-75">
+{{--                    start--}}
+                    @foreach($PopTour as $val)
+                    <div class="main__content tur__content">
+                        <div class="card__img tur__img">
+                            <img src="./img/popToursImg/{{$val->nameImg}}" alt="">
+                            <div class="tur__information">
+                                <a href="@if($val->sitesUrl != "" && $val->sitesUrl!=null)
+                                {{$val->sitesUrl}}
+                                @endif  " class="tur__location">{{$val->name}}</a>
+                                <a href="{{$val->sitesUrl}}" class="tur__suggestions">{{$val->info}}</a>
+                            </div>
+                        </div>
+                    </div>
+                    @endforeach
+                    {{--                    end--}}
 
-                    <div class="main__content tur__content">
-                        <div class="card__img tur__img">
-                            <img src="./img/tur1.jpg" alt="">
-                            <div class="tur__information">
-                                <a href="#" class="tur__location">Пляжный отдых</a>
-                                <a href="#" class="tur__suggestions">55 предложений</a>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="main__content tur__content">
-                        <div class="card__img tur__img">
-                            <img src="./img/tur2.jpg" alt="">
-                            <div class="tur__information">
-                                <a href="#" class="tur__location">Пляжный отдых</a>
-                                <a href="#" class="tur__suggestions">55 предложений</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="main__content tur__content">
-                        <div class="card__img tur__img">
-                            <img src="./img/tur3.jpg" alt="">
-                            <div class="tur__information">
-                                <a href="#" class="tur__location">Пляжный отдых</a>
-                                <a href="#" class="tur__suggestions">55 предложений</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="main__content tur__content">
-                        <div class="card__img tur__img">
-                            <img src="./img/tur4.jpg" alt="">
-                            <div class="tur__information">
-                                <a href="#" class="tur__location">Пляжный отдых</a>
-                                <a href="#" class="tur__suggestions">55 предложений</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="main__content tur__content">
-                        <div class="card__img tur__img">
-                            <img src="./img/tur5.jpeg" alt="">
-                            <div class="tur__information">
-                                <a href="#" class="tur__location">Пляжный отдых</a>
-                                <a href="#" class="tur__suggestions">55 предложений</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="main__content tur__content">
-                        <div class="card__img tur__img">
-                            <img src="./img/tur1.jpg" alt="">
-                            <div class="tur__information">
-                                <a href="#" class="tur__location">Пляжный отдых</a>
-                                <a href="#" class="tur__suggestions">55 предложений</a>
-                            </div>
-                        </div>
-                    </div>
 
                 </div>
 

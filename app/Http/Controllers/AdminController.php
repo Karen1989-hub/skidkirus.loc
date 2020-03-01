@@ -8,6 +8,8 @@ use App\Skidki;
 use App\Site;
 use App\PopRestoran;
 use App\PopHotel;
+use App\PopTour;
+use App\AllTours;
 
 class AdminController extends Controller
 {
@@ -347,5 +349,96 @@ class AdminController extends Controller
 
         return back();
     }
+
+    public function getPopTours(){
+        $popTours = PopTour::all();
+
+        $arr = ['popTours'=>$popTours];
+        return view('popTours',$arr);
+    }
+
+    public  function  setPopTours(Request $request){
+        $popTourName = $request->input('name');
+        $popTourInfo = $request->input('description');
+        $sitesUrl = $request->input('sitesUrl');
+        $popToursImg = $request->file('popToursImg');
+        $toursCountry = $request->input('toursCountry');
+
+        $popToursImg->move('img/popToursImg', $popToursImg->getClientOriginalName());
+        PopTour::create(['nameImg'=>$popToursImg->getClientOriginalName(),
+            'name'=>$popTourName,'info'=>$popTourInfo,'sitesUrl'=>$sitesUrl,
+            'toursCountry'=>$toursCountry]);
+
+        return back();
+    }
+
+    public function updatePopTours(Request $request){
+        $id = $request->input('id');
+
+        $popToursImg = $request->file('popToursImg');
+        $description = $request->input('description');
+        $name = $request->input('name');
+        $sitesUrl = $request->input('sitesUrl');
+
+        $update = PopTour::find($id);
+
+        if( $popToursImg != null){
+            if($popToursImg->getClientOriginalName() != ""){
+                //delete old image
+                $popTours = PopTour::find($id);
+                $oldImg = $popTours->nameImg;
+                unlink("img/popToursImg/$oldImg");
+                //delete old image end
+
+                $update -> nameImg = $popToursImg->getClientOriginalName();
+                $popToursImg->move('img/popToursImg',$popToursImg->getClientOriginalName());
+            }
+        }
+        if($description != ""){
+            $update->info = $description;
+        }
+        if($name != ""){
+            $update->name = $name;
+        }
+        if($sitesUrl != ""){
+            $update->sitesUrl = $sitesUrl;
+        }
+        $update -> save();
+
+
+        return back();
+    }
+
+    public function deletePopTours(Request $request){
+        $id = $request->input('id');
+        $delete = PopTour::find($id);
+        $delete -> delete();
+
+        return back();
+    }
+
+    public function getAllTours(){
+        $allTours = AllTours::all();
+
+        $arr = ['allTours'=>$allTours];
+        return view('adminPages/allTours',$arr);
+    }
+    public function setAllTours(Request $request){
+        $request->input('description');
+        $request->input('name');
+        $request->input('sitesUrl');
+        $request->input('toursCountry');
+        $request->file('allToursImg');
+        return back();
+    }
+    public function updateAllTours(){
+
+        return back();
+    }
+    public function deleteAllTours(){
+
+        return back();
+    }
+
 
 }

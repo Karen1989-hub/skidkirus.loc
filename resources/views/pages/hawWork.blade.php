@@ -5,13 +5,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Blog</title>
+    <title>Как работает Biglion</title>
+
+
+
+    <link rel="stylesheet" href="./style/how-work.css" />
+
     <link rel="stylesheet" href="{{asset('style/slick.css')}}">
     <link rel="stylesheet" href="{{asset('style/slick-theme.css')}}">
     <link rel="stylesheet" href="{{asset('style/main.css')}}" />
     <link rel="stylesheet" href="{{asset('style/style.css')}}" />
     <link rel="stylesheet" href="{{asset('style/slider.css')}}">
     <link rel="stylesheet" href="{{asset('style/blog.css')}}">
+    <link rel="stylesheet" href="{{asset('style/how-work.css')}}">
+
     <link rel="stylesheet" href="https://wave-it.ru/lessons/css/plugin/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/v4-shims.css">
@@ -19,7 +26,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
 </head>
-
+<body>
 <body>
 <div class="wrapper">
     <header id="header">
@@ -72,7 +79,7 @@
                                         <input type="password"required autocomplete="off"/>
                                     </div>
 
-                                    <button type="submit" class="button button-block"/>Зарегистрироваться</button>
+                                    <button type="submit" class="button button-block">Зарегистрироваться</button>
 
                                 </form>
 
@@ -80,7 +87,7 @@
 
                             <div id="login">
                                 <h1 style="    color: white;
-                                    ">Добро пожаловать</h1>
+                                        ">Добро пожаловать</h1>
 
                                 <form action="/" method="post">
 
@@ -99,7 +106,7 @@
                                     </div>
 
 
-                                    <button class="button button-block"/>Вход</button>
+                                    <button class="button button-block">Вход</button>
 
                                 </form>
 
@@ -115,6 +122,7 @@
                 <ul>
                     <li>
                         <a class="link" href="#">Услуги</a>
+
                         <div class="bottom__links bottom__links-hover">
                             <div class="links">
                                 <ul>
@@ -567,6 +575,8 @@
                             </div>
                         </div>
                     </li>
+                    <li><a class="link" href="{{route('getBlog')}}">Блог</a></li>
+                    <li><a class="link" href="{{route('gethowWork')}}">Как работает Biglion</a></li>
                     <li>
                         <a class="link" href="#">Товары по купонам</a>
                         <div class="bottom__links bottom__links-hover">
@@ -592,227 +602,262 @@
             </div>
         </nav>
     </header>
-    <div class ="blog">
-        <div class ="blog_container">
-            <div class ="breadcrumbs">
-                <ul class="breadcrumbs_list">
-                    <li class="breadcrumbs_item">
-                        <a class="breadcrumbs_item_list" href="{{route('home')}}">Главная</a>
-                        <span class ="span-arrow">&#8594;</span>
-                    </li>
-                    <li class="breadcrumbs_item">
-                        <span>Блог</span>
-                    </li>
-                </ul>
-            </div>
-            <h1 class="blog_title">Блог</h1>
-            <div class ="blog_news_container">
-                <a href="#" class="news_item first">
-                    <div class="news_item_img_div big_image_div">
-                        <img class="news_item_img big_image " src="img/blog-img1.jpg" alt="">
+    <div class="how_container">
+
+        <li class="breadcrumbs_item">
+            <a class="breadcrumbs_item_list" href="{{route('home')}}">Главная</a>
+            <span class ="span-arrow">&#8594;</span>
+        </li>
+        <li class="breadcrumbs_item">
+            <span>Как работает Biglion</span>
+        </li>
+
+
+        <div class="how">
+
+            <div class="how_context">
+                <h1 class="how_title">
+                    Как работает Biglion
+                </h1>
+                <p class="how_text">
+                    Biglion — крупнейший в России онлайн-сервис разумного потребления.
+                    На сайте и в мобильном приложении у нас представлено более 10 000 акций
+                    со скидками до 90% на развлечения, аквапарки, салоны красоты и SPA, кафе,
+                    рестораны, услуги медицинских клиник, на отели и туры и многое другое.
+                </p>
+                <div class="how_icons">
+                    <div class="how_icons_item">
+                        <p class="how_icons_item_text">
+                            Круглосуточная<br>
+                            поддержка
+                        </p>
                     </div>
-                    <div class="new_item_info">
-                        <div class="news_item_info_title">
-                            Подготовка к самому влюбленному дню
-                        </div>
-                        <div class ="news_item_info_description">
-                            Наша корзина изобильна на сюрпризы для влюбленных! Давайте изучать вместе!
-                        </div>
+                    <div class="how_icons_item">
+                        <p class="how_icons_item_text">
+                            Проверенные<br>
+                            партнёры
+                        </p>
                     </div>
-                </a>
-                <a href="#" class="news_item  first">
-                    <div class="news_item_img_div">
-                        <img class="news_item_img" src="img/blog-image2.jpg" alt="">
-                    </div>
-                    <div class="new_item_info">
-                        <div class="news_item_info_title">
-                            Раскрываем секреты красоты Снегурочки, Белоснежки и Снежной Королевы
-                        </div>
-                        <div class ="news_item_info_description">
-                            Раскрываем секреты красоты главных зимних красавиц во всем мире!
-                        </div>
-                    </div>
-                </a>
-                <a class="news_item first" href="#" >
-                    <div class="news_item_img_div">
-                        <img class="news_item_img" src="img/BLOG-IMAGE3.jpg" alt="">
-                        <div class="news_item_img"></div>
-                    </div>
-                    <div class="news_item_info">
-                        <div class="news_item_info_title">Самые запоминающиеся выходные</div>
-                        <div class="news_item_info_description">Самый простой способ сделать выходные необычные - это сделать что-то наоборот!</div>
-                    </div>
-                </a>
-                <a class="news_item first" href="#">
-                    <div class="news_item_img_div">
-                        <img class="news_item_img" src="img/BLOG-IMAGE4.jpg" alt="">
-                    </div>
-                    <div class="news_item_info">
-                        <div class="news_item_info_title">Лыжню, друзья: где покататься на лыжах</div>
-                        <div class="news_item_info_description">Мы сделали для вас классную подборку мест, где покататься на лыжах!</div>
-                    </div>
-                </a>
-                <a class="news_item first" href="#">
-                    <div class="news_item_img_div">
-                        <img class="news_item_img" src="img/blogimage4.jpg" alt="">
-                    </div>
-                    <div class="news_item_info">
-                        <div class="news_item_info_title">Праздники закончились. Как продлить ощущение волшебства?</div>
-                        <div class="news_item_info_description">Как продлить ощущение праздников и не зависеть от календаря?</div>
-                    </div>
-                </a>
-            </div>
-            <div class="podpisat">
-                <div class="podpis_container">
-                    <div class="podpis_content">
-                        <div class="title_content">
-                            <div class="podpis_title">
-                                Подпишитесь и не пропустите новые статьи
-                            </div>
-                            <form class="podpis_form" action ="" method ="">
-                                <input id="podpis_email" class="podpis_email"
-                                       type="email" placeholder="Введите свой e-mail">
-                                <button id="podpis_btn" class="btn btn_blog" type="submit">Подписаться</button>
-                            </form>
-                            <div class="pod_descript">
-                                Я соглашаюсь с условиями договора публичной оферты и пользовательским соглашением.
-                            </div>
-                        </div>
+                    <div class="how_icons_item">
+                        <p class="how_icons_item_text">
+                            Гарантированный<br>
+                            возврат
+                        </p>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="blog_container">
 
-
-            <div class="blog_line"></div>
-            <div class="blog_news_container news">
-                <a href="#" class="news_item first_news">
-                    <div class="news_item_img_div ">
-                        <img class="news_item_img" src="img/blog-image11.jpg" alt="">
-
-                    </div>
-                    <div class="new_item_info">
-                        <div class="news_item_info_title">
-                            Черная пятница 2019 в России – большие скидки для всех
-                        </div>
-                        <div class ="news_item_info_description">
-                            Заветное словосочетание «Black Friday» вызывает легкое возбуждение у настоящего шопоголика.
-                            Еще бы, именно в день «черной пятницы» скидки достигают невероятных размеров.
-                            При этом по хорошей цене можно приобрести практически любой товар.
-                            Многие даже специально откладывают покупки на этот день, чтобы закупиться «по-серьезному» и существенно сэкономить.
-                        </div>
-                    </div>
-                </a>
-                <a href="#" class="news_item">
-                    <div class="news_item_img_div">
-                        <img class="news_item_img" src="img/blog-image12.jpg" alt="">
-                    </div>
-                    <div class="new_item_info">
-                        <div class="news_item_info_title">
-                            Хэллоуин 2019 в России – торжество мистики и веселья
-                        </div>
-                        <div class ="news_item_info_description">
-                            Сугубо западный праздник Хэллоуин в России прижился на удивление быстро.
-                            У нас сильны православные христианские традиции, а церковь считается противником этого
-                            «мистического и страшного действа». Но давайте отбросим все эти предрассудки, а просто узнаем,
-                            что это за праздник и почему
-                            Хэллоуин 2019 в России планирует праздновать довольно большое количество людей и речь идет не только о молодежи.
-                        </div>
-                    </div>
-                </a>
-                <a class="news_item" href="#" >
-                    <div class="news_item_img_div">
-                        <img class="news_item_img" src="img/blog-image13.jpg" alt="">
-
-                    </div>
-                    <div class="news_item_info">
-                        <div class="news_item_info_title">Лучшие развлечения для детей в Москве</div>
-                        <div class="news_item_info_description">
-                            Время, проведенное с детьми, хочется сделать особенным и запоминающимся. Ребенку нужна настоящая сказка, особенно если дело касается праздников и дней рождения. Домашними развлечениями и играми в этом случае будет не отделаться.
-                            В таком случае встает вопрос: куда сходить с ребенком, чтобы он был рад и удовлетворен?
-                        </div>
-                    </div>
-                </a>
-                <a class="news_item" href="#">
-                    <div class="news_item_img_div">
-                        <img class="news_item_img" src="img/blog-image14.jpg" alt="">
-                    </div>
-                    <div class="news_item_info">
-                        <div class="news_item_info_title">Лучшие доставки пиццы в Москве</div>
-                        <div class="news_item_info_description">
-                            Если вы собрались дома большой компанией или погода не располагает к передвижениям по городу, то службы доставки привезут вкусную пиццу в любой район города.
-                            Мы собрали рейтинг лучшей пиццы в Москве с доставкой, чтобы каждый мог выбрать вариант по душе.
-                        </div>
-                    </div>
-                </a>
-                <a class="news_item" href="#">
-                    <div class="news_item_img_div">
-                        <img class="news_item_img" src="img/blog-image15.jpg" alt="">
-                    </div>
-                    <div class="news_item_info">
-                        <div class="news_item_info_title">
-                            Лучшие доставки суши в Москве
-                        </div>
-                        <div class="news_item_info_description">
-                            Зачем тратить время на готовку, если есть десятки организаций, готовых по первому звонку
-                            привести любимые блюда по выгодной цене – пиццу, бургеры, пироги и, конечно же, суши.
-                            Но как узнать, какая доставка суши лучшая – в этом вам поможет наш обзор.
-                        </div>
-                    </div>
-                </a>
-                <a class="news_item" href="#">
-                    <div class="news_item_img_div">
-                        <img class="news_item_img" src="img/blog-image16.jpg" alt="">
-                    </div>
-                    <div class="news_item_info">
-                        <div class="news_item_info_title">
-                            Конные прогулки в Подмосковье
-                        </div>
-                        <div class="news_item_info_description">
-                            Польза общения людей с лошадьми доказана врачами.
-                            Для этого даже ввели специальное понятие – иппотерапия. Полезно такое общение не только с
-                            эмоциональной точки зрения, но и с физической. Сегодня конные прогулки очень востребованы в
-                            Москве и Подмосковье,
-                            поэтому мы решили собрать для вас лучшие конноспортивные клубы и конюшни столичного региона.
-                        </div>
-                    </div>
-                </a>
+            <div class="how_context">
+                <h1 class="how_title_second">
+                    Почему в Biglion такие большие скидки
+                </h1>
+                <p class="how_text">
+                    Мы сотрудничаем только с проверенными партнерами,
+                    которые предоставляют нашим пользователям качественные
+                    услуги по самым выгодным ценам. С каждым из них мы
+                    договариваемся о лучших условиях для вас.
+                </p>
             </div>
-        </div>
-        <div class="pagination">
-            <ul>
-                <li>
-                    <a href="#">1</a>
-                </li>
-                <li>
-                    <a href="#">2</a>
-                </li>
-                <li>
-                    <a href="#">3</a>
-                </li>
-                <li>
-                    <a href="#">4</a>
-                </li>
-                <li>
-                    <a href="#">5</a>
-                </li>
-                <li>
-                    <a href="#">6</a>
-                </li>
-                <li>
-                    <a href="#">7</a>
-                </li>
-                <li>
-                    <a href="#">8</a>
-                </li>
-                <li>
-                    <a href="#">9</a>
-                </li>
-                <li>
-                    <a href="#">10</a>
-                </li>
-            </ul>
+            <div class="how_context">
+                <h1 class="how_title_second">
+                    Более 10 000 акций со скидками до 90%
+                </h1>
+                <div class="how_categories_icons">
+                    <a href="#" class="how_categories_icons_item">
+                        <div class='categories_img cat_img_1'>
+                        </div>
+                        <span class="icons_item_text">
+                                    Красота
+                                   </span>
+                    </a>
+                    <a href="#" class="how_categories_icons_item">
+                        <div class='categories_img cat_img_2'>
+                        </div>
+                        <span class="icons_item_text">
+                                    Здоровье
+                                   </span>
+                    </a>
+                    <a href="#" class="how_categories_icons_item">
+                        <div class='categories_img cat_img_3'>
+
+                        </div>
+                        <span class="icons_item_text">
+                                        Рестораны<br> и кафе
+                                    </span>
+                    </a>
+                    <a href="#" class="how_categories_icons_item">
+                        <div class='categories_img cat_img_4'>
+
+                        </div>
+                        <span class="icons_item_text">
+                                        Развлечения
+                                    </span>
+                    </a>
+                    <a href="#" class="how_categories_icons_item">
+                        <div class='categories_img cat_img_5'>
+
+                        </div>
+                        <span class="icons_item_text">
+                                        Обучение
+                                    </span>
+                    </a>
+                    <a href="#" class="how_categories_icons_item">
+                        <div class='categories_img cat_img_6'>
+                        </div>
+                        <span class="icons_item_text">
+                                        Авто
+                                    </span>
+                    </a>
+                    <a href="#" class="how_categories_icons_item">
+                        <div class='categories_img cat_img_7'>
+                        </div>
+                        <span class="icons_item_text">
+                                        Фитнес
+                                    </span>
+                    </a>
+                    <a href="#" class="how_categories_icons_item">
+                        <div class='categories_img cat_img_8'>
+
+                        </div>
+                        <span class="icons_item_text">
+                                        Концерты
+                                    </span>
+                    </a>
+                    <a href="#" class="how_categories_icons_item">
+                        <div class='categories_img cat_img_9'>
+
+                        </div>
+                        <span class="icons_item_text">
+                                        Дети
+                                    </span>
+                    </a>
+                    <a href="#" class="how_categories_icons_item">
+                        <div class='categories_img cat_img_10'>
+
+                        </div>
+                        <span class="icons_item_text">
+                                        Разное
+                                    </span>
+                    </a>
+                    <a href="#" class="how_categories_icons_item">
+                        <div class='categories_img cat_img_11'>
+
+                        </div>
+                        <span class="icons_item_text">
+                                        Акции<br> в Подмосковье
+                                    </span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="how_context">
+                <h1 class="how_title_second">
+                    Cashback Biglion
+                </h1>
+                <p class="how_text">
+                    C Biglion можно покупать в онлайн или оффлайн-магазинах и возвращать часть суммы назад.<br>
+                    Чтобы узнать, как, переходите в раздел
+                    <a class='' href="#">Кэшбэк</a>!
+                </p>
+                <div class="how_shops_section">
+                    <div class="how_shops_section_item">
+                        <div class="item_icon">
+
+                        </div>
+
+                        <h3 class="item_title">
+                            Выберите магазин
+                        </h3>
+                        <p class="item_text">
+                            Откройте раздел
+                            <a class="item_link" href="#">
+                                кэшбэк
+                            </a>
+                            на сайте Biglion и перейдите в понравившийся магазин
+                        </p>
+                    </div>
+                    <div class="how_shops_section_item">
+                        <div class="item_icon">
+                        </div>
+                        <h3 class="item_title">
+                            Сделайте покупку
+                        </h3>
+                        <p class="item_text">
+                            Как вы обычно это делаете
+                        </p>
+
+                    </div>
+                    <div class="how_shops_section_item">
+                        <div class="item_icon">
+                        </div>
+                        <h3 class="item_title">
+                            Получите кэшбэк
+                        </h3>
+                        <p class="item_text">
+                            Мы вернём вам часть денег назад
+                        </p>
+
+                    </div>
+                    <div class="how_shops_section_item">
+                        <div class="item_icon">
+                        </div>
+                        <h3 class='item_title'>
+                            Используйте кэшбэк
+                        </h3>
+                        <p class="item_text">
+                            Купите купон на Biglion или выведите деньги
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="how_context">
+                <div class="mobile">
+                    <div class="mobile_first_section">
+                        <h1 class="how_title_second">
+                            Мобильное приложение Biglion
+                        </h1>
+                        <p class="mobile_text">
+                            Мы разработали удобные мобильные приложения для всех распространенных устройств. Теперь услуги, развлечения,
+                            кафе, рестораны и многое другое со скидками доступны для вас в любом месте. Удобный поиск по карте и вашему
+                            местоположению поможет экономить удобнее и быстрее!
+                        </p>
+                        <div class="mobile_image">
+
+                            <a class="mobile_image_link" href="#">
+                                <div class="mobile_image_div">
+                                    <div class="mobile_image_text">
+                                                        <span class="mobile_image_text1">
+                                                            загрузить в
+                                                        </span>
+                                        <span class="mobile_image_text2">
+                                                            App Store
+                                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="mobile_image_link" href="#">
+                                <div class="mobile_image_div">
+                                    <div class="mobile_image_text">
+                                                        <span class="mobile_image_text1">
+                                                            загрузить в
+                                                        </span>
+                                        <span class="mobile_image_text2">
+                                                            Google Play
+                                                        </span>
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mobile_second_section">
+
+                    </div>
+
+                </div>
+            </div>
         </div>
     </div>
     <footer class="footer pd_0" id="footer">
@@ -832,14 +877,14 @@
                         <div class="menu_block_header">Компания</div>
                         <ul class="blaock_header_link_list">
                             <li>
-                                <a href="how-work.html">Как работает Biglion</a>
+                                <a href="{{route('gethowWork')}}">Как работает Biglion</a>
                             </li>
-                            </li>
+
                             <li>
                                 <a href="#">Вакансии</a>
                             </li>
                             <li>
-                                <a href="blog.html">Блог</a>
+                                <a href="{{route('getBlog')}}">Блог</a>
                             </li>
                         </ul>
                     </div>
@@ -937,8 +982,4 @@
         </div>
     </footer>
 </div>
-<script src="./src/jquery-3.4.1.min.js"></script>
-<script src="./src/script.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 </body>
-</html>

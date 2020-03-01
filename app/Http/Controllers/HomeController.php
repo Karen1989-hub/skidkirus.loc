@@ -7,6 +7,7 @@ use App\Skidki;
 use App\Site;
 use App\PopRestoran;
 use App\PopHotel;
+use App\PopTour;
 
 class HomeController extends Controller
 {
@@ -15,15 +16,17 @@ class HomeController extends Controller
         $sites = Site::all();
         $popRestoran = PopRestoran::all();
         $popHotel = PopHotel::all();
+        $PopTour = PopTour::all();
 
-        $arr = ['skidki'=>$skidki,'sites'=>$sites,'popRestoran'=>$popRestoran,'popHotel'=>$popHotel];
+        $arr = ['skidki'=>$skidki,'sites'=>$sites,'popRestoran'=>$popRestoran,'popHotel'=>$popHotel,
+            'PopTour'=>$PopTour];
         return view('welcome',$arr);
     }
 
     public function getBlog(){
-        return view('blog');
+        return view('pages/blog');
     }
     public  function gethowWork(){
-        return view('hawWork');
+        return view('pages/hawWork');
     }
 }
