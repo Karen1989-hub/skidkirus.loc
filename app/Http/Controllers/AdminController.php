@@ -9,7 +9,7 @@ use App\Site;
 use App\PopRestoran;
 use App\PopHotel;
 use App\PopTour;
-use App\AllTours;
+use App\PopCuponProduct;
 
 class AdminController extends Controller
 {
@@ -103,6 +103,7 @@ class AdminController extends Controller
     public function deleteSitsList(Request $request){
       $id = $request->input('id');
       $delete = Site::find($id);
+
       $delete -> delete();
 
       return back();
@@ -193,6 +194,7 @@ class AdminController extends Controller
      public function deleteSkidki(Request $request){
       $id = $request->input('id');
       $delete = Skidki::find($id);
+         unlink("img/skidkiImg/$delete->imageUrl");
       $delete -> delete();
 
       return back();
@@ -289,6 +291,7 @@ class AdminController extends Controller
     public function deletePopRestoran(Request $request){
       $id = $request->input('id');
       $delete = PopRestoran::find($id);
+        unlink("img/popRestoranImg/$delete->imageUrl");
       $delete -> delete();
 
       return back();
@@ -345,6 +348,7 @@ class AdminController extends Controller
     public function deletePopHotel(Request $request){
         $id = $request->input('id');
         $delete = PopHotel::find($id);
+        unlink("img/popHotelImg/$delete->popHotelImg");
         $delete -> delete();
 
         return back();
@@ -412,33 +416,103 @@ class AdminController extends Controller
     public function deletePopTours(Request $request){
         $id = $request->input('id');
         $delete = PopTour::find($id);
+        unlink("img/popToursImg/$delete->nameImg");
         $delete -> delete();
 
         return back();
     }
 
-    public function getAllTours(){
-        $allTours = AllTours::all();
+    public function getPopCuponProduct(){
+        $PopCuponProduct = PopCuponProduct::all();
 
-        $arr = ['allTours'=>$allTours];
-        return view('adminPages/allTours',$arr);
+        $arr = ['PopCuponProduct'=>$PopCuponProduct];
+        return view('popCuponProduct',$arr);
     }
-    public function setAllTours(Request $request){
-        $request->input('description');
-        $request->input('name');
-        $request->input('sitesUrl');
-        $request->input('toursCountry');
-        $request->file('allToursImg');
+
+    public function setPopCuponProduct(Request $request){
+        $discount = $request->input('discount');
+        $marker = $request->input('marker');
+        $description = $request->input('description');
+        $name = $request->input('name');
+        $count = $request->input('count');
+        $oldPrice = $request->input('oldPrice');
+        $newPrice = $request->input('newPrice');
+        $sitesUrl = $request->input('sitesUrl');
+        //$imageUrl = $request->input('imageUrl');
+        $popCuponProductImg = $request->file('popCuponProductImg');
+
+        $popCuponProductImg->move('img/popCuponProductImg',$popCuponProductImg->getClientOriginalName());
+        PopCuponProduct::create(['discount'=>$discount,'marker'=>$marker,'description'=>$description,
+            'name'=>$name,'count'=>$count,'oldPrice'=>$oldPrice,'newPrice'=>$newPrice,
+            'sitesUrl'=>$sitesUrl,'imageUrl'=>$popCuponProductImg->getClientOriginalName()]);
         return back();
     }
-    public function updateAllTours(){
+
+    public function updatePopCuponProduct(Request $request){
+        $id = $request->input('id');
+        $discount = $request->input('discount');
+        $marker = $request->input('marker');
+        $description = $request->input('description');
+        $name = $request->input('name');
+        $count = $request->input('count');
+        $oldPrice = $request->input('oldPrice');
+        $newPrice = $request->input('newPrice');
+        $sitesUrl = $request->input('sitesUrl');
+        $popCuponProductImg = $request->file('popCuponProductImg');
+
+        $update = PopCuponProduct::find($id);
+        if($discount != ""){
+            $update -> discount = $discount;
+        }
+        if($marker != ""){
+            $update -> marker = $marker;
+        }
+        if($description != ""){
+            $update -> description = $description;
+        }
+        if($name != ""){
+            $update -> name = $name;
+        }
+        if($count != ""){
+            $update -> count = $count;
+        }
+        if($oldPrice != ""){
+            $update -> oldPrice = $oldPrice;
+        }
+        if($newPrice != ""){
+            $update -> newPrice = $newPrice;
+        }
+        if($sitesUrl != ""){
+            $update -> sitesUrl = $sitesUrl;
+        }
+        if($popCuponProductImg != null){
+            if($popCuponProductImg->getClientOriginalName() != ""){
+                //delete old image
+                $popCupon = PopCuponProduct::find($id);
+                $oldImg = $popCupon->imageUrl;
+                unlink("img/popCuponProductImg/$oldImg");
+                //delete old image end
+
+                $update -> imageUrl = $popCuponProductImg->getClientOriginalName();
+                $popCuponProductImg->move('img/popCuponProductImg',$popCuponProductImg->getClientOriginalName());
+            }
+        }
+
+        $update -> save();
+        return back();
+    }
+
+    public function deletePopCuponProduct(Request $request){
+        $id = $request->input('id');
+
+        $delete = PopCuponProduct::find($id);
+        unlink("img/popCuponProductImg/$delete->imageUrl");
+        $delete -> delete();
 
         return back();
     }
-    public function deleteAllTours(){
 
-        return back();
-    }
+
 
 
 }

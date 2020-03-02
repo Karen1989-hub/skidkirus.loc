@@ -42,10 +42,10 @@
                     <div class="adminsBlokLists">
                         <div class="row">
                             <div class="col-sm-12 col-lg-6">
-                                <div class="slide"><img src="img/popToursImg/{{$val->nameImg}}" alt=""></div>
+                                <div class="slide"><img src="img/allTours/{{$val->nameImg}}" alt=""></div>
                             </div>
                             <div class="col-sm-12 col-lg-6">
-                                <button type="button" class="btn btn-success" id="popToursUpdate">Изменить</button>
+                                <button type="button" class="btn btn-success" id="allToursUpdate">Изменить</button>
                                 <form action="{{route('deleteAllTours')}}" method="post">
                                     @csrf
                                     <input type="hidden" name="id" value="{{$val->id}}">

@@ -1,3 +1,4 @@
+@section('header')
 <!DOCTYPE html>
 <html lang="en">
 
@@ -612,16 +613,9 @@
 
         </nav>
     </header>
+    @show
 
-
-
-
-
-
-
-
-
-
+    @section('menu')
     <div class="contanier">
 
         <div class="left__menue">
@@ -731,7 +725,8 @@
             </ul>
             <div class="burger "><img src="./img/burger.svg" alt=""></div>
         </div>
-
+        @show
+        @section('content')
         <a href="#header" class="go__top"></a>
         <div class="slider__contanier">
             <div class="auto__slider">
@@ -816,6 +811,8 @@
             </div>
 
         </div>
+        @show
+        @section('footer')
         <footer class="footer pd_0" id="footer">
             <div class="footer_frstpart footer_blog">
                 <div class=" footer_menu_blog">
@@ -947,3 +944,4 @@
 </body>
 
 </html>
+@show

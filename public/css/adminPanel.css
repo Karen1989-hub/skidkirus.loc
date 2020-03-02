@@ -31,6 +31,11 @@
     height: 350px!important;
     transition-duration: 0.5s;
 }
+.height400{
+     height: 400px!important;
+     transition-duration: 0.5s;
+ }
+
 
 .adminsBlokLists>.row .slide{
     width: 150px;
@@ -89,7 +94,7 @@
     background: #F6F6F6;
 }
 #height{
-    height: 300px!important;
+    height: 350px!important;
     transition-duration: 0.5s;
 }
 #height1{

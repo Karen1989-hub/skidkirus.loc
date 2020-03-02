@@ -44,15 +44,15 @@
 
 .slick-slide {
   transition: all ease-in-out 0.3s;
-  opacity: 0.2;
+  /*opacity: 0.2;*/
 }
 
 .slick-active {
-  opacity: 0.5;
+  /*opacity: 0.5;*/
 }
 
 .slick-current {
-  opacity: 1;
+  /*opacity: 1;*/
 }
 
 .slick_s {
@@ -84,7 +84,7 @@
 .hotel__slider-img,
 .shop__slider-img {
   cursor: pointer;
-  opacity: 1;
+  /*opacity: 1;*/
 }
 .slider_shop {
   width: 80%;

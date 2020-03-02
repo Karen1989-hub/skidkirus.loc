@@ -734,7 +734,10 @@
                 </div>
 
                 <!-- navbar end -->
-
+                <div class="contanier__menue-title hotel__title">
+                    <a href="{{route('getAllSkidkisPage')}}" id="menue__title">Скидки</a>
+                    <a href="{{route('getAllSkidkisPage')}}" id="menue__title-info">ВСЕ (555)</a>
+                </div>
                 <div class="cards w-75">
                     <!-- card start -->
                     @foreach($skidki as $val)
@@ -777,8 +780,8 @@
 
 
                     <div class="contanier__menue-title hotel__title">
-                        <a href="#" id="menue__title">Сайты</a>
-                        <a href="#" id="menue__title-info">ВСЕ (555)</a>
+                        <a href="{{route('getAllSitesPage')}}" id="menue__title">Сайты</a>
+                        <a href="{{route('getAllSitesPage')}}" id="menue__title-info">ВСЕ (555)</a>
                     </div>
                       <!-- Swiper -->
                       <div class="swiper-container">
@@ -852,8 +855,8 @@
                 <div class="cards__bg cards__bg-product">
                     <div class="cards__bg-title">
                         <div class="contanier__menue-title bg__title">
-                            <a href="#" id="menue__title">Популярные рестораны </a>
-                            <a href="#" id="menue__title-info">ВСЕ (268)</a>
+                            <a href="{{route('getAllRestoranPage')}}" id="menue__title">Популярные рестораны </a>
+                            <a href="{{route('getAllRestoranPage')}}" id="menue__title-info">ВСЕ (268)</a>
                         </div>
                     </div>
                     <div class="cards services">
@@ -907,8 +910,8 @@
 
 
                 <div class="contanier__menue-title tur__title">
-                    <a href="#" id="menue__title">Туры</a>
-                    <a href="#" id="menue__title-info">ВСЕ (555)</a>
+                    <a href="{{route('getAllToursPage')}}" id="menue__title">Туры</a>
+                    <a href="{{route('getAllToursPage')}}" id="menue__title-info">ВСЕ (555)</a>
                 </div>
 
                 <div class="cards tur w-75">
@@ -940,70 +943,34 @@
 
                 <div class="cards w-75">
 
-
+                @foreach($PopCuponProduct as $val)
                     <div class="main__content">
                         <div class="card__img">
-                            <img src="./img/fa82a77f81f786eaa0efde4b973a5e9b.jpg" alt="">
-                            <div class="card__discount big">
-                                <a href="#">-70%</a>
-                            </div>
+                            <img src="./img/popCuponProductImg/{{$val->imageUrl}}" alt="">
+                            @if($val->discount != null)
+                                <div class="card__discount big">
+                                    <a href="{{$val->sitesUrl}}">{{$val->discount}}%</a>
+
+                                </div>
+                            @endif
 
 
                         </div>
                         <div class="card__title">
-                            <a href="#">Посещение аквапарка в комплексе «Фэнтази парк»</a>
+                            <a href="{{$val->sitesUrl}}">{{$val->description}}</a>
                         </div>
                         <div class="card__lcation">
-                            <span class="metro">Марьино</span>
-                            <span class="shop">Куплено 5 090</span>
+                            <span class="metro">{{$val->name}}</span>
+                            <span class="shop">Куплено {{$val->count}}</span>
                         </div>
                         <div class="card_price">
-                            <a href="#" class="old__price">1 700 руб.</a>
-                            <a href="#" class="new__price">748 руб.</a>
+                            <a href="#" class="old__price">{{$val->oldPrice}} руб.</a>
+                            <a href="#" class="new__price">{{$val->newPrice}} руб.</a>
                         </div>
                     </div>
-                    <div class="main__content">
-                        <div class="card__img">
-                            <img src="./img/fa82a77f81f786eaa0efde4b973a5e9b.jpg" alt="">
-                            <div class="card__discount big">
-                                <a href="#">-70%</a>
-                            </div>
-
-                        </div>
-                        <div class="card__title">
-                            <a href="#">Посещение аквапарка в комплексе «Фэнтази парк»</a>
-                        </div>
-                        <div class="card__lcation">
-                            <span class="metro">Марьино</span>
-                            <span class="shop">Куплено 5 090</span>
-                        </div>
-                        <div class="card_price">
-                            <a href="#" class="old__price">1 700 руб.</a>
-                            <a href="#" class="new__price">748 руб.</a>
-                        </div>
-                    </div>
-
-                    <div class="main__content">
-                        <div class="card__img">
-                            <img src="./img/fa82a77f81f786eaa0efde4b973a5e9b.jpg" alt="">
-                            <div class="card__discount average">
-                                <a href="#">-50%</a>
-                            </div>
+                @endforeach
 
 
-                        </div>
-                        <div class="card__title">
-                            <a href="#">Посещение аквапарка в комплексе «Фэнтази парк»</a>
-                        </div>
-                        <div class="card__lcation">
-                            <span class="metro">Марьино</span>
-                            <span class="shop">Куплено 5 090</span>
-                        </div>
-                        <div class="card_price">
-                            <a href="#" class="old__price">1 700 руб.</a>
-                            <a href="#" class="new__price">748 руб.</a>
-                        </div>
-                    </div>
 
                 </div>
 
@@ -1018,18 +985,8 @@
                         <a href="#" id="menue__title-info">ВСЕ (999)</a>
                     </div>
                     <section class="slider">
-                        <img class="hotel__slider-img" src="./img/tur1.jpg">
-                        <img class="hotel__slider-img" src="./img/tur2.jpg">
-                        <img class="hotel__slider-img" src="./img/tur3.jpg">
-                        <img class="hotel__slider-img" src="./img/tur4.jpg">
-                        <img class="hotel__slider-img" src="./img/tur1.jpg">
-                        <img class="hotel__slider-img" src="./img/tur2.jpg">
-                        <img class="hotel__slider-img" src="./img/tur1.jpg">
-                        <img class="hotel__slider-img" src="./img/tur2.jpg">
-                        <img class="hotel__slider-img" src="./img/tur3.jpg">
-                        <img class="hotel__slider-img" src="./img/tur4.jpg">
-                        <img class="hotel__slider-img" src="./img/tur1.jpg">
-                        <img class="hotel__slider-img" src="./img/tur2.jpg">
+                        <a><img class="hotel__slider-img slick-slide slick-active" src="./img/tur1.jpg">text text text</a>
+
                     </section>
                 </div>
 
@@ -1080,7 +1037,7 @@
                                 <div class="menu_block_header">Партнерам</div>
                                 <ul class="blaock_header_link_list">
                                     <li>
-                                        <a href="for-businees.html" >Для Вашего бизнеса</a>
+                                        <a href="{{route('getForBisnes')}}" >Для Вашего бизнеса</a>
 
                                     </li>
                                     <li>

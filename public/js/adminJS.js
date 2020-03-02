@@ -27,10 +27,14 @@ $('.adminsBlokLists #popHotelUpdate').click(function(){
 });
 
 $('.adminsBlokLists #popToursUpdate').click(function(){
-    $(this).parent().parent().parent().toggleClass('height350');
+    $(this).parent().parent().parent().toggleClass('height400');
 });
 
-//update panel open/closed end   /
+$('.adminsBlokLists #allToursUpdate').click(function(){
+    $(this).parent().parent().parent().toggleClass('height400');
+});
+
+//update panel open/closed end   /allToursUpdate
 
 
 //menu lists anim

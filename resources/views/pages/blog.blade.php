@@ -864,7 +864,7 @@
                         <div class="menu_block_header">Партнерам</div>
                         <ul class="blaock_header_link_list">
                             <li>
-                                <a href="for-businees.html" >Для Вашего бизнеса</a>
+                                <a href="{{route('getForBisnes')}}" >Для Вашего бизнеса</a>
 
                             </li>
                             <li>
