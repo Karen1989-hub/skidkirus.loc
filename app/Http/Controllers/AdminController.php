@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\PopShop;
 use Illuminate\Http\Request;
 use App\Admin;
 use App\Skidki;
@@ -511,6 +512,25 @@ class AdminController extends Controller
 
         return back();
     }
+
+    public function getPopShop(Request $request){
+        $popShop = PopShop::all();
+
+        $arr = ['popShop'=>$popShop];
+        return view('popShop',$arr);
+    }
+
+    public function setPopShop(){
+        return back();
+    }
+//
+//    public function updatePopShop(Request $request){
+//        return back();
+//    }
+//
+//    public function deletePopShop(){
+//        return back();
+//    }
 
 
 

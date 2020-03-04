@@ -612,12 +612,12 @@
         <div class="forbusiness_container">
             <h1 class="title_bigilon">
                         <span>
-                            Biglion
+                            Skidkirus
                         </span><br>
                 <span>для вашего бизнеса</span>
             </h1>
             <button class="bigilon_btn">
-                Стать партнером Biglion
+                Стать партнером Skidkirus
             </button>
             <div class ="bigilon_image">
                 <img class="bg_image" src ="img/main-bg-full.png">
@@ -629,15 +629,15 @@
         <div class="about_bigilon">
             <div class="cont">
                 <h2 class="about_title">
-                    Что такое Biglion?
+                    Что такое Skidkirus ?
                 </h2>
                 <p>
-                    Компания Biglion — лидер российского рынка по продаже скидочных купонов. Миллионы клиентов доверяют нам самое
+                    Компания Skidkirus — лидер российского рынка по продаже скидочных купонов. Миллионы клиентов доверяют нам самое
                     дорогое: свое свободное время. Каждый день мы помогаем реализовать давно задуманное с самым лучшим ценовым
                     предложением.
                 </p>
                 <p>
-                    Секрет нашего успеха - наши партнеры. На данный момент, Biglion имеет представительства в 75 городах и более
+                    Секрет нашего успеха - наши партнеры. На данный момент, Skidkirus имеет представительства в 75 городах и более
                     20 тысяч партнеров, которые нам доверяют и помогают каждый день делать наших клиентов чуть более счастливыми,
                     чем вчера.
                 </p>
@@ -647,7 +647,7 @@
             <div class="cont">
                 <h2 class="about_title">Оцените наш успех!</h2>
                 Станьте его частью!
-                <p>Biglion — лидер купонных сервисов на российском рынке более 9 лет. Мир Biglion яркий, насыщенный и успешный!
+                <p>Skidkirus — лидер купонных сервисов на российском рынке более 9 лет. Мир Skidkirus яркий, насыщенный и успешный!
                     Цифры говорят сами за себя.
                 </p>
                 <div class="forbusiness_success_list">
@@ -706,7 +706,7 @@
         </div>
         <div class="forbusiness_resultat">
             <div class="cont">
-                <h2 class="about_title">Партнерство с Biglion:  4 ключа к успеху</h2>
+                <h2 class="about_title">Партнерство с Skidkirus:  4 ключа к успеху</h2>
                 <div class="forbusiness_resultat_list">
                     <div class="forbusiness_resultat_item">
                         <h3 class="item_title">
@@ -720,7 +720,7 @@
                         <h3 class="item_title">
                             PROдвижение к успеху
                         </h3>
-                        <p>Biglion обладает всеми доступными маркетинговыми каналами для успешного продвижения акций партнёров:
+                        <p>Skidkirus обладает всеми доступными маркетинговыми каналами для успешного продвижения акций партнёров:
                             контекстная реклама в Яндекс и Google, email-рассылки, социальные сети и многое другое. Вашу акцию будет
                             невозможно пропустить!
                         </p>
@@ -732,20 +732,20 @@
                             Стабильный поток новых клиентов
                         </h3>
                         <p>
-                            Привлечение новых клиентов — легкая задача для Biglion. Благодаря многочисленной клиентской базе Biglion
+                            Привлечение новых клиентов — легкая задача для Skidkirus. Благодаря многочисленной клиентской базе Skidkirus
                             по всей России, а также активному продвижению акций партнеров, обеспечивается широкий охват акции. О вашей
                             акции узнает каждый!
                         </p>
                     </div>
                     <div class="forbusiness_resultat_item">
                         <h3 class="item_title">
-                            Пользователь Biglion — ваш лояльный клиент
+                            Пользователь Skidkirus — ваш лояльный клиент
 
                         </h3>
                         <p>
                             Наши пользователи знают, что за каждым купоном стоит проверенная и качественная услуга. Пользователи
-                            Biglion готовы пробовать, потому что они нам доверяют. А мы доверяем нашим партнерам. Благодаря такому
-                            взаимодействию положительные отзывы и рекомендации привлекают все больше новых пользователей в Biglion,
+                            Skidkirus готовы пробовать, потому что они нам доверяют. А мы доверяем нашим партнерам. Благодаря такому
+                            взаимодействию положительные отзывы и рекомендации привлекают все больше новых пользователей в Skidkirus,
                             которые впоследствии становятся вашими постоянными клиентами.
                         </p>
                     </div>
@@ -755,10 +755,10 @@
         <div class="forbusiness_pro">
             <div class="forbusiness_container">
                 <h2 class="about_title">
-                    PROдвижение с Biglion  — ваш путь к успеху!
+                    PROдвижение с Skidkirus  — ваш путь к успеху!
                 </h2>
                 <p>
-                    Мы знаем, о чем говорим. Biglion — не просто эффективный канал продвижения для вашего бизнеса. Партнер
+                    Мы знаем, о чем говорим. Skidkirus — не просто эффективный канал продвижения для вашего бизнеса. Партнер
                     получает уникальную возможность увидеть значительный результат в короткие сроки, так как продвижение акции
                     происходит по всем доступным маркетинговым каналам. Мы зарабатываем только тогда, когда зарабатывает наш
                     партнёр!
@@ -768,7 +768,7 @@
                         <thead>
                         <tr>
                             <th></th>
-                            <th>Biglion</th>
+                            <th>??</th>
                             <th>Наружная<br>реклама<br>радио
                             </th>
                             <th></th>
@@ -997,7 +997,7 @@
         <div class="forbusinees_registr">
             <div class="cont">
                 <h2 class="about_title">
-                    Стать партнёром Biglion
+                    Стать партнёром ??
                 </h2>
                 <div class="registr_form">
                     <form class="reg_form" method="" action ="">
@@ -1008,7 +1008,7 @@
 
                         <label>Сайт компании</label>
                         <input class="input_for_url" type="text" placeholder="http://">
-                        <label>Хочу продвигать на Biglion</label>
+                        <label>Хочу продвигать на ??</label>
 
                         <label>
                             <input class="reg_radio" type= "radio">
@@ -1059,14 +1059,12 @@
                         <h4 class="register_contact_sec_title">
                             Телефон
                         </h4>
-                        <a class="register_contact_phone" href="#">+7 495 649‑649‑1</a>
-                        <a class="register_contact_phone" href="#">
-                            8 800 2000‑649
-                        </a>
+                        <a class="register_contact_phone" href="#">+79150238800</a>
+
                         <h4 class="title_email">
                             Email
                         </h4>
-                        <a class="register_contact_phone" href="#">info@biglion.ru</a>
+                        <a class="register_contact_phone" href="#">info@wave-it.ru</a>
                     </div>
 
                 </div>
@@ -1077,7 +1075,7 @@
                 <div class=" footer_menu_blog">
                     <div class="foot1">
                         <div class="footer_contact">
-                            <a href="tel:+7(800) 2000-649" class="phone">8 (800) 2000-649</a>
+                            <a href="tel:+7(800) 2000-649" class="phone">+79150238800</a>
                             <p class="contact_description">
                                 Для звонка из Москвы<br>
                                 и регионов России
@@ -1089,7 +1087,7 @@
                             <div class="menu_block_header">Компания</div>
                             <ul class="blaock_header_link_list">
                                 <li>
-                                    <a href="{{route('gethowWork')}}">Как работает Biglion</a>
+                                    <a href="{{route('gethowWork')}}">Как работает Skidkirus</a>
                                 </li>
                                 </li>
                                 <li>
@@ -1141,7 +1139,7 @@
                 <div class=" footer_info footer_info_blog">
                     <div class="frst_sect">
                         <div class="footer_info_left">
-                            <p class="copyright"> © 2010-2020 BIGLION </p>
+                            <p class="copyright"> © 2015-2020</p>
                             <ul class="links">
                                 <li><a href="#">Обработка персональных данных</a></li>
                                 <li><a href="#">Пользовательское соглашение</a></li>

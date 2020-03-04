@@ -15,6 +15,11 @@ class CreatePopShopsTable extends Migration
     {
         Schema::create('pop_shops', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('description')->nullable();
+            $table->string('name')->nullable();
+            $table->string('brend')->nullable();
+            $table->string('sitesUrl')->nullable();
+            $table->string('imageUrl')->nullable();
             $table->timestamps();
         });
     }

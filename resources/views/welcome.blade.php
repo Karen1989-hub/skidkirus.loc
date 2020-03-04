@@ -485,8 +485,8 @@
                                     </div>
                                 </div>
                             </li>
-                            <li><a class="link" href="{{route('getBlog')}}">Блог</a></li>
-                            <li><a class="link" href="{{route('gethowWork')}}">Как работает Biglion</a></li>
+                            <li><a class="link" href="">Блог</a></li>
+                            <li><a class="link" href="">Как работает Skidkirus</a></li>
 
 
                              <li>
@@ -769,6 +769,7 @@
                             <span class="metro">{{$val->name}}</span>
                             <span class="shop">Вход {{$val->count}}</span>
                         </div>
+
                         <div class="card_price">
                             <a href="#" class="old__price">{{$val->oldPrice}} руб.</a>
                             <a href="#" class="new__price">{{$val->newPrice}} руб.</a>
@@ -787,33 +788,35 @@
                       <div class="swiper-container">
                         <div class="swiper-wrapper">
                         @foreach($sites as $val)
-                           <div class="swiper-slide main__content">
-                            <div class="card__img sites" >
-                                <a target="_blank" href="{{$val->sitesUrl}}"><img src="{{$val->imageUrl}}" alt=""></a>
-                                @if($val->discount != null)
-                                <div class="card__discount small">
-                                    <a href="#">{{$val->discount}}%</a>
+                                <div class="swiper-slide main__content">
+                                    <div class="card__img sites" >
+                                        <a target="_blank" href="{{$val->sitesUrl}}"><img src="{{$val->imageUrl}}" alt=""></a>
+                                        @if($val->discount != null)
+                                            <div class="card__discount small">
+                                                <a href="#">{{$val->discount}}%</a>
 
+                                            </div>
+                                        @endif
+                                        @if($val->marker != null)
+                                            <div class="card__holidays">
+                                                <a href="#">{{$val->marker}}</a>
+                                            </div>
+                                        @endif
+                                    </div>
+                                    <div class="card__title">
+                                        <a href="#">{{$val->description}}</a>
+                                    </div>
+
+
+                                    <div class="card__lcation">
+                                        <span class="metro">{{$val->name}}</span>
+                                        <span class="shop">Вход {{$val->count}}</span>
+                                    </div>
+                                    <div class="card_price">
+                                        <a href="#" class="old__price">{{$val->oldPrice}} руб.</a>
+                                        <a href="#" class="new__price">{{$val->newPrice}} руб.</a>
+                                    </div>
                                 </div>
-                                @endif
-                                @if($val->marker != null)
-                                <div class="card__holidays">
-                                    <a href="#">{{$val->marker}}</a>
-                                </div>
-                                @endif
-                            </div>
-                            <div class="card__title">
-                                <a href="#">{{$val->description}}</a>
-                            </div>
-                            <div class="card__lcation">
-                                <span class="metro">{{$val->name}}</span>
-                                <span class="shop">Вход {{$val->count}}</span>
-                            </div>
-                            <div class="card_price">
-                                <a href="#" class="old__price">{{$val->oldPrice}} руб.</a>
-                                <a href="#" class="new__price">{{$val->newPrice}} руб.</a>
-                            </div>
-                        </div>
                         @endforeach
 
 
@@ -997,7 +1000,7 @@
                     <div class=" footer_menu_blog">
                         <div class="foot1">
                             <div class="footer_contact">
-                                <a href="tel:+7(800) 2000-649" class="phone">8 (800) 2000-649</a>
+                                <a href="tel:+7(800) 2000-649" class="phone"> </a>
                                 <p class="contact_description">
                                     Для звонка из Москвы<br>
                                     и регионов России
@@ -1009,7 +1012,7 @@
                                 <div class="menu_block_header">Компания</div>
                                 <ul class="blaock_header_link_list">
                                     <li>
-                                        <a href="{{route('gethowWork')}}">Как работает Biglion</a>
+                                        <a href="{{route('gethowWork')}}">Как работает Skidkirus</a>
                                     </li>
 
                                     <li>
@@ -1060,7 +1063,7 @@
                     <div class=" footer_info footer_info_blog">
                         <div class="frst_sect">
                             <div class="footer_info_left">
-                                <p class="copyright"> © 2010-2020 BIGLION </p>
+                                <p class="copyright"> © 2015-2020  </p>
                                 <ul class="links">
                                     <li><a href="#">Обработка персональных данных</a></li>
                                     <li><a href="#">Пользовательское соглашение</a></li>

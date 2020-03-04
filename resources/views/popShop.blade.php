@@ -24,10 +24,10 @@
                     <a href="{{route('adminPage')}}"><div>Скидки</div></a>
                     <a href="{{route('setSitsPage')}}"><div>Сайты</div></a>
                     <a href="{{route('getPopularRestoran')}}"><div>Популярные рестораны</div></a>
-                    <a href="{{route('getPopHotel')}}"><div class="activPage">Отели</div></a>
+                    <a href="{{route('getPopHotel')}}"><div>Отели</div></a>
                     <a href="{{route('getPopTours')}}"><div>Туры</div></a>
                     <a href="{{route('getPopCuponProduct')}}"><div>Товары по купонам</div></a>
-                    <a href="{{route('getPopShop')}}"><div>Популярные магазины</div></a>
+                    <a href="{{route('getPopShop')}}"><div class="activPage">Популярные магазины</div></a>
                 </div>
                 <div class="big" id="null1">
                     <div class="menuHeading1">Другие объявление</div>
@@ -45,15 +45,15 @@
 
             <!-- Material form login -->
             <div class="cards">
-                @foreach($popHotel as $val)
+                @foreach($popShop as $val)
                     <div class="adminsBlokLists">
                         <div class="row">
                             <div class="col-sm-12 col-lg-6">
-                                <div class="slide"><img src="img/popHotelImg/{{$val->popHotelImg}}" alt=""></div>
+                                <div class="slide"><img src="img/popShop/{{$val->imageUrl}}" alt=""></div>
                             </div>
                             <div class="col-sm-12 col-lg-6">
                                 <button type="button" class="btn btn-success" id="popHotelUpdate">Изменить</button>
-                                <form action="{{route('deleteSitsList')}}" method="post">
+                                <form action="{{route('deletePopShop')}}" method="post">
                                     @csrf
                                     <input type="hidden" name="id" value="{{$val->id}}">
                                     <button type="submit" class="btn btn-danger">Удалить</button>
@@ -62,12 +62,12 @@
                             </div>
                         </div>
                         <div class="updatePanel">
-                            <form action="{{route('updatePopHotel')}}" method="post" enctype='multipart/form-data'>
+                            <form action="{{route('updatePopShop')}}" method="post" enctype='multipart/form-data'>
                                 @csrf
                                 <input type="hidden" name="id" value="{{$val->id}}">
                                 <div class="form-row">
 
-                                    <!--<div class="col-lg-6 col-sm-12">
+                                <!--<div class="col-lg-6 col-sm-12">
                                         <span>адрес сайта</span>
                                         <input type="text" class="form-control" placeholder="{{$val->sitesUrl}}" name="sitesUrl">
                                     </div>-->
@@ -78,7 +78,7 @@
                                                 <span class="input-group-text" id="inputGroupFileAddon01">Загрузить</span>
                                             </div>
                                             <div class="custom-file">
-                                                <input type="file" name="popHotelImg" class="custom-file-input" id="inputGroupFile01"
+                                                <input type="file" name="popShopImg" class="custom-file-input" id="inputGroupFile01"
                                                        aria-describedby="inputGroupFileAddon01">
                                                 <label class="custom-file-label" for="inputGroupFile01">Выберите файл</label>
                                             </div>
@@ -106,25 +106,30 @@
                 <div class="card-body px-lg-5 pt-0 formBg">
 
                     <!-- Form -->
-                    <form class="text-center" style="color: #757575;" action="{{route('setPopHotel')}}" method="post" enctype='multipart/form-data'>
-                    @csrf
+                    <form class="text-center" style="color: #757575;" action="{{route('setPopShop')}}" method="post" enctype='multipart/form-data'>
+                        @csrf
+                        <div class="form-row">
+                            <div class="col-lg-6 col-sm-12">
+                                <span>бренд</span>
+                                <input type="text"  class="form-control" placeholder="{{$val->discount}}" name="discount">
+                            </div>
 
-                    <!-- input file -->
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text" id="inputGroupFileAddon01">Загрузить</span>
+                            <!-- input file -->
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroupFileAddon01">Загрузить</span>
+                                </div>
+                                <div class="custom-file">
+                                    <input type="file" name="popHotelImg" class="custom-file-input" id="inputGroupFile01"
+                                           aria-describedby="inputGroupFileAddon01">
+                                    <label class="custom-file-label" for="inputGroupFile01">Выберите файл</label>
+                                </div>
                             </div>
-                            <div class="custom-file">
-                                <input type="file" name="popHotelImg" class="custom-file-input" id="inputGroupFile01"
-                                       aria-describedby="inputGroupFileAddon01">
-                                <label class="custom-file-label" for="inputGroupFile01">Выберите файл</label>
-                            </div>
+
+                            <!-- Sign in button -->
+                            <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">создать</button>
+
                         </div>
-
-                        <!-- Sign in button -->
-                        <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">создать</button>
-
-
                     </form>
                     <!-- Form -->
 
@@ -143,4 +148,5 @@
 @section('footer')
     @parent
 @endsection
+
 

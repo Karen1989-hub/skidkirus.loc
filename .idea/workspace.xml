@@ -3,26 +3,38 @@
   <component name="ChangeListManager">
     <list default="true" id="55ea3ffd-cea8-4cec-8f4c-f782e579d332" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/AllTours.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/AllTours.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/PopShop.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/PopShop.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_02_134651_create_pop_shops_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_03_02_134651_create_pop_shops_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/adminPanel.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/adminPanel.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/adminJS.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/adminJS.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/src/slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/src/slider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/style/slick-theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/style/slick-theme.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/style/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/allTours/image-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/allTours/images (1).jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/popCuponProductImg/images (2).jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/popCuponProductImg/Без названия (3).jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/popHotelImg/tur5.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/popHotelImg/Без названия (1).jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/popHotelImg/Без названия (3).jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/popHotelImg/Без названия (4).jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/popHotelImg/Без названия.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/popRestoranImg/images.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/popToursImg/Без названия (2).jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/popToursImg/Без названия (3).jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/skidkiImg/GwRbOyuwiX.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/skidkiImg/tur5.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/skidkiImg/Без названия (1).jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/skidkiImg/Снимок.PNG" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/adminPage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/adminPage.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/adminPages/allTours.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/adminPages/allTours.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/getPopRestor.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/getPopRestor.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout/singlPagesMaket.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/singlPagesMaket.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/pages/blog.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/blog.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/forBisnes.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/forBisnes.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/pages/hawWork.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/hawWork.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/popCuponProduct.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/popCuponProduct.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/popTours.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/popTours.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/setPopHotel.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/setPopHotel.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/setSitsPage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/setSitsPage.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor.zip" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,7 +199,11 @@
       <workItem from="1583001499443" duration="6409000" />
       <workItem from="1583067410070" duration="17874000" />
       <workItem from="1583130256801" duration="8746000" />
-      <workItem from="1583154701848" duration="1930000" />
+      <workItem from="1583154701848" duration="5435000" />
+      <workItem from="1583218937573" duration="3044000" />
+      <workItem from="1583231245634" duration="6124000" />
+      <workItem from="1583260310170" duration="3299000" />
+      <workItem from="1583307894615" duration="3280000" />
     </task>
     <servers />
   </component>
@@ -208,10 +224,10 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="420" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582547161309">
+    <state x="420" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583220072343">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="420" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1582547161309" />
+    <state x="420" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1583220072343" />
     <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1583072430719">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -224,10 +240,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1582712481091" />
-    <state x="378" y="187" key="com.intellij.ide.util.TipDialog" timestamp="1583154716520">
+    <state x="378" y="187" key="com.intellij.ide.util.TipDialog" timestamp="1583307903281">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="378" y="187" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1583154716520" />
+    <state x="378" y="187" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1583307903281" />
     <state x="339" y="162" key="run.anything.popup" timestamp="1582395037593">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

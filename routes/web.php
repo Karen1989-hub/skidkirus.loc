@@ -34,7 +34,7 @@ Route::post('/setPopRestoran','AdminController@setPopRestoran')->name('setPopRes
 Route::post('/updatePopRestoran','AdminController@updatePopRestoran')->name('updatePopRestoran');
 Route::post('/deletePopRestoran','AdminController@deletePopRestoran')->name('deletePopRestoran');
 Route::get('/getAllRestoranPage','HomeController@getAllRestoranPage')->name('getAllRestoranPage');
-//poplar Hotel img
+//popular Hotel img
 Route::get('/getPopHotel',"AdminController@getPopHotel")->name('getPopHotel');
 Route::post('/setPopHotel','AdminController@setPopHotel')->name('setPopHotel');
 Route::post('/updatePopHotel','AdminController@updatePopHotel')->name('updatePopHotel');
@@ -48,6 +48,8 @@ Route::get('/getPopCuponProduct','AdminController@getPopCuponProduct')->name('ge
 Route::post('/setPopCuponProduct','AdminController@setPopCuponProduct')->name('setPopCuponProduct');
 Route::post('/updatePopCuponProduct','AdminController@updatePopCuponProduct')->name('updatePopCuponProduct');
 Route::post('/deletePopCuponProduct','AdminController@deletePopCuponProduct')->name('deletePopCuponProduct');
+//popShop
+Route::get('/getPopShop','AdminController@getPopShop')->name('getPopShop');
 //blog
 Route::get('/getBlog','HomeController@getBlog')->name('getBlog');
 //howWork getForBisnes

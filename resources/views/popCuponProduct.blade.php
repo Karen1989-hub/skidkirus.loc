@@ -27,6 +27,7 @@
                         <a href="{{route('getPopHotel')}}"><div>Отели</div></a>
                         <a href="{{route('getPopTours')}}"><div>Туры</div></a>
                         <a href="{{route('getPopCuponProduct')}}"><div class="activPage">Товары по купонам</div></a>
+                        <a href="{{route('getPopShop')}}"><div>Популярные магазины</div></a>
                     </div>
                     <div class="big" id="null1">
                         <div class="menuHeading1">Другие объявление</div>

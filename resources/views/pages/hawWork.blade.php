@@ -576,7 +576,7 @@
                         </div>
                     </li>
                     <li><a class="link" href="{{route('getBlog')}}">Блог</a></li>
-                    <li><a class="link" href="{{route('gethowWork')}}">Как работает Biglion</a></li>
+                    <li><a class="link" href="{{route('gethowWork')}}">Как работает ??</a></li>
                     <li>
                         <a class="link" href="#">Товары по купонам</a>
                         <div class="bottom__links bottom__links-hover">
@@ -609,7 +609,7 @@
             <span class ="span-arrow">&#8594;</span>
         </li>
         <li class="breadcrumbs_item">
-            <span>Как работает Biglion</span>
+            <span>Как работает ??</span>
         </li>
 
 
@@ -617,10 +617,10 @@
 
             <div class="how_context">
                 <h1 class="how_title">
-                    Как работает Biglion
+                    Как работает ??
                 </h1>
                 <p class="how_text">
-                    Biglion — крупнейший в России онлайн-сервис разумного потребления.
+                    ?? — крупнейший в России онлайн-сервис разумного потребления.
                     На сайте и в мобильном приложении у нас представлено более 10 000 акций
                     со скидками до 90% на развлечения, аквапарки, салоны красоты и SPA, кафе,
                     рестораны, услуги медицинских клиник, на отели и туры и многое другое.
@@ -649,7 +649,7 @@
 
             <div class="how_context">
                 <h1 class="how_title_second">
-                    Почему в Biglion такие большие скидки
+                    Почему в ?? такие большие скидки
                 </h1>
                 <p class="how_text">
                     Мы сотрудничаем только с проверенными партнерами,
@@ -752,7 +752,7 @@
 
             <div class="how_context">
                 <h1 class="how_title_second">
-                    Cashback Biglion
+                    Cashback ??
                 </h1>
                 <p class="how_text">
                     C Biglion можно покупать в онлайн или оффлайн-магазинах и возвращать часть суммы назад.<br>
@@ -773,7 +773,7 @@
                             <a class="item_link" href="#">
                                 кэшбэк
                             </a>
-                            на сайте Biglion и перейдите в понравившийся магазин
+                            на сайте ?? и перейдите в понравившийся магазин
                         </p>
                     </div>
                     <div class="how_shops_section_item">
@@ -805,7 +805,7 @@
                             Используйте кэшбэк
                         </h3>
                         <p class="item_text">
-                            Купите купон на Biglion или выведите деньги
+                            Купите купон на  или выведите деньги
                         </p>
 
                     </div>
@@ -816,7 +816,7 @@
                 <div class="mobile">
                     <div class="mobile_first_section">
                         <h1 class="how_title_second">
-                            Мобильное приложение Biglion
+                            Мобильное приложение
                         </h1>
                         <p class="mobile_text">
                             Мы разработали удобные мобильные приложения для всех распространенных устройств. Теперь услуги, развлечения,
@@ -865,7 +865,7 @@
             <div class=" footer_menu_blog">
                 <div class="foot1">
                     <div class="footer_contact">
-                        <a href="tel:+7(800) 2000-649" class="phone">8 (800) 2000-649</a>
+                        <a href="tel:+7(800) 2000-649" class="phone">+79150238800</a>
                         <p class="contact_description">
                             Для звонка из Москвы<br>
                             и регионов России
@@ -877,7 +877,7 @@
                         <div class="menu_block_header">Компания</div>
                         <ul class="blaock_header_link_list">
                             <li>
-                                <a href="{{route('gethowWork')}}">Как работает Biglion</a>
+                                <a href="{{route('gethowWork')}}">Как работает?</a>
                             </li>
 
                             <li>
@@ -928,7 +928,7 @@
             <div class=" footer_info footer_info_blog">
                 <div class="frst_sect">
                     <div class="footer_info_left">
-                        <p class="copyright"> © 2010-2020 BIGLION </p>
+                        <p class="copyright"> © 2015-2020 </p>
                         <ul class="links">
                             <li><a href="#">Обработка персональных данных</a></li>
                             <li><a href="#">Пользовательское соглашение</a></li>
