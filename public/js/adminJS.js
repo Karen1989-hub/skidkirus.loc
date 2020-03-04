@@ -34,6 +34,10 @@ $('.adminsBlokLists #allToursUpdate').click(function(){
     $(this).parent().parent().parent().toggleClass('height400');
 });
 
+$('.adminsBlokLists #popShopUpdate').click(function(){
+    $(this).parent().parent().parent().toggleClass('height400');
+});
+
 //update panel open/closed end   /allToursUpdate
 
 

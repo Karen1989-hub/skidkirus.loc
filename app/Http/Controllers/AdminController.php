@@ -306,10 +306,15 @@ class AdminController extends Controller
     }
 
     public function setPopHotel(Request $request){
+        $description = $request->input('description');
+        $name = $request->input('name');
+        $country = $request->input('country');
+        $sitesUrl = $request->input('sitesUrl');
         $popHotel = $request->file('popHotelImg');
 
         $popHotel->move('img/popHotelImg',$popHotel->getClientOriginalName());
-        PopHotel::create(['popHotelImg'=>$popHotel->getClientOriginalName()]);
+        PopHotel::create(['popHotelImg'=>$popHotel->getClientOriginalName(),
+            '']);
 
         return back();
     }
@@ -520,17 +525,68 @@ class AdminController extends Controller
         return view('popShop',$arr);
     }
 
-    public function setPopShop(){
+    public function setPopShop(Request $request){
+        $description = $request->input('description');
+        $name = $request->input('name');
+        $brend = $request->input('brend');
+        $sitesUrl = $request->input('sitesUrl');
+        $popShopImg = $request->file('popShopImg');
+
+        $popShopImg ->move('img/popShop',$popShopImg ->getClientOriginalName());
+        PopShop::create(['description'=>$description,'name'=>$name,'brend'=>$brend,
+            'sitesUrl'=>$sitesUrl,'imageUrl'=>$popShopImg ->getClientOriginalName()]);
         return back();
     }
-//
-//    public function updatePopShop(Request $request){
-//        return back();
-//    }
-//
-//    public function deletePopShop(){
-//        return back();
-//    }
+
+    public function updatePopShop(Request $request){
+        $id = $request->input('id');
+        $description = $request->input('description');
+        $name = $request->input('name');
+        $brend = $request->input('brend');
+        $sitesUrl = $request->input('sitesUrl');
+        $popShopImg = $request->file('popShopImg');
+
+        $update = PopShop::find($id);
+
+        if($description != ""){
+            $update -> description = $description;
+        }
+        if($name != ""){
+            $update -> name = $name;
+        }
+
+        if($sitesUrl != ""){
+            $update -> sitesUrl = $sitesUrl;
+        }
+        if($brend != ""){
+            $update -> brend = $brend;
+        }
+        if($popShopImg != null){
+            if($popShopImg->getClientOriginalName() != ""){
+                //delete old image
+                $popShop = PopShop::find($id);
+                $oldImg = $popShop->imageUrl;
+                unlink("img/popShop/$oldImg");
+                //delete old image end
+
+                $update -> imageUrl = $popShopImg->getClientOriginalName();
+                $popShopImg->move('img/popShop',$popShopImg->getClientOriginalName());
+            }
+        }
+
+        $update -> save();
+
+        return back();
+    }
+
+    public function deletePopShop(Request $request){
+        $id = $request->input('id');
+
+        $delete = PopShop::find($id);
+        unlink("img/popShop/$delete->imageUrl");
+        $delete -> delete();
+        return back();
+    }
 
 
 

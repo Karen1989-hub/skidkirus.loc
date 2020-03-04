@@ -887,7 +887,7 @@
             <div class=" footer_info footer_info_blog">
                 <div class="frst_sect">
                     <div class="footer_info_left">
-                        <p class="copyright"> © 2010-2020  </p>
+                        <p class="copyright"> © 2015-2020  </p>
                         <ul class="links">
                             <li><a href="#">Обработка персональных данных</a></li>
                             <li><a href="#">Пользовательское соглашение</a></li>

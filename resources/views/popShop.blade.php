@@ -46,13 +46,13 @@
             <!-- Material form login -->
             <div class="cards">
                 @foreach($popShop as $val)
-                    <div class="adminsBlokLists">
+                    <div class="adminsBlokLists" >
                         <div class="row">
                             <div class="col-sm-12 col-lg-6">
                                 <div class="slide"><img src="img/popShop/{{$val->imageUrl}}" alt=""></div>
                             </div>
                             <div class="col-sm-12 col-lg-6">
-                                <button type="button" class="btn btn-success" id="popHotelUpdate">Изменить</button>
+                                <button type="button" class="btn btn-success" id="popShopUpdate">Изменить</button>
                                 <form action="{{route('deletePopShop')}}" method="post">
                                     @csrf
                                     <input type="hidden" name="id" value="{{$val->id}}">
@@ -65,8 +65,24 @@
                             <form action="{{route('updatePopShop')}}" method="post" enctype='multipart/form-data'>
                                 @csrf
                                 <input type="hidden" name="id" value="{{$val->id}}">
-                                <div class="form-row">
 
+                                <div class="form-row">
+                                    <div class="col-lg-6 col-sm-12">
+                                        <span>описание</span>
+                                        <input type="text" class="form-control" placeholder="{{$val->description}}" name="description">
+                                    </div>
+                                    <div class="col-lg-6 col-sm-12">
+                                        <span>имя</span>
+                                        <input type="text" class="form-control" placeholder="{{$val->name}}" name="name">
+                                    </div>
+                                    <div class="col-lg-6 col-sm-12">
+                                        <span>бренд</span>
+                                        <input type="text" class="form-control" placeholder="{{$val->brend}}" name="brend">
+                                    </div>
+                                    <div class="col-lg-6 col-sm-12">
+                                        <span>адрес сайта</span>
+                                        <input type="text" class="form-control" placeholder="{{$val->sitesUrl}}" name="sitesUrl">
+                                    </div>
                                 <!--<div class="col-lg-6 col-sm-12">
                                         <span>адрес сайта</span>
                                         <input type="text" class="form-control" placeholder="{{$val->sitesUrl}}" name="sitesUrl">
@@ -108,11 +124,28 @@
                     <!-- Form -->
                     <form class="text-center" style="color: #757575;" action="{{route('setPopShop')}}" method="post" enctype='multipart/form-data'>
                         @csrf
+
+
+                        <div class="md-form">
+                            <input type="text" name="description" id="materialLoginFormPassword" class="form-control">
+                            <label for="materialLoginFormPassword">описание</label>
+                        </div>
+
+                        <div class="md-form">
+                            <input type="text" name="name" id="materialLoginFormPassword" class="form-control">
+                            <label for="materialLoginFormPassword">имя</label>
+                        </div>
+
+                        <div class="md-form">
+                            <input type="text" name="brend" id="materialLoginFormPassword" class="form-control">
+                            <label for="materialLoginFormPassword">бренд</label>
+                        </div>
+
+                        <div class="md-form">
+                            <input type="text" name="sitesUrl" id="materialLoginFormPassword" class="form-control">
+                            <label for="materialLoginFormPassword">URL сайта</label>
+                        </div>
                         <div class="form-row">
-                            <div class="col-lg-6 col-sm-12">
-                                <span>бренд</span>
-                                <input type="text"  class="form-control" placeholder="{{$val->discount}}" name="discount">
-                            </div>
 
                             <!-- input file -->
                             <div class="input-group">
@@ -120,7 +153,7 @@
                                     <span class="input-group-text" id="inputGroupFileAddon01">Загрузить</span>
                                 </div>
                                 <div class="custom-file">
-                                    <input type="file" name="popHotelImg" class="custom-file-input" id="inputGroupFile01"
+                                    <input type="file" name="popShopImg" class="custom-file-input" id="inputGroupFile01"
                                            aria-describedby="inputGroupFileAddon01">
                                     <label class="custom-file-label" for="inputGroupFile01">Выберите файл</label>
                                 </div>

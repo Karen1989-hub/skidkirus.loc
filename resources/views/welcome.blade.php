@@ -984,12 +984,19 @@
 
                 <div class="cards__bg cards__bg-stores">
                     <div class="contanier__menue-title">
-                        <a href="#" id="menue__title">Популярные магазины3 </a>
+                        <a href="#" id="menue__title">Популярные магазины </a>
                         <a href="#" id="menue__title-info">ВСЕ (999)</a>
                     </div>
                     <section class="slider">
-                        <a><img class="hotel__slider-img slick-slide slick-active" src="./img/tur1.jpg">text text text</a>
+                        @foreach($popShop as $val)
 
+                        <a href="{{$val->sitesUrl}}"><img class="hotel__slider-img slick-slide slick-active" src="./img/popShop/{{$val->imageUrl}}">
+                           <div style="margin-left: 20px"><span>{{$val->name}}</span><br>
+                               {{$val->description}}</div>
+
+                        </a>
+
+                        @endforeach
                     </section>
                 </div>
 
@@ -1000,7 +1007,7 @@
                     <div class=" footer_menu_blog">
                         <div class="foot1">
                             <div class="footer_contact">
-                                <a href="tel:+7(800) 2000-649" class="phone"> </a>
+                                <a href="#" class="phone">+79150238800</a>
                                 <p class="contact_description">
                                     Для звонка из Москвы<br>
                                     и регионов России

@@ -10,6 +10,7 @@ use App\PopHotel;
 use App\PopTour;
 use App\AllTours;
 use App\PopCuponProduct;
+use App\PopShop;
 
 class HomeController extends Controller
 {
@@ -20,9 +21,10 @@ class HomeController extends Controller
         $popHotel = PopHotel::all();
         $PopTour = PopTour::all();
         $PopCuponProduct = PopCuponProduct::all();
+        $PopShop = PopShop::all();
 
         $arr = ['skidki'=>$skidki,'sites'=>$sites,'popRestoran'=>$popRestoran,'popHotel'=>$popHotel,
-            'PopTour'=>$PopTour,'PopCuponProduct'=>$PopCuponProduct];
+            'PopTour'=>$PopTour,'PopCuponProduct'=>$PopCuponProduct,'popShop'=>$PopShop];
         return view('welcome',$arr);
     }
     public function getAllToursPage(){

@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class PopShop extends Model
 {
-    protected $fillable = ['description','name','sitesUrl','imageUrl'];
+    protected $fillable = ['description','brend','name','sitesUrl','imageUrl'];
 }

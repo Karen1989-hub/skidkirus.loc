@@ -109,6 +109,25 @@
                     <form class="text-center" style="color: #757575;" action="{{route('setPopHotel')}}" method="post" enctype='multipart/form-data'>
                     @csrf
 
+                        <div class="md-form">
+                            <input type="text" name="description" id="materialLoginFormPassword" class="form-control">
+                            <label for="materialLoginFormPassword">описание</label>
+                        </div>
+
+                        <div class="md-form">
+                            <input type="text" name="name" id="materialLoginFormPassword" class="form-control">
+                            <label for="materialLoginFormPassword">имя</label>
+                        </div>
+
+                        <div class="md-form">
+                            <input type="text" name="country" id="materialLoginFormPassword" class="form-control">
+                            <label for="materialLoginFormPassword">страна</label>
+                        </div>
+
+                        <div class="md-form">
+                            <input type="text" name="sitesUrl" id="materialLoginFormPassword" class="form-control">
+                            <label for="materialLoginFormPassword">URL сайта</label>
+                        </div>
                     <!-- input file -->
                         <div class="input-group">
                             <div class="input-group-prepend">

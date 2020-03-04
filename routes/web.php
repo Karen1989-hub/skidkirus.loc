@@ -50,6 +50,9 @@ Route::post('/updatePopCuponProduct','AdminController@updatePopCuponProduct')->n
 Route::post('/deletePopCuponProduct','AdminController@deletePopCuponProduct')->name('deletePopCuponProduct');
 //popShop
 Route::get('/getPopShop','AdminController@getPopShop')->name('getPopShop');
+Route::post('/setsetPopShop','AdminController@setPopShop')->name('setPopShop');
+Route::post('/updatePopShop','AdminController@updatePopShop')->name('updatePopShop');
+Route::post('/deletePopShop','AdminController@deletePopShop')->name('deletePopShop');
 //blog
 Route::get('/getBlog','HomeController@getBlog')->name('getBlog');
 //howWork getForBisnes
