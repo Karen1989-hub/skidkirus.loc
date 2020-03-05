@@ -29,7 +29,7 @@
 
             <header id="header">
                 <div class="logo">
-                    <a href="index.html"><img src="./img/logo.png" alt=""></a>
+                    <a href="index.html"><img src="./img/SkidkirusLogo.png" alt=""></a>
                 </div>
 
                 <nav class="header__menue">
