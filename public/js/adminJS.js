@@ -23,7 +23,7 @@ $('.adminsBlokLists .btn-success').click(function(){
 });
 
 $('.adminsBlokLists #popHotelUpdate').click(function(){
-    $(this).parent().parent().parent().toggleClass('height250');
+    $(this).parent().parent().parent().toggleClass('height400');
 });
 
 $('.adminsBlokLists #popToursUpdate').click(function(){

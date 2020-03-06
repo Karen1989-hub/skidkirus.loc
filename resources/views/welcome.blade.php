@@ -905,7 +905,13 @@
                 <div class="cards__bg">
                     <section class="slider">
                         @foreach($popHotel as $val)
-                        <img class="hotel__slider-img" src="./img/popHotelImg/{{$val->popHotelImg}}">
+
+                            <a href="{{$val->sitesUrl}}"><img class="hotel__slider-img slick-slide slick-active" src="./img/popHotelImg/{{$val->popHotelImg}}">
+                                <div style="margin-left: 20px"><span>{{$val->name}}</span><br>
+                                    {{$val->description}}</div>
+
+                            </a>
+
                         @endforeach
                     </section>
                 </div>

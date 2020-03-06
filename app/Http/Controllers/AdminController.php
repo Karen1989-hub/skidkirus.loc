@@ -314,7 +314,7 @@ class AdminController extends Controller
 
         $popHotel->move('img/popHotelImg',$popHotel->getClientOriginalName());
         PopHotel::create(['popHotelImg'=>$popHotel->getClientOriginalName(),
-            '']);
+            'description'=>$description,'name'=>$name,'country'=>$country,'sitesUrl'=>$sitesUrl]);
 
         return back();
     }
@@ -322,17 +322,27 @@ class AdminController extends Controller
     public function updatePopHotel(Request $request){
         $id = $request->input('id');
 
-        //$sitesUrl = $request->input('sitesUrl');
+        $description = $request->input('description');
+        $name = $request->input('name');
+        $brend = $request->input('brend');
+        $sitesUrl = $request->input('sitesUrl');
         $popHotelImg = $request->file('popHotelImg');
 
-        $update = PopHotel::find($id);
+        $update = PopShop::find($id);
 
-        //($sitesUrl != ""){
-         //   $update -> sitesUrl = $sitesUrl;
-        //}
-//         if($imageUrl != ""){
-//           $update -> imageUrl = $imageUrl;
-//        }
+        if($description != ""){
+            $update -> description = $description;
+        }
+        if($name != ""){
+            $update -> name = $name;
+        }
+
+        if($sitesUrl != ""){
+            $update -> sitesUrl = $sitesUrl;
+        }
+        if($brend != ""){
+            $update -> brend = $brend;
+        }
 
         if($popHotelImg != null){
             if($popHotelImg->getClientOriginalName() != ""){

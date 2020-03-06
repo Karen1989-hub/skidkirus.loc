@@ -262,7 +262,7 @@ padding-bottom: 22px;
 }
 .footer_menu_blog {
     display: flex;
-    width: 76%;
+    width: 60%;
     -webkit-box-pack: justify;
     justify-content: space-between; 
     padding-left: 0px;
@@ -458,7 +458,7 @@ padding-bottom: 22px;
         .podpis_form .podpis_email {
             width: 86%;
             text-align: center;
-            display: bloack;
+            display: block;
             margin: 0 auto;
         }
         .pod_descript{
@@ -569,4 +569,3 @@ padding-bottom: 22px;
 
 
 
-   

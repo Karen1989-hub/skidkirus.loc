@@ -15,7 +15,11 @@ class CreatePopHotelsTable extends Migration
     {
         Schema::create('pop_hotels', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('popHotelImg');
+            $table->string('description')->nullable();
+            $table->string('name')->nullable();
+            $table->string('country')->nullable();
+            $table->string('sitesUrl')->nullable();
+            $table->string('popHotelImg')->nullable();
             $table->timestamps();
         });
     }

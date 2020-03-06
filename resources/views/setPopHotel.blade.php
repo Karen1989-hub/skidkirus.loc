@@ -66,6 +66,22 @@
                                 @csrf
                                 <input type="hidden" name="id" value="{{$val->id}}">
                                 <div class="form-row">
+                                    <div class="col-lg-6 col-sm-12">
+                                        <span>описание</span>
+                                        <input type="text" class="form-control" placeholder="{{$val->description}}" name="description">
+                                    </div>
+                                    <div class="col-lg-6 col-sm-12">
+                                        <span>имя</span>
+                                        <input type="text" class="form-control" placeholder="{{$val->name}}" name="name">
+                                    </div>
+                                    <div class="col-lg-6 col-sm-12">
+                                        <span>страна</span>
+                                        <input type="text" class="form-control" placeholder="{{$val->brend}}" name="country">
+                                    </div>
+                                    <div class="col-lg-6 col-sm-12">
+                                        <span>адрес сайта</span>
+                                        <input type="text" class="form-control" placeholder="{{$val->sitesUrl}}" name="sitesUrl">
+                                    </div>
 
                                     <!--<div class="col-lg-6 col-sm-12">
                                         <span>адрес сайта</span>
