@@ -48,7 +48,7 @@
 
                                 <ul class="tab-group">
                                   <li class="tab active"><a href="#signup">Регистрация</a></li>
-                                  <li class="tab"><a href="#login">Вход</a></li>
+                                  <li class="tab"><a href="#login">Вход2</a></li>
                                 </ul>
 
                                 <div class="tab-content">
