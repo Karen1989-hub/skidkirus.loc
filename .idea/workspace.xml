@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="55ea3ffd-cea8-4cec-8f4c-f782e579d332" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PagesFilterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PagesFilterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/allToursPage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/allToursPage.blade.php" afterDir="false" />
-    </list>
+    <list default="true" id="55ea3ffd-cea8-4cec-8f4c-f782e579d332" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/vendor/beyondcode/laravel-dump-server/" />
     <ignored path="$PROJECT_DIR$/vendor/composer/" />
     <ignored path="$PROJECT_DIR$/vendor/dnoegel/php-xdg-base-dir/" />
@@ -518,15 +515,15 @@
       <workItem from="1583402521321" duration="4481000" />
       <workItem from="1583475839670" duration="3804000" />
       <workItem from="1583489664018" duration="2656000" />
-      <workItem from="1583562975515" duration="19077000" />
+      <workItem from="1583562975515" duration="19550000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41912000" />
+    <option name="totallyTimeSpent" value="42385000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23457584" />
