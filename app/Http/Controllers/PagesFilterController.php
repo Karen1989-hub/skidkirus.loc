@@ -18,4 +18,15 @@ class PagesFilterController extends Controller
             'allTours'=>$allTours, 'PopTour'=>$PopTour];
         return view('pages/allToursPage',$arr);
     }
+
+    public function getRussianTours(){
+        $rusAllTours = AllTours::where('toursCountry',"Russia")->get();
+        $rusPopTours = PopTour::where('toursCountry',"Russia")->get();
+        //dd($armPopTours);
+        $allTours = null;
+        $PopTour = null;
+        $arr = ['rusAllTours'=>$rusAllTours,'rusPopTours'=>$rusPopTours,
+            'allTours'=>$allTours, 'PopTour'=>$PopTour];
+        return view('pages/allToursPage',$arr);
+    }
 }

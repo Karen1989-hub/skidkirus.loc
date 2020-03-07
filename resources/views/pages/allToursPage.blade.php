@@ -129,6 +129,57 @@
             </div>
         @endforeach
     @endif
+{{--    rusAllTours  rusPopTours--}}
+            @if( $rusAllTours != null)
+
+                @foreach( $rusAllTours as $val)
+
+                    <div class="main__content card_content">
+                        <div class="card__img">
+                            <a href="@if($val->sitesUrl != "" && $val->sitesUrl!=null)
+                            {{$val->sitesUrl}}
+                            @else
+                                #
+                        @endif"><img src="./img/popToursImg/{{$val->nameImg}}" alt=""></a>
+                        </div>
+                        <p>
+                            <a href="@if($val->sitesUrl != "" && $val->sitesUrl!=null)
+                            {{$val->sitesUrl}}
+                            @endif  " class="tur__location">{{$val->name}}</a>
+                        </p>
+                        <div class="card__title">
+                            <a href="@if($val->sitesUrl != "" && $val->sitesUrl!=null)
+                            {{$val->sitesUrl}}
+                            @endif  ">{{$val->info}}</a>
+                        </div>
+                    </div>
+    @endforeach
+    @endif
+            @if( $rusPopTours != null)
+
+                @foreach( $rusPopTours as $val)
+
+                    <div class="main__content card_content">
+                        <div class="card__img">
+                            <a href="@if($val->sitesUrl != "" && $val->sitesUrl!=null)
+                            {{$val->sitesUrl}}
+                            @else
+                                #
+                        @endif"><img src="./img/popToursImg/{{$val->nameImg}}" alt=""></a>
+                        </div>
+                        <p>
+                            <a href="@if($val->sitesUrl != "" && $val->sitesUrl!=null)
+                            {{$val->sitesUrl}}
+                            @endif  " class="tur__location">{{$val->name}}</a>
+                        </p>
+                        <div class="card__title">
+                            <a href="@if($val->sitesUrl != "" && $val->sitesUrl!=null)
+                            {{$val->sitesUrl}}
+                            @endif  ">{{$val->info}}</a>
+                        </div>
+                    </div>
+    @endforeach
+    @endif
 @endsection
 
 @section('footer')
