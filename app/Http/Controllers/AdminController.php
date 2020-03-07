@@ -379,6 +379,7 @@ class AdminController extends Controller
 
     public  function  setPopTours(Request $request){
         $popTourName = $request->input('name');
+        $popToursCountry = $request->input('popToursCountry');
         $popTourInfo = $request->input('description');
         $sitesUrl = $request->input('sitesUrl');
         $popToursImg = $request->file('popToursImg');
@@ -387,7 +388,7 @@ class AdminController extends Controller
         $popToursImg->move('img/popToursImg', $popToursImg->getClientOriginalName());
         PopTour::create(['nameImg'=>$popToursImg->getClientOriginalName(),
             'name'=>$popTourName,'info'=>$popTourInfo,'sitesUrl'=>$sitesUrl,
-            'toursCountry'=>$toursCountry]);
+            'toursCountry'=>$popToursCountry]);
 
         return back();
     }
@@ -398,6 +399,7 @@ class AdminController extends Controller
         $popToursImg = $request->file('popToursImg');
         $description = $request->input('description');
         $name = $request->input('name');
+        $popToursCountry = $request->input('popToursCountry');
         $sitesUrl = $request->input('sitesUrl');
 
         $update = PopTour::find($id);
@@ -419,6 +421,9 @@ class AdminController extends Controller
         }
         if($name != ""){
             $update->name = $name;
+        }
+        if($popToursCountry != ""){
+            $update->toursCountry = $popToursCountry;
         }
         if($sitesUrl != ""){
             $update->sitesUrl = $sitesUrl;
@@ -450,17 +455,19 @@ class AdminController extends Controller
         $marker = $request->input('marker');
         $description = $request->input('description');
         $name = $request->input('name');
+        $popCuponProductCategory = $request->input('popCuponProductCategory');
         $count = $request->input('count');
         $oldPrice = $request->input('oldPrice');
         $newPrice = $request->input('newPrice');
         $sitesUrl = $request->input('sitesUrl');
         //$imageUrl = $request->input('imageUrl');
         $popCuponProductImg = $request->file('popCuponProductImg');
-
+        //dd($popCuponProductCategory);
         $popCuponProductImg->move('img/popCuponProductImg',$popCuponProductImg->getClientOriginalName());
         PopCuponProduct::create(['discount'=>$discount,'marker'=>$marker,'description'=>$description,
             'name'=>$name,'count'=>$count,'oldPrice'=>$oldPrice,'newPrice'=>$newPrice,
-            'sitesUrl'=>$sitesUrl,'imageUrl'=>$popCuponProductImg->getClientOriginalName()]);
+            'sitesUrl'=>$sitesUrl,'productCategory'=>$popCuponProductCategory,
+            'imageUrl'=>$popCuponProductImg->getClientOriginalName()]);
         return back();
     }
 
@@ -470,6 +477,7 @@ class AdminController extends Controller
         $marker = $request->input('marker');
         $description = $request->input('description');
         $name = $request->input('name');
+        $popCuponProductCategory = $request->input('popCuponProductCategory');
         $count = $request->input('count');
         $oldPrice = $request->input('oldPrice');
         $newPrice = $request->input('newPrice');
@@ -488,6 +496,9 @@ class AdminController extends Controller
         }
         if($name != ""){
             $update -> name = $name;
+        }
+        if($popCuponProductCategory != ""){
+            $update -> popCuponProductCategory = $popCuponProductCategory;
         }
         if($count != ""){
             $update -> count = $count;

@@ -72,12 +72,15 @@
                                         <input type="text" class="form-control" placeholder="{{$val->name}}" name="name">
                                     </div>
                                     <div class="col-lg-6 col-sm-12">
-                                        <span>страна тура(по русский)</span>
-                                        <input type="text" class="form-control" placeholder="{{$val->toursCountry}}" name="toursCountry">
+                                        <span>страна тура</span>
+                                        <select name="allToursCountry" class="custom-select" >
+                                            <option selected>все</option>
+                                            <option value="Armenia">Армения</option>
+                                            <option value="Russia">Россия</option>
+                                            <option value="Turkey">Турция</option>
+                                            <option value="Europe">Европа</option>
+                                        </select>
                                     </div>
-
-
-
 
                                     <div class="col-lg-6 col-sm-12">
                                         <span>адрес сайта</span>
@@ -139,10 +142,14 @@
                             <label for="materialLoginFormPassword">URL сайта</label>
                         </div>
 
-                        <div class="md-form">
-                            <input type="text" name="toursCountry" id="materialLoginFormPassword" class="form-control">
-                            <label for="materialLoginFormPassword">страна тура(по русский)</label>
-                        </div>
+                        <select name="allToursCountry" class="custom-select" >
+                            <option selected>все</option>
+                            <option value="Armenia">Армения</option>
+                            <option value="Russia">Россия</option>
+                            <option value="Turkey">Турция</option>
+                            <option value="Europe">Европа</option>
+                        </select>
+                        <label for="materialLoginFormPassword">страна тура</label>
 
                     {{--      <div class="md-form">--}}
                     {{--        <input type="text" name="imageUrl" id="materialLoginFormPassword" class="form-control">--}}

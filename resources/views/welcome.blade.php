@@ -29,7 +29,7 @@
 
             <header id="header">
                 <div class="logo">
-                    <a href="index.html"><img src="./img/SkidkirusLogo.png" alt=""></a>
+                    <a href="{{route('home')}}"><img src="./img/SkidkirusLogo.png" alt=""></a>
                 </div>
 
                 <nav class="header__menue">
@@ -431,13 +431,12 @@
                                 <div class="bottom__links bottom__links-hover">
                                     <div class="links">
                                         <ul>
-                                            <li><a href="#">Все</a></li>
+                                            <li><a href="{{route('getAllToursPage')}}">Все</a></li>
+                                            <li><a href="{{route('getArmenianTours')}}">Армения</a></li>
                                             <li><a href="#">Россия</a></li>
                                             <li><a href="#">Турция</a></li>
                                             <li><a href="#">Европа</a></li>
-                                            <li><a href="#">Пляжный отдых</a></li>
-                                            <li><a href="#">Другие страны</a></li>
-                                            <li><a href="#">Туры на север из СПб</a></li>
+
                                         </ul>
                                     </div>
                                 </div>
@@ -591,12 +590,12 @@
                                 <div class="bottom__links bottom__links-hover">
                                     <div class="links">
                                         <ul>
-                                            <li><a href="#">Мебель и ремонт</a></li>
+                                            <li><a href="{{route('f1')}}">Мебель и ремонт</a></li>
                                             <li><a href="#">Товары для дома</a></li>
                                             <li><a href="#">Бытовая техника и электроника</a></li>
                                             <li><a href="#">Здоровье</a></li>
                                             <li><a href="#">Продукты питания</a></li>
-                                            <li><a href="">Красота</a></li>
+                                            <li><a href="#">Красота</a></li>
                                             <li><a href="#">Обувь и одежда</a></li>
                                             <li><a href="#">Товары для детей</a></li>
                                             <li><a href="#">Сувенирная продукция</a></li>
@@ -657,7 +656,7 @@
                                 <li><a href="#">Рестораны</a></li>
                                 <li><a href="#">Доставка еды</a></li>
                                 <li><a href="#">Банкеты</a></li>
-                                <li><a href="#">Новые рестораны на Biglion</a></li>
+                                <li><a href="#">Новые рестораны на Skidkirus</a></li>
                             </ul>
                         </li>
                         <li class="left__links">
@@ -953,7 +952,7 @@
                 <div class="cards w-75">
 
                 @foreach($PopCuponProduct as $val)
-                    <div class="main__content">
+                    <div class="main__content popProductCupon" >
                         <div class="card__img">
                             <img src="./img/popCuponProductImg/{{$val->imageUrl}}" alt="">
                             @if($val->discount != null)

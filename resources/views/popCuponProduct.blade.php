@@ -86,6 +86,10 @@
                                         <input type="text" class="form-control" placeholder="{{$val->name}}" name="name">
                                     </div>
                                     <div class="col-lg-6 col-sm-12">
+                                        <span>категория товара</span>
+                                        <input type="text" class="form-control" placeholder="{{$val->productCategory}}" name="popCuponProductCategory">
+                                    </div>
+                                    <div class="col-lg-6 col-sm-12">
                                         <span>каличество покупок</span>
                                         <input type="text" class="form-control" placeholder="{{$val->count}}" name="count">
                                     </div>
@@ -159,6 +163,23 @@
                             <input type="text" name="name" id="materialLoginFormPassword" class="form-control">
                             <label for="materialLoginFormPassword">имя</label>
                         </div>
+
+                        <select name="popCuponProductCategory" class="custom-select" >
+                            <option selected>все категории товара</option>
+                            <option value="Furniture">Мебель и ремонт</option>
+                            <option value="forHome">Товары для дома</option>
+                            <option value="Electronics">Бытовая техника и электроника</option>
+                            <option value="Health">Здоровье</option>
+                            <option value="Food">Продукты питания</option>
+                            <option value="beauty">Красота</option>
+                            <option value="clothes">Обувь и одежда</option>
+                            <option value="forChildren">Товары для детей</option>
+                            <option value="Suvenirs">Сувенирная продукция</option>
+                            <option value="Flowers">Цветы</option>
+                            <option value="Balloons">Воздушные шары</option>
+                            <option value="plus18">18+</option>
+                        </select>
+                        <label for="materialLoginFormPassword">категория товара</label>
 
                         <div class="md-form">
                             <input type="text" name="count" id="materialLoginFormPassword" class="form-control">

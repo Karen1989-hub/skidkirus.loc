@@ -71,12 +71,16 @@
                                         <input type="text" class="form-control" placeholder="{{$val->name}}" name="name">
                                     </div>
                                     <div class="col-lg-6 col-sm-12">
-                                        <span>страна тура(по русский)</span>
-                                        <input type="text" class="form-control" placeholder="{{$val->toursCountry}}" name="toursCountry">
+                                        <span>страна тура</span>
+                                        <select name="popToursCountry" class="custom-select" >
+                                            <option selected>все</option>
+                                            <option value="Armenia">Армения</option>
+                                            <option value="Russia">Россия</option>
+                                            <option value="Turkey">Турция</option>
+                                            <option value="Europe">Европа</option>
+
+                                        </select>
                                     </div>
-
-
-
 
                                     <div class="col-lg-6 col-sm-12">
                                         <span>адрес сайта</span>
@@ -132,6 +136,16 @@
                             <input type="text" name="name" id="materialLoginFormPassword" class="form-control">
                             <label for="materialLoginFormPassword">имя</label>
                         </div>
+
+                        <select name="popToursCountry" class="custom-select" >
+                            <option selected>все</option>
+                            <option value="Armenia">Армения</option>
+                            <option value="Russia">Россия</option>
+                            <option value="Turkey">Турция</option>
+                            <option value="Europe">Европа</option>
+
+                        </select>
+                        <label for="materialLoginFormPassword">страна тура</label>
 
                         <div class="md-form">
                             <input type="text" name="sitesUrl" id="materialLoginFormPassword" class="form-control">

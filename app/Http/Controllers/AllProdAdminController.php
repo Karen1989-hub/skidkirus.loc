@@ -17,13 +17,13 @@ class AllProdAdminController extends Controller
         $allTourName = $request->input('name');
         $allTourInfo = $request->input('description');
         $sitesUrl = $request->input('sitesUrl');
-        $toursCountry = $request->input('toursCountry');
+        $allToursCountry = $request->input('allToursCountry');
         $allToursImg = $request->file('allToursImg');
 
         $allToursImg->move('img/allTours', $allToursImg->getClientOriginalName());
         AllTours::create(['nameImg'=>$allToursImg->getClientOriginalName(),
             'name'=>$allTourName,'info'=>$allTourInfo,'sitesUrl'=>$sitesUrl,
-            'toursCountry'=>$toursCountry]);
+            'toursCountry'=>$allToursCountry]);
         return back();
     }
     public function updateAllTours(Request $request){
@@ -31,6 +31,7 @@ class AllProdAdminController extends Controller
 
         $allToursImg = $request->file('allToursImg');
         $description = $request->input('description');
+        $allToursCountry = $request->input('allToursCountry');
         $name = $request->input('name');
         $sitesUrl = $request->input('sitesUrl');
 
@@ -54,6 +55,9 @@ class AllProdAdminController extends Controller
         if($name != ""){
             $update->name = $name;
         }
+        if($allToursCountry != ""){
+            $update->toursCountry = $allToursCountry;
+        }
         if($sitesUrl != ""){
             $update->sitesUrl = $sitesUrl;
         }
@@ -65,8 +69,17 @@ class AllProdAdminController extends Controller
     public function deleteAllTours(Request $request){
         $id = $request->input('id');
         $delete = AllTours::find($id);
+        unlink("img/allTours/$delete->nameImg");
         $delete -> delete();
 
         return back();
+    }
+
+    public function f1(){
+        $prod = "product1";
+        $allTours = null;
+        $PopTour = null;
+        $arr = ['prod'=>$prod,'allTours'=>$allTours,'PopTour'=>$PopTour];
+       return view('pages/allToursPage',$arr);
     }
 }

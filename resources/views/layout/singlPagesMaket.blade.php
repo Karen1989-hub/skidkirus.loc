@@ -30,7 +30,7 @@
 
     <header id="header">
         <div class="logo">
-            <a href="index.html"><img src="./img/logo.png" alt=""></a>
+            <a href="{{route('home')}}"><img src="./img/SkidkirusLogo.png" alt=""></a>
         </div>
 
         <nav class="header__menue">
@@ -818,7 +818,7 @@
                 <div class=" footer_menu_blog">
                     <div class="foot1">
                         <div class="footer_contact">
-                            <a href="tel:+7(800) 2000-649" class="phone">8 (800) 2000-649</a>
+                            <a href="tel:+7(800) 2000-649" class="phone">+79150238800</a>
                             <p class="contact_description">
                                 Для звонка из Москвы<br>
                                 и регионов России
@@ -830,7 +830,7 @@
                             <div class="menu_block_header">Компания</div>
                             <ul class="blaock_header_link_list">
                                 <li>
-                                    <a href="{{route('gethowWork')}}">Как работает Biglion</a>
+                                    <a href="{{route('gethowWork')}}">Как работает skidkirus</a>
                                 </li>
 
                                 <li>
@@ -881,7 +881,7 @@
                 <div class=" footer_info footer_info_blog">
                     <div class="frst_sect">
                         <div class="footer_info_left">
-                            <p class="copyright"> © 2010-2020 BIGLION </p>
+                            <p class="copyright"> © 2015-2020 wave-it </p>
                             <ul class="links">
                                 <li><a href="#">Обработка персональных данных</a></li>
                                 <li><a href="#">Пользовательское соглашение</a></li>

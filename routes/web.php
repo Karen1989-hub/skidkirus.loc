@@ -65,10 +65,10 @@ Route::post('/setAllTours','AllProdAdminController@setAllTours')->name('setAllTo
 Route::post('/updateAllTours','AllProdAdminController@updateAllTours')->name('updateAllTours');
 Route::post('/deleteAllTours','AllProdAdminController@deleteAllTours')->name('deleteAllTours');
 Route::get('/getAllToursPage','HomeController@getAllToursPage')->name('getAllToursPage');
+//get tours category getArmenianTours
+Route::get('/getArmenianTours','PagesFilterController@getArmenianTours')->name('getArmenianTours');
 
 
-Route::get('/pages',function (){
-    return view('pages/allSkidkisPage');
-});
+Route::get('/f1','AllProdAdminController@f1')->name('f1');
 
 

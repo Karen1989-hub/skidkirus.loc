@@ -19,6 +19,7 @@ class CreatePopCuponProductsTable extends Migration
             $table->string('marker')->nullable();
             $table->string('description')->nullable();
             $table->string('name')->nullable();
+            $table->string('productCategory')->nullable();
             $table->string('count')->nullable();
             $table->string('oldPrice')->nullable();
             $table->string('newPrice')->nullable();

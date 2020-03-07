@@ -30,10 +30,20 @@ class HomeController extends Controller
     public function getAllToursPage(){
         $allTours = AllTours::all();
         $PopTour = PopTour::all();
+        $armAllTours = null;
+        $armPopTours = null;
         //$allToursCount = count($allTours)+count($PopTour);
-        $arr = ['allTours'=>$allTours,'PopTour'=>$PopTour];
+        $arr = ['allTours'=>$allTours,'PopTour'=>$PopTour,'armAllTours'=>$armAllTours,
+            'armPopTours'=>$armPopTours];
         return view('pages/allToursPage',$arr);
     }
+    //get turs category
+//    public function getArmenianTurs(){
+//        $allArmenianTours = AllTours::where('toursCountry','');
+//        $PopArmenianTour
+//        return view('pages/allToursPage',$arr);
+//    }
+    //get turs category end
 
     public function getAllSkidkisPage(){
         $Skidki = Skidki::all();
