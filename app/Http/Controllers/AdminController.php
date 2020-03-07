@@ -328,7 +328,7 @@ class AdminController extends Controller
         $sitesUrl = $request->input('sitesUrl');
         $popHotelImg = $request->file('popHotelImg');
 
-        $update = PopShop::find($id);
+        $update = PopHotel::find($id);
 
         if($description != ""){
             $update -> description = $description;
