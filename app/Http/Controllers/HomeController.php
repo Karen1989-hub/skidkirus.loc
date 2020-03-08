@@ -30,11 +30,11 @@ class HomeController extends Controller
     public function getAllToursPage(){
         $allTours = AllTours::all();
         $PopTour = PopTour::all();
-        $armAllTours = null;
-        $armPopTours = null;
+        $allToursCategory = null;
+        $popToursCategory = null;
         //$allToursCount = count($allTours)+count($PopTour);
-        $arr = ['allTours'=>$allTours,'PopTour'=>$PopTour,'armAllTours'=>$armAllTours,
-            'armPopTours'=>$armPopTours];
+        $arr = ['allTours'=>$allTours,'PopTour'=>$PopTour,'allToursCategory'=>$allToursCategory,
+            'popToursCategory'=>$popToursCategory];
         return view('pages/allToursPage',$arr);
     }
     //get turs category

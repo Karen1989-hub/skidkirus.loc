@@ -8,15 +8,6 @@
 <!-- nav menu  -->
 <div class="col-sm-4 col-lg-3 border">
 <h2>Меню</h2>
-{{--<div class="list-group">--}}
-{{--  <a href="{{route('adminPage')}}" class="list-group-item list-group-item-action">Скидки</a>--}}
-{{--  <a href="{{route('setSitsPage')}}" class="list-group-item list-group-item-action active">Сайты</a>--}}
-{{--  <a href="{{route('getPopularRestoran')}}" class="list-group-item list-group-item-action">Популярные рестораны</a>--}}
-{{--  <a href="" class="list-group-item list-group-item-action">Отели</a>--}}
-{{--  <a href="" class="list-group-item list-group-item-action">Туры</a>--}}
-{{--  <a href="" class="list-group-item list-group-item-action">Товары по купонам</a>--}}
-{{--  <a href="" class="list-group-item list-group-item-action">Популярные магазины</a> --}}
-{{--</div>--}}
 
     <div class="nav">
         <div class="big" id="null">
@@ -31,9 +22,13 @@
         </div>
         <div class="big" id="null1">
             <div class="menuHeading1">Другие объявление</div>
+            <a href="{{route('getAllSkidkis')}}"><div>Все Скидки</div></a>
+            <a href="{{route('getAllSites')}}"><div>Все Сайты</div></a>
+            <a href="{{route('getAllRestoran')}}"><div>Все рестораны</div></a>
+            <a href="{{route('getAllHotel')}}"><div>Все Отели</div></a>
             <a href="{{route('getAllTours')}}"><div>Все туры</div></a>
-            <div>text</div>
-            <div>text</div>
+            <a href="{{route('getAllCuponProduct')}}"><div>Все Товары по купонам</div></a>
+            <a href="{{route('getAllShop')}}"><div>Все магазины</div></a>          
         </div>
     </div>
 </div>

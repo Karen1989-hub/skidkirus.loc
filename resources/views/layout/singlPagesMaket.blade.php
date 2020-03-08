@@ -129,8 +129,7 @@
             <div class="bottom__menue">
                 <ul>
                     <li>
-                        <a class="link" href="#">Услуги</a>
-                        <span>&#8604;</span>
+                        <a class="link" href="#">Услуги</a>                        
                         <div class="bottom__links bottom__links-hover">
                             <div class="links">
                                 <ul>
@@ -252,8 +251,7 @@
                         </div>
                     </li>
                     <li>
-                        <a class="link" href="#">Отели</a>
-                        <span>&#8604;</span>
+                        <a class="link" href="#">Отели</a>                        
                         <div class="bottom__links bottom__links-hover">
                             <div class="links">
                                 <ul>
@@ -429,8 +427,7 @@
 
                     </li>
                     <li>
-                        <a class="link" href="#">Туры </a>
-                        <span>&#8604;</span>
+                        <a class="link" href="#">Туры </a>                        
                         <div class="bottom__links bottom__links-hover">
                             <div class="links">
                                 <ul>
@@ -445,8 +442,7 @@
                         </div>
                     </li>
                     <li>
-                        <a class="link" href="#">Магазины</a>
-                        <span>&#8604;</span>
+                        <a class="link" href="#">Магазины</a>                        
                         <div class="bottom__links bottom__links-hover">
                             <div class="links">
                                 <ul>
@@ -487,9 +483,11 @@
                             </div>
                         </div>
                     </li>
+                    
+                    <li><a class="link" href="{{route('getBlog')}}">Блог</a></li>
+                    <li><a class="link" href="{{route('gethowWork')}}">Как работает Skidkirus</a></li>
                     <li>
-                        <a class="link" href="#">Кешбэк</a>
-                        <span>&#8604;</span>
+                        <a class="link" href="#">Кешбэк</a>                        
                         <div class="bottom__links bottom__links-hover">
 
                             <div class="links">
@@ -583,11 +581,8 @@
                             </div>
                         </div>
                     </li>
-                    <li><a class="link" href="{{route('getBlog')}}">Блог</a></li>
-                    <li><a class="link" href="{{route('gethowWork')}}">Как работает Biglion</a></li>
                     <li>
-                        <a class="link" href="#">Товары по купонам</a>
-                        <span>&#8604;</span>
+                        <a class="link" href="#">Товары по купонам</a>                        
                         <div class="bottom__links bottom__links-hover">
                             <div class="links">
                                 <ul>

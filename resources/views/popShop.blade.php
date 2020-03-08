@@ -31,9 +31,13 @@
                 </div>
                 <div class="big" id="null1">
                     <div class="menuHeading1">Другие объявление</div>
-                    <a href="{{route('getAllTours')}}"><div>Все туры</div></a>
-                    <div>text</div>
-                    <div>text</div>
+                    <a href="{{route('getAllSkidkis')}}"><div>Все Скидки</div></a>
+            <a href="{{route('getAllSites')}}"><div>Все Сайты</div></a>
+            <a href="{{route('getAllRestoran')}}"><div>Все рестораны</div></a>
+            <a href="{{route('getAllHotel')}}"><div>Все Отели</div></a>
+            <a href="{{route('getAllTours')}}"><div>Все туры</div></a>
+            <a href="{{route('getAllCuponProduct')}}"><div>Все Товары по купонам</div></a>
+            <a href="{{route('getAllShop')}}"><div>Все магазины</div></a>          
                 </div>
             </div>
         </div>
@@ -41,7 +45,7 @@
 
         <!-- controler panel -->
         <div class="col-sm-8 col-lg-9 border">
-            <h2>Топ отели</h2>
+            <h2>Популярные магазины</h2>
 
             <!-- Material form login -->
             <div class="cards">

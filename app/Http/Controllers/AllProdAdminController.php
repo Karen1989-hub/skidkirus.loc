@@ -7,6 +7,19 @@ use Illuminate\Http\Request;
 
 class AllProdAdminController extends Controller
 {
+    public function getAllSkidkis(){
+        return view('adminPages/allSkidkis');
+    }
+    public function getAllSites(){
+        return view('adminPages/allSites');
+    }
+    public function getAllRestoran(){
+        return view('adminPages/allRestoran');
+    }
+    public function getAllHotel(){
+        return view('adminPages/allHotels');
+    }
+    
     public function getAllTours(){
         $allTours = AllTours::all();
 
@@ -73,6 +86,13 @@ class AllProdAdminController extends Controller
         $delete -> delete();
 
         return back();
+    }
+
+    public function getAllCuponProduct(){
+        return view('adminPages/allCuponProduct');
+    }
+    public function getAllShop(){
+        return view('adminPages/allShops');
     }
 
     public function f1(){

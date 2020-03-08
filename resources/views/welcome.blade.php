@@ -433,7 +433,7 @@
                                         <ul>
                                             <li><a href="{{route('getAllToursPage')}}">Все</a></li>
                                             <li><a href="{{route('getArmenianTours')}}">Армения</a></li>
-                                            <li><a href="#">Россия</a></li>
+                                            <li><a href="{{route('getRussionTours')}}">Россия</a></li>
                                             <li><a href="#">Турция</a></li>
                                             <li><a href="#">Европа</a></li>
 
