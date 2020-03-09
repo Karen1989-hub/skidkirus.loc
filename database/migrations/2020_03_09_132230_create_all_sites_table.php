@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePopRestoransTable extends Migration
+class CreateAllSitesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,13 @@ class CreatePopRestoransTable extends Migration
      */
     public function up()
     {
-        Schema::create('pop_restorans', function (Blueprint $table) {
+        Schema::create('all_sites', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('discount')->nullable();
             $table->string('marker')->nullable();
             $table->string('description')->nullable();
             $table->string('name')->nullable();
             $table->string('count')->nullable();
-            $table->string('country')->nullable();
             $table->string('oldPrice')->nullable();
             $table->string('newPrice')->nullable();
             $table->string('sitesUrl')->nullable();
@@ -36,6 +35,6 @@ class CreatePopRestoransTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('pop_restorans');
+        Schema::dropIfExists('all_sites');
     }
 }

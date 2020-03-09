@@ -40,7 +40,7 @@
 
 <!-- controler panel -->
 <div class="col-sm-8 col-lg-9 border">
-<h2>Панел скидок</h2>
+<h2>Топ скидки</h2>
 
     <!-- Material form login -->
     <div class="cards">

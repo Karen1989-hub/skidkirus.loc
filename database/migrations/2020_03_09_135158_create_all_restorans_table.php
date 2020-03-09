@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePopRestoransTable extends Migration
+class CreateAllRestoransTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreatePopRestoransTable extends Migration
      */
     public function up()
     {
-        Schema::create('pop_restorans', function (Blueprint $table) {
+        Schema::create('all_restorans', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('discount')->nullable();
             $table->string('marker')->nullable();
@@ -36,6 +36,6 @@ class CreatePopRestoransTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('pop_restorans');
+        Schema::dropIfExists('all_restorans');
     }
 }

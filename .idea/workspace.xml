@@ -3,21 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="55ea3ffd-cea8-4cec-8f4c-f782e579d332" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/AllSkidkis.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/AllSkidkis.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AllProdAdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AllProdAdminController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/PopHotel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/PopHotel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/popCuponProductImg/Без названия (3).jfif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/popHotelImg/Без названия (2).jfif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/popRestoranImg/Без названия (1).jfif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/popShop/Без названия.jfif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/popToursImg/Без названия (3).jfif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/skidkiImg/images.jfif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/style/for-businees.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/style/for-businees.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout/singlPagesMaket.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/singlPagesMaket.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/allHotelsPage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/allHotelsPage.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/allShopPage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/allShopPage.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/forBisnes.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/forBisnes.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/hawWork.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/hawWork.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_19_183603_create_pop_restorans_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_19_183603_create_pop_restorans_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_09_115247_create_all_skidkis_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_03_09_115247_create_all_skidkis_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/skidkiImg/avonimg.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/adminPage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/adminPage.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/adminPages/allSites.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/adminPages/allSites.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/adminPages/allSkidkis.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/adminPages/allSkidkis.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/allSitesPage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/allSitesPage.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/allSkidkisPage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/allSkidkisPage.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/vendor/beyondcode/laravel-dump-server/" />
@@ -113,11 +109,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdminController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="393" column="5" lean-forward="true" selection-start-line="393" selection-start-column="5" selection-end-line="393" selection-end-column="5" />
+            <state relative-caret-position="350">
+              <caret line="107" column="26" lean-forward="true" selection-start-line="104" selection-start-column="5" selection-end-line="107" selection-end-column="26" />
               <folding>
                 <element signature="e#40#56#0#PHP" expanded="true" />
               </folding>
@@ -125,11 +121,33 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AllProdAdminController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="325">
+              <caret line="25" column="48" lean-forward="true" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
+              <folding>
+                <element signature="e#40#57#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/adminPages/allRestoran.blade.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/getPopRestor.blade.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2225">
-              <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
+            <state relative-caret-position="306">
+              <caret line="63" column="11" selection-start-line="63" selection-start-column="11" selection-end-line="63" selection-end-column="11" />
               <folding>
                 <element signature="e#7#389#0#PHP" expanded="true" />
               </folding>
@@ -138,28 +156,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="1030" column="50" selection-start-line="1030" selection-start-column="50" selection-end-line="1030" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/style/for-businees.css">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="275">
-              <caret line="140" column="5" selection-start-line="140" selection-start-column="5" selection-end-line="140" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/pages/hawWork.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+              <caret line="62" column="33" lean-forward="true" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="40" />
+              <folding>
+                <element signature="e#41#69#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -190,19 +193,31 @@
         <option value="$PROJECT_DIR$/resources/views/popTours.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/adminPages/allTours.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/PagesFilter.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/AllProdAdminController.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/allToursPage.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/PagesFilterController.php" />
         <option value="$PROJECT_DIR$/app/PopHotel.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/allHotelsPage.blade.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/allShopPage.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layout/singlPagesMaket.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/hawWork.blade.php" />
         <option value="$PROJECT_DIR$/public/style/for-businees.css" />
         <option value="$PROJECT_DIR$/resources/views/pages/forBisnes.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2020_02_19_183603_create_pop_restorans_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2020_03_09_115247_create_all_skidkis_table.php" />
+        <option value="$PROJECT_DIR$/app/AllSkidkis.php" />
+        <option value="$PROJECT_DIR$/resources/views/adminPage.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/adminPages/allSkidkis.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/pages/allSkidkisPage.blade.php" />
+        <option value="$PROJECT_DIR$/app/AllSite.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2020_03_09_132230_create_all_sites_table.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/resources/views/adminPages/allSites.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
+        <option value="$PROJECT_DIR$/resources/views/pages/allSitesPage.blade.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2020_03_09_135158_create_all_restorans_table.php" />
+        <option value="$PROJECT_DIR$/app/AllRestoran.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/AllProdAdminController.php" />
       </list>
     </option>
   </component>
@@ -356,7 +371,7 @@
               <item name="skidkirus.loc" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="img" type="462c0819:PsiDirectoryNode" />
-              <item name="popHotelImg" type="462c0819:PsiDirectoryNode" />
+              <item name="skidkiImg" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="skidkirus.loc" type="b2602c69:ProjectViewProjectNode" />
@@ -500,16 +515,15 @@
       <workItem from="1583475839670" duration="3804000" />
       <workItem from="1583489664018" duration="2656000" />
       <workItem from="1583562975515" duration="19550000" />
-      <workItem from="1583734873458" duration="8302000" />
+      <workItem from="1583734873458" duration="17313000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50687000" />
+    <option name="totallyTimeSpent" value="59698000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2377892" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -616,44 +630,6 @@
     <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1582395037593" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.env.example">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="39" column="18" selection-end-line="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/getPopRestor.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/blog.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="826" column="69" lean-forward="true" selection-start-line="826" selection-start-column="69" selection-end-line="826" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/PopShop.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/adminPage.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="29" column="12" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2020_03_02_134651_create_pop_shops_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="20" column="51" lean-forward="true" selection-start-line="17" selection-start-column="11" selection-end-line="20" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/style/slider.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -735,16 +711,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PagesFilter.php" />
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AllProdAdminController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1764">
-          <caret line="83" column="5" lean-forward="true" selection-start-line="77" selection-start-column="4" selection-end-line="83" selection-end-column="5" />
-          <folding>
-            <element signature="e#40#57#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PagesFilterController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="470">
@@ -759,13 +725,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="645">
           <caret line="133" column="11" selection-start-line="133" selection-start-column="11" selection-end-line="133" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/adminPages/allTours.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="78" column="59" selection-start-line="78" selection-start-column="59" selection-end-line="78" selection-end-column="65" />
         </state>
       </provider>
     </entry>
@@ -794,23 +753,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="370">
           <caret line="30" column="85" selection-start-line="30" selection-start-column="85" selection-end-line="30" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="85" column="17" lean-forward="true" selection-start-line="85" selection-start-column="17" selection-end-line="85" selection-end-column="32" />
-          <folding>
-            <element signature="e#40#68#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/allSkidkisPage.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-175">
-          <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -859,6 +801,90 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_20_095411_create_skidkis_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="20" column="47" lean-forward="true" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Skidki.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="38" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="9" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/adminPage.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/AllSkidkis.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_03_09_115247_create_all_skidkis_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="16" column="40" lean-forward="true" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/adminPages/allTours.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-975">
+          <caret line="78" column="59" selection-start-line="78" selection-start-column="59" selection-end-line="78" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/allSkidkisPage.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="64" column="31" selection-start-line="64" selection-start-column="31" selection-end-line="64" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_04_203634_create_sites_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="51" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="25" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_03_09_132230_create_all_sites_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="25" column="51" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/AllSite.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Site.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="9" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/adminPages/allSkidkis.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-794">
+          <caret line="55" column="71" selection-start-line="55" selection-start-column="71" selection-end-line="55" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
@@ -866,10 +892,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/setSitsPage.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="190" lean-forward="true" selection-end-line="190" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2225">
-          <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
+        <state relative-caret-position="306">
+          <caret line="63" column="11" selection-start-line="63" selection-start-column="11" selection-end-line="63" selection-end-column="11" />
           <folding>
             <element signature="e#7#389#0#PHP" expanded="true" />
           </folding>
@@ -878,10 +911,78 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdminController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="393" column="5" lean-forward="true" selection-start-line="393" selection-start-column="5" selection-end-line="393" selection-end-column="5" />
+        <state relative-caret-position="350">
+          <caret line="107" column="26" lean-forward="true" selection-start-line="104" selection-start-column="5" selection-end-line="107" selection-end-column="26" />
           <folding>
             <element signature="e#40#56#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="62" column="33" lean-forward="true" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="40" />
+          <folding>
+            <element signature="e#41#69#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/adminPages/allSites.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="15" column="59" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/allSitesPage.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-205">
+          <caret line="64" column="29" selection-start-line="64" selection-start-column="29" selection-end-line="64" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_02_19_183603_create_pop_restorans_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="26" column="51" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="26" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_03_09_135158_create_all_restorans_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="26" column="51" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/PopRestoran.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="9" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/AllRestoran.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/getPopRestor.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/adminPages/allRestoran.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AllProdAdminController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="25" column="48" lean-forward="true" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
+          <folding>
+            <element signature="e#40#57#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

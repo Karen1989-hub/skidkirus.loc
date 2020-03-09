@@ -2,9 +2,12 @@
 
 namespace App\Http\Controllers;
 
+
 use Illuminate\Http\Request;
 use App\Skidki;
+use App\AllSkidkis;
 use App\Site;
+use App\AllSite;
 use App\PopRestoran;
 use App\PopHotel;
 use App\PopTour;
@@ -47,15 +50,17 @@ class HomeController extends Controller
 
     public function getAllSkidkisPage(){
         $Skidki = Skidki::all();
+        $allSkidki = AllSkidkis::all();
         //$allToursCount = count($allTours)+count($PopTour);
-        $arr = ['Skidki'=>$Skidki];
+        $arr = ['Skidki'=>$Skidki,'allSkidki'=>$allSkidki];
         return view('pages/allSkidkisPage',$arr);
     }
 
     public function getAllSitesPage(){
         $Sites = Site::all();
+        $AllSite = AllSite::all();
         //$allToursCount = count($allTours)+count($PopTour);
-        $arr = ['Sites'=>$Sites];
+        $arr = ['Sites'=>$Sites,'AllSite'=>$AllSite];
         return view('pages/allSitesPage',$arr);
     }
 

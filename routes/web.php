@@ -21,19 +21,16 @@ Route::get('/adminPage','AdminController@adminPage')->name('adminPage');
 Route::post('/setSkidki','AdminController@setSkidki')->name('setSkidki');
 Route::post('/updateSkidki','AdminController@updateSkidki')->name('updateSkidki');
 Route::post('/deleteSkidki','AdminController@deleteSkidki')->name('deleteSkidki');
-Route::get('/getAllSkidkisPage','HomeController@getAllSkidkisPage')->name('getAllSkidkisPage');
 //pop sites 
 Route::get('/setSitsPage','AdminController@setSitsPage')->name('setSitsPage');
 Route::post('/setSitsList','AdminController@setSitsList')->name('setSitsList');
 Route::post('/updateSitsList','AdminController@updateSitsList')->name('updateSitsList');
 Route::post('/deleteSitsList','AdminController@deleteSitsList')->name('deleteSitsList');
-Route::get('/getAllSitesPage','HomeController@getAllSitesPage')->name('getAllSitesPage');
 //popular restoran
 Route::get('/getPopularRestoran','AdminController@getPopularRestoran')->name('getPopularRestoran');
 Route::post('/setPopRestoran','AdminController@setPopRestoran')->name('setPopRestoran');
 Route::post('/updatePopRestoran','AdminController@updatePopRestoran')->name('updatePopRestoran');
 Route::post('/deletePopRestoran','AdminController@deletePopRestoran')->name('deletePopRestoran');
-Route::get('/getAllRestoranPage','HomeController@getAllRestoranPage')->name('getAllRestoranPage');
 //popular Hotel 
 Route::get('/getPopHotel',"AdminController@getPopHotel")->name('getPopHotel');
 Route::post('/setPopHotel','AdminController@setPopHotel')->name('setPopHotel');
@@ -57,28 +54,41 @@ Route::post('/deletePopShop','AdminController@deletePopShop')->name('deletePopSh
 
 //all skidkis
 Route::get('/getAllSkidkis','AllProdAdminController@getAllSkidkis')->name('getAllSkidkis');
+Route::post('/setAllSkidkis','AllProdAdminController@setAllSkidkis')->name('setAllSkidkis');
+Route::post('/updateAllSkidkis','AllProdAdminController@updateAllSkidkis')->name('updateAllSkidkis');
+Route::post('/deleteAllSkidkis','AllProdAdminController@deleteAllSkidkis')->name('deleteAllSkidkis');
 //all sites
 Route::get('/getAllSites','AllProdAdminController@getAllSites')->name('getAllSites');
+Route::post('/setAllSites','AllProdAdminController@setAllSites')->name('setAllSites');
+Route::post('/updateAllSites','AllProdAdminController@updateAllSites')->name('updateAllSites');
+Route::post('/deleteAllSites','AllProdAdminController@deleteAllSites')->name('deleteAllSites');
 //all restoran
 Route::get('/getAllRestoran','AllProdAdminController@getAllRestoran')->name('getAllRestoran');
 //all hotel 
 Route::get('/getAllHotel','AllProdAdminController@getAllHotel')->name('getAllHotel');
-Route::get('/getAllHotelPage','HomeController@getAllHotelPage')->name('getAllHotelPage');
 //all tours
 Route::get('/getAllTours','AllProdAdminController@getAllTours')->name('getAllTours');
 Route::post('/setAllTours','AllProdAdminController@setAllTours')->name('setAllTours');
 Route::post('/updateAllTours','AllProdAdminController@updateAllTours')->name('updateAllTours');
 Route::post('/deleteAllTours','AllProdAdminController@deleteAllTours')->name('deleteAllTours');
-Route::get('/getAllToursPage','HomeController@getAllToursPage')->name('getAllToursPage');
 //all shops
 Route::get('/getAllShop','AllProdAdminController@getAllShop')->name('getAllShop');
-Route::get('/getAllShopsPage','HomeController@getAllShopsPage')->name('getAllShopsPage');
 //all cupon product
 Route::get('/getAllCuponProduct','AllProdAdminController@getAllCuponProduct')->name('getAllCuponProduct');
-Route::get('/getAllCuponProductPage','HomeController@getAllCuponProductPage')->name('getAllCuponProductPage');
+
 //get tours category 
 Route::get('/getArmenianTours','PagesFilterController@getArmenianTours')->name('getArmenianTours');
 Route::get('/getRussionTours','PagesFilterController@getRussianTours')->name('getRussionTours');
+
+
+//get all products page
+Route::get('/getAllSkidkisPage','HomeController@getAllSkidkisPage')->name('getAllSkidkisPage');
+Route::get('/getAllSitesPage','HomeController@getAllSitesPage')->name('getAllSitesPage');
+Route::get('/getAllRestoranPage','HomeController@getAllRestoranPage')->name('getAllRestoranPage');
+Route::get('/getAllHotelPage','HomeController@getAllHotelPage')->name('getAllHotelPage');
+Route::get('/getAllToursPage','HomeController@getAllToursPage')->name('getAllToursPage');
+Route::get('/getAllShopsPage','HomeController@getAllShopsPage')->name('getAllShopsPage');
+Route::get('/getAllCuponProductPage','HomeController@getAllCuponProductPage')->name('getAllCuponProductPage');
 
 
 //blog
