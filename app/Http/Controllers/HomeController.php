@@ -80,6 +80,13 @@ class HomeController extends Controller
         return view('pages/allCuponProductPages',$arr);
     }
 
+    public function getAllShopsPage(){
+        $getAllShopsPage = PopShop::all();
+        //$allToursCount = count($allTours)+count($PopTour);
+        $arr = ['getAllShopsPage'=>$getAllShopsPage];
+        return view('pages/allShopPage',$arr);
+    }
+
     public function getBlog(){
         return view('pages/blog');
     }

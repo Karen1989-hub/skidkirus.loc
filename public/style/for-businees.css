@@ -34,7 +34,7 @@
     right: -297px;
     top: 61px;
     height: 571px;
-    width: 717px;
+    width: 600px;
     transition: .3s;
     overflow: hidden;
     margin: 0 10%;
@@ -827,4 +827,3 @@ line-height: 16px;
         line-height: 30px;
     }
 }
-    

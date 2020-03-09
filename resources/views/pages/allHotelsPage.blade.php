@@ -9,11 +9,26 @@
 @endsection
 
 @section('content')
+    {{--    go home page--}}
+    <div class ="breadcrumbs">
+        <ul class="breadcrumbs_list">
+            <li class="breadcrumbs_item">
+                <a class="breadcrumbs_item_list" href="{{route('home')}}">Главная</a>
+                <span class ="span-arrow">&#8594;</span>
+            </li>
+            <li class="breadcrumbs_item">
+                <span>отели</span>
+            </li>
+        </ul>
+    </div>
+    {{--    go home page end--}}
+
+
 <div class="cards__bg">
                     <section class="slider">
                         @foreach($popHotel as $val)
                             <h2>text2</h2>
-                            <a href="{{$val->sitesUrl}}"><img class="hotel__slider-img slick-slide slick-active" src="./img/popHotelImg/{{$val->popHotelImg}}">
+                            <a href="{{$val->sitesUrl}}"><img src="./img/popHotelImg/{{$val->popHotelImg}}">
                                 <div style="margin-left: 20px"><span>{{$val->name}}</span><br>
                                     {{$val->description}}</div>
 

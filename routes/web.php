@@ -72,6 +72,7 @@ Route::post('/deleteAllTours','AllProdAdminController@deleteAllTours')->name('de
 Route::get('/getAllToursPage','HomeController@getAllToursPage')->name('getAllToursPage');
 //all shops
 Route::get('/getAllShop','AllProdAdminController@getAllShop')->name('getAllShop');
+Route::get('/getAllShopsPage','HomeController@getAllShopsPage')->name('getAllShopsPage');
 //all cupon product
 Route::get('/getAllCuponProduct','AllProdAdminController@getAllCuponProduct')->name('getAllCuponProduct');
 Route::get('/getAllCuponProductPage','HomeController@getAllCuponProductPage')->name('getAllCuponProductPage');

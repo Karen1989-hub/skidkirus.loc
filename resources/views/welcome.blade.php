@@ -485,7 +485,7 @@
                                 </div>
                             </li>
                             <li><a class="link" href="">Блог</a></li>
-                            <li><a class="link" href="">Как работает Skidkirus</a></li>
+                            <li><a class="link" href="{{route('gethowWork')}}">Как работает Skidkirus</a></li>
 
 
                              <li>
@@ -982,15 +982,12 @@
 
                 </div>
 
-                <div class="contanier__menue-title">
-                    <a href="#" id="menue__title">Популярные магазины </a>
-                    <a href="#" id="menue__title-info">ВСЕ (999)</a>
-                </div>
+
 
                 <div class="cards__bg cards__bg-stores">
                     <div class="contanier__menue-title">
-                        <a href="#" id="menue__title">Популярные магазины </a>
-                        <a href="#" id="menue__title-info">ВСЕ (999)</a>
+                        <a href="{{route('getAllShopsPage')}}" id="menue__title">Популярные магазины </a>
+                        <a href="{{route('getAllShopsPage')}}" id="menue__title-info">ВСЕ (999)</a>
                     </div>
                     <section class="slider">
                         @foreach($popShop as $val)
@@ -1031,7 +1028,7 @@
                                         <a href="#">Вакансии</a>
                                     </li>
                                     <li>
-                                        <a href="{{route('getBlog')}}">Блог</a>
+                                        <a href="#">Блог</a>
                                     </li>
                                 </ul>
                             </div>
@@ -1052,7 +1049,7 @@
                                 <div class="menu_block_header">Партнерам</div>
                                 <ul class="blaock_header_link_list">
                                     <li>
-                                        <a href="{{route('getForBisnes')}}" >Для Вашего бизнеса</a>
+                                        <a href="#" >Для Вашего бизнеса</a>
 
                                     </li>
                                     <li>
