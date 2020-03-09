@@ -53,14 +53,17 @@ Route::get('/getPopShop','AdminController@getPopShop')->name('getPopShop');
 Route::post('/setsetPopShop','AdminController@setPopShop')->name('setPopShop');
 Route::post('/updatePopShop','AdminController@updatePopShop')->name('updatePopShop');
 Route::post('/deletePopShop','AdminController@deletePopShop')->name('deletePopShop');
+
+
 //all skidkis
 Route::get('/getAllSkidkis','AllProdAdminController@getAllSkidkis')->name('getAllSkidkis');
 //all sites
 Route::get('/getAllSites','AllProdAdminController@getAllSites')->name('getAllSites');
 //all restoran
 Route::get('/getAllRestoran','AllProdAdminController@getAllRestoran')->name('getAllRestoran');
-//all hotel
+//all hotel 
 Route::get('/getAllHotel','AllProdAdminController@getAllHotel')->name('getAllHotel');
+Route::get('/getAllHotelPage','HomeController@getAllHotelPage')->name('getAllHotelPage');
 //all tours
 Route::get('/getAllTours','AllProdAdminController@getAllTours')->name('getAllTours');
 Route::post('/setAllTours','AllProdAdminController@setAllTours')->name('setAllTours');
@@ -71,9 +74,12 @@ Route::get('/getAllToursPage','HomeController@getAllToursPage')->name('getAllTou
 Route::get('/getAllShop','AllProdAdminController@getAllShop')->name('getAllShop');
 //all cupon product
 Route::get('/getAllCuponProduct','AllProdAdminController@getAllCuponProduct')->name('getAllCuponProduct');
+Route::get('/getAllCuponProductPage','HomeController@getAllCuponProductPage')->name('getAllCuponProductPage');
 //get tours category 
 Route::get('/getArmenianTours','PagesFilterController@getArmenianTours')->name('getArmenianTours');
 Route::get('/getRussionTours','PagesFilterController@getRussianTours')->name('getRussionTours');
+
+
 //blog
 Route::get('/getBlog','HomeController@getBlog')->name('getBlog');
 //howWork getForBisnes

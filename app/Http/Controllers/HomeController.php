@@ -66,6 +66,20 @@ class HomeController extends Controller
         return view('pages/allRestoranPage',$arr);
     }
 
+    public function getAllHotelPage(){
+        $popHotel = PopHotel::all();        
+        //$allToursCount = count($allTours)+count($PopTour);
+        $arr = ['popHotel'=>$popHotel];
+        return view('pages/allHotelsPage',$arr);
+    }
+
+    public function getAllCuponProductPage(){
+        $PopCuponProduct =PopCuponProduct::all();
+        //$allToursCount = count($allTours)+count($PopTour);
+        $arr = ['PopCuponProduct'=>$PopCuponProduct];
+        return view('pages/allCuponProductPages',$arr);
+    }
+
     public function getBlog(){
         return view('pages/blog');
     }

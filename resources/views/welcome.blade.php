@@ -898,8 +898,8 @@
                 </div>
 
                 <div class="contanier__menue-title hotel__title">
-                    <a href="#" id="menue__title">Отели</a>
-                    <a href="#" id="menue__title-info">ВСЕ (555)</a>
+                    <a href="{{route('getAllHotelPage')}}" id="menue__title">Отели</a>
+                    <a href="{{route('getAllHotelPage')}}" id="menue__title-info">ВСЕ (555)</a>
                 </div>
                 <div class="cards__bg">
                     <section class="slider">
@@ -945,8 +945,8 @@
 
 
                 <div class="contanier__menue-title">
-                    <a href="#" id="menue__title">Товары по купонам </a>
-                    <a href="#" id="menue__title-info">ВСЕ (999)</a>
+                    <a href="{{route('getAllCuponProductPage')}}" id="menue__title">Товары по купонам </a>
+                    <a href="{{route('getAllCuponProductPage')}}" id="menue__title-info">ВСЕ (999)</a>
                 </div>
 
                 <div class="cards w-75">
