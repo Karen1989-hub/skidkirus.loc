@@ -27,7 +27,16 @@
 <div class="cards__bg">
                     <section class="slider">
                         @foreach($popHotel as $val)
-                            <h2>text2</h2>
+                            
+                            <a href="{{$val->sitesUrl}}"><img src="./img/popHotelImg/{{$val->popHotelImg}}">
+                                <div style="margin-left: 20px"><span>{{$val->name}}</span><br>
+                                    {{$val->description}}</div>
+
+                            </a>
+
+                        @endforeach 
+                        @foreach($allHotel as $val)
+                            
                             <a href="{{$val->sitesUrl}}"><img src="./img/popHotelImg/{{$val->popHotelImg}}">
                                 <div style="margin-left: 20px"><span>{{$val->name}}</span><br>
                                     {{$val->description}}</div>

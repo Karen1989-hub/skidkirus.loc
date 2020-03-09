@@ -25,9 +25,9 @@
 
 
     <div class="cards__bg">
-        <section class="slider">
-            @foreach($getAllShopsPage as $val)
-                <h2>text2</h2>
+    <div class="cards allTours" style="margin-bottom: 50px">
+            @foreach($popShop as $val)
+                
                 <a href="{{$val->sitesUrl}}"><img src="./img/popShop/{{$val->imageUrl}}">
                     <div style="margin-left: 20px"><span>{{$val->name}}</span><br>
                         {{$val->description}}</div>
@@ -35,7 +35,16 @@
                 </a>
 
             @endforeach
-        </section>
+            @foreach($getAllShopsPage as $val)
+                
+                <a href="{{$val->sitesUrl}}"><img src="./img/popShop/{{$val->imageUrl}}">
+                    <div style="margin-left: 20px"><span>{{$val->name}}</span><br>
+                        {{$val->description}}</div>
+
+                </a>
+
+            @endforeach
+        </div>
     </div>
 @endsection
 

@@ -9,11 +9,14 @@ use App\AllSkidkis;
 use App\Site;
 use App\AllSite;
 use App\PopRestoran;
+use App\AllRestoran;
 use App\PopHotel;
+use App\AllHotel;
 use App\PopTour;
 use App\AllTours;
 use App\PopCuponProduct;
 use App\PopShop;
+use App\AllShop;
 
 class HomeController extends Controller
 {
@@ -66,15 +69,17 @@ class HomeController extends Controller
 
     public function getAllRestoranPage(){
         $PopRestoran = PopRestoran::all();
+        $AllRestoran = AllRestoran::all();
         //$allToursCount = count($allTours)+count($PopTour);
-        $arr = ['PopRestoran'=>$PopRestoran];
+        $arr = ['PopRestoran'=>$PopRestoran,'AllRestoran'=>$AllRestoran];
         return view('pages/allRestoranPage',$arr);
     }
 
     public function getAllHotelPage(){
-        $popHotel = PopHotel::all();        
+        $popHotel = PopHotel::all();  
+        $allHotel = AllHotel::all();     
         //$allToursCount = count($allTours)+count($PopTour);
-        $arr = ['popHotel'=>$popHotel];
+        $arr = ['popHotel'=>$popHotel,'allHotel'=>$allHotel];
         return view('pages/allHotelsPage',$arr);
     }
 
@@ -86,9 +91,10 @@ class HomeController extends Controller
     }
 
     public function getAllShopsPage(){
-        $getAllShopsPage = PopShop::all();
+        $popShop = PopShop::all();
+        $getAllShopsPage = AllShop::all();
         //$allToursCount = count($allTours)+count($PopTour);
-        $arr = ['getAllShopsPage'=>$getAllShopsPage];
+        $arr = ['getAllShopsPage'=>$getAllShopsPage,'popShop'=>$popShop];
         return view('pages/allShopPage',$arr);
     }
 

@@ -8,15 +8,6 @@
 <!-- nav menu  -->
 <div class="col-sm-4 col-lg-3 border">
 <h2>Меню</h2>
-{{--<div class="list-group">--}}
-{{--  <a href="{{route('adminPage')}}" class="list-group-item list-group-item-action">Скидки</a>--}}
-{{--  <a href="{{route('setSitsPage')}}" class="list-group-item list-group-item-action">Сайты</a>--}}
-{{--  <a href="{{route('getPopularRestoran')}}" class="list-group-item list-group-item-action active">Популярные рестораны</a>--}}
-{{--  <a href="" class="list-group-item list-group-item-action">Отели</a>--}}
-{{--  <a href="" class="list-group-item list-group-item-action">Туры</a>--}}
-{{--  <a href="" class="list-group-item list-group-item-action">Товары по купонам</a>--}}
-{{--  <a href="" class="list-group-item list-group-item-action">Популярные магазины</a>--}}
-{{--</div>--}}
 
     <div class="nav">
         <div class="big" id="null">

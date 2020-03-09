@@ -64,8 +64,14 @@ Route::post('/updateAllSites','AllProdAdminController@updateAllSites')->name('up
 Route::post('/deleteAllSites','AllProdAdminController@deleteAllSites')->name('deleteAllSites');
 //all restoran
 Route::get('/getAllRestoran','AllProdAdminController@getAllRestoran')->name('getAllRestoran');
+Route::post('/setAllRestoran','AllProdAdminController@setAllRestoran')->name('setAllRestoran');
+Route::post('/updateAllRestoran','AllProdAdminController@updateAllRestoran')->name('updateAllRestoran');
+Route::post('/deleteAllRestoran','AllProdAdminController@deleteAllRestoran')->name('deleteAllRestoran');
 //all hotel 
 Route::get('/getAllHotel','AllProdAdminController@getAllHotel')->name('getAllHotel');
+Route::post('/setAllHotel','AllProdAdminController@setAllHotel')->name('setAllHotel');
+Route::post('/updateAllHotel','AllProdAdminController@updateAllHotel')->name('updateAllHotel');
+Route::post('/deleteAllHotel','AllProdAdminController@deleteAllHotel')->name('deleteAllHotel');
 //all tours
 Route::get('/getAllTours','AllProdAdminController@getAllTours')->name('getAllTours');
 Route::post('/setAllTours','AllProdAdminController@setAllTours')->name('setAllTours');
@@ -73,8 +79,14 @@ Route::post('/updateAllTours','AllProdAdminController@updateAllTours')->name('up
 Route::post('/deleteAllTours','AllProdAdminController@deleteAllTours')->name('deleteAllTours');
 //all shops
 Route::get('/getAllShop','AllProdAdminController@getAllShop')->name('getAllShop');
+Route::post('/setAllShop','AllProdAdminController@setAllShop')->name('setAllShop');
+Route::post('/updateAllShop','AllProdAdminController@updateAllShop')->name('updateAllShop');
+Route::post('/deleteAllShop','AllProdAdminController@deleteAllShop')->name('deleteAllShop');
 //all cupon product
 Route::get('/getAllCuponProduct','AllProdAdminController@getAllCuponProduct')->name('getAllCuponProduct');
+Route::get('/setAllCuponProduct','AllProdAdminController@setAllCuponProduct')->name('setAllCuponProduct');
+Route::get('/updateAllCuponProduct','AllProdAdminController@updateAllCuponProduct')->name('updateAllCuponProduct');
+Route::get('/deleteAllCuponProduct','AllProdAdminController@deleteAllCuponProduct')->name('deleteAllCuponProduct');
 
 //get tours category 
 Route::get('/getArmenianTours','PagesFilterController@getArmenianTours')->name('getArmenianTours');

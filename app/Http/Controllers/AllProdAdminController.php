@@ -5,7 +5,9 @@ namespace App\Http\Controllers;
 use App\AllTours;
 use App\AllSkidkis;
 use App\AllSite;
-use App\
+use App\AllRestoran;
+use App\AllHotel;
+use App\AllShop;
 use Illuminate\Http\Request;
 
 class AllProdAdminController extends Controller
@@ -172,28 +174,163 @@ class AllProdAdminController extends Controller
     }
 
     public function getAllRestoran(){
-        return view('adminPages/allRestoran');
+        $allRestoran = AllRestoran::all();
+
+        $arr = ['allRestoran'=>$allRestoran];
+        return view('adminPages/allRestoran',$arr);
     }
-    public function setAllRestoran(){
+    public function setAllRestoran(Request $request){
+        $discount = $request->input('discount');
+        $marker = $request->input('marker');
+        $description = $request->input('description');
+        $name = $request->input('name');
+        $count = $request->input('count');
+        $oldPrice = $request->input('oldPrice');
+        $newPrice = $request->input('newPrice');
+        $sitesUrl = $request->input('sitesUrl');
+        $imgName = $request->file('imgName2');
+
+        $imgName->move('img/popRestoranImg',$imgName->getClientOriginalName());
+        AllRestoran::create(['discount'=>$discount,'marker'=>$marker,'description'=>$description,
+        'name'=>$name,'count'=>$count,'oldPrice'=>$oldPrice,'newPrice'=>$newPrice,
+        'sitesUrl'=>$sitesUrl,'imageUrl'=>$imgName->getClientOriginalName()]);
+
+
         return back();
     }
-    public function updateAllRestoran(){
+    public function updateAllRestoran(Request $request){
+        $id = $request->input('id');
+        $discount = $request->input('discount');
+        $marker = $request->input('marker');
+        $description = $request->input('description');
+        $name = $request->input('name');
+        $count = $request->input('count');
+        $oldPrice = $request->input('oldPrice');
+        $newPrice = $request->input('newPrice');
+        $sitesUrl = $request->input('sitesUrl');
+        $imgName = $request->file('imgName3');
+
+        $update = AllRestoran::find($id);
+        if($discount != ""){
+           $update -> discount = $discount;
+        }
+         if($marker != ""){
+           $update -> marker = $marker;
+        }
+         if($description != ""){
+           $update -> description = $description;
+        }
+         if($name != ""){
+           $update -> name = $name;
+        }
+         if($count != ""){
+           $update -> count = $count;
+        }
+         if($oldPrice != ""){
+           $update -> oldPrice = $oldPrice;
+        }
+         if($newPrice != ""){
+           $update -> newPrice = $newPrice;
+        }
+         if($sitesUrl != ""){
+           $update -> sitesUrl = $sitesUrl;
+        }
+//         if($imageUrl != ""){
+//           $update -> imageUrl = $imageUrl;
+//        }
+
+        if($imgName != null){
+            if($imgName->getClientOriginalName() != ""){
+                //delete old image
+                $popRest = AllRestoran::find($id);
+                $oldImg = $popRest->imageUrl;
+                unlink("img/popRestoranImg/$oldImg");
+                //delete old image end
+
+                $update -> imageUrl = $imgName->getClientOriginalName();
+                $imgName->move('img/popRestoranImg',$imgName->getClientOriginalName());
+            }
+        }
+
+
+          $update -> save();
+
         return back();
     }
-    public function deleteAllRestoran(){
+    public function deleteAllRestoran(Request $request){
+        $id = $request->input('id');
+      $delete = AllRestoran::find($id);
+        unlink("img/popRestoranImg/$delete->imageUrl");
+      $delete -> delete();
+
         return back();
     }
 
     public function getAllHotel(){
-        return view('adminPages/allHotels');
+        $allHotel = AllHotel::all();
+
+        $arr = ['allHotel'=>$allHotel];
+        return view('adminPages/allHotels',$arr);
     }
-    public function setAllHotel(){
+    public function setAllHotel(Request $request){
+        $description = $request->input('description');
+        $name = $request->input('name');
+        $country = $request->input('country');
+        $sitesUrl = $request->input('sitesUrl');
+        $popHotel = $request->file('popHotelImg');
+
+        $popHotel->move('img/popHotelImg',$popHotel->getClientOriginalName());
+        AllHotel::create(['popHotelImg'=>$popHotel->getClientOriginalName(),
+        'description'=>$description,'name'=>$name,'country'=>$country,'sitesUrl'=>$sitesUrl]);
+
         return back();
     }
-    public function updateAllHotel(){
+    public function updateAllHotel(Request $request){
+        $id = $request->input('id');
+
+        $description = $request->input('description');
+        $name = $request->input('name');
+        $brend = $request->input('brend');
+        $sitesUrl = $request->input('sitesUrl');
+        $popHotelImg = $request->file('popHotelImg');
+
+        $update = AllHotel::find($id);
+
+        if($description != ""){
+            $update -> description = $description;
+        }
+        if($name != ""){
+            $update -> name = $name;
+        }
+
+        if($sitesUrl != ""){
+            $update -> sitesUrl = $sitesUrl;
+        }
+        if($brend != ""){
+            $update -> brend = $brend;
+        }
+
+        if($popHotelImg != null){
+            if($popHotelImg->getClientOriginalName() != ""){
+                //delete old image
+                $popHotel = AllHotel::find($id);
+                $oldImg = $popHotel->popHotelImg;
+                unlink("img/popHotelImg/$oldImg");
+                //delete old image end
+
+                $update -> popHotelImg = $popHotelImg->getClientOriginalName();
+                $popHotelImg->move('img/popHotelImg',$popHotelImg->getClientOriginalName());
+            }
+        }
+        $update -> save();
         return back();
     }
-    public function deleteAllHotel(){
+    public function deleteAllHotel(Request $request){
+        $id = $request->input('id');
+        $delete = AllHotel::find($id);
+        unlink("img/popHotelImg/$delete->popHotelImg");
+        $delete -> delete();
+
         return back();
     }
     
@@ -279,15 +416,68 @@ class AllProdAdminController extends Controller
     }
 
     public function getAllShop(){
-        return view('adminPages/allShops');
+        $allShop = AllShop::all();
+
+        $arr = ['allShop'=>$allShop];
+        return view('adminPages/allShops',$arr);
     }
-    public function setAllShop(){
+    public function setAllShop(Request $request){
+        $description = $request->input('description');
+        $name = $request->input('name');
+        $brend = $request->input('brend');
+        $sitesUrl = $request->input('sitesUrl');
+        $popShopImg = $request->file('popShopImg');
+
+        $popShopImg ->move('img/popShop',$popShopImg ->getClientOriginalName());
+        AllShop::create(['description'=>$description,'name'=>$name,'brend'=>$brend,
+            'sitesUrl'=>$sitesUrl,'imageUrl'=>$popShopImg ->getClientOriginalName()]);
         return back();
     }
-    public function updateAllShop(){
+    public function updateAllShop(Request $request){
+        $id = $request->input('id');
+        $description = $request->input('description');
+        $name = $request->input('name');
+        $brend = $request->input('brend');
+        $sitesUrl = $request->input('sitesUrl');
+        $popShopImg = $request->file('popShopImg');
+
+        $update = AllShop::find($id);
+
+        if($description != ""){
+            $update -> description = $description;
+        }
+        if($name != ""){
+            $update -> name = $name;
+        }
+
+        if($sitesUrl != ""){
+            $update -> sitesUrl = $sitesUrl;
+        }
+        if($brend != ""){
+            $update -> brend = $brend;
+        }
+        if($popShopImg != null){
+            if($popShopImg->getClientOriginalName() != ""){
+                //delete old image
+                $popShop = AllShop::find($id);
+                $oldImg = $popShop->imageUrl;
+                unlink("img/popShop/$oldImg");
+                //delete old image end
+
+                $update -> imageUrl = $popShopImg->getClientOriginalName();
+                $popShopImg->move('img/popShop',$popShopImg->getClientOriginalName());
+            }
+        }
+
+        $update -> save();
         return back();
     }
-    public function deleteAllShop(){
+    public function deleteAllShop(Request $request){
+        $id = $request->input('id');
+
+        $delete = AllShop::find($id);
+        unlink("img/popShop/$delete->imageUrl");
+        $delete -> delete();
         return back();
     }
 
