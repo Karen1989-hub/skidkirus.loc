@@ -8,6 +8,7 @@ use App\AllSite;
 use App\AllRestoran;
 use App\AllHotel;
 use App\AllShop;
+use App\AllCuponProduct;
 use Illuminate\Http\Request;
 
 class AllProdAdminController extends Controller
@@ -403,12 +404,86 @@ class AllProdAdminController extends Controller
     }
 
     public function getAllCuponProduct(){
-        return view('adminPages/allCuponProduct');
+        $allCuponProduct = AllCuponProduct::all();
+
+        $arr = ['allCuponProduct'=>$allCuponProduct];
+        return view('adminPages/allCuponProduct',$arr);
     }
-    public function setAllCuponProduct(){
+    public function setAllCuponProduct(Request $request){
+        $discount = $request->input('discount');
+        $marker = $request->input('marker');
+        $description = $request->input('description');
+        $name = $request->input('name');
+        $popCuponProductCategory = $request->input('popCuponProductCategory');
+        $count = $request->input('count');
+        $oldPrice = $request->input('oldPrice');
+        $newPrice = $request->input('newPrice');
+        $sitesUrl = $request->input('sitesUrl');
+        //$imageUrl = $request->input('imageUrl');
+        $popCuponProductImg = $request->file('popCuponProductImg');
+        //dd($popCuponProductCategory);
+        $popCuponProductImg->move('img/popCuponProductImg',$popCuponProductImg->getClientOriginalName());
+        AllCuponProduct::create(['discount'=>$discount,'marker'=>$marker,'description'=>$description,
+            'name'=>$name,'count'=>$count,'oldPrice'=>$oldPrice,'newPrice'=>$newPrice,
+            'sitesUrl'=>$sitesUrl,'productCategory'=>$popCuponProductCategory,
+            'imageUrl'=>$popCuponProductImg->getClientOriginalName()]);
         return back();
     }
-    public function updateAllCuponProduct(){
+    public function updateAllCuponProduct(Request $request){
+        $id = $request->input('id');
+        $discount = $request->input('discount');
+        $marker = $request->input('marker');
+        $description = $request->input('description');
+        $name = $request->input('name');
+        $popCuponProductCategory = $request->input('popCuponProductCategory');
+        $count = $request->input('count');
+        $oldPrice = $request->input('oldPrice');
+        $newPrice = $request->input('newPrice');
+        $sitesUrl = $request->input('sitesUrl');
+        $popCuponProductImg = $request->file('popCuponProductImg');
+
+        $update = AllCuponProduct::find($id);
+        if($discount != ""){
+            $update -> discount = $discount;
+        }
+        if($marker != ""){
+            $update -> marker = $marker;
+        }
+        if($description != ""){
+            $update -> description = $description;
+        }
+        if($name != ""){
+            $update -> name = $name;
+        }
+        if($popCuponProductCategory != ""){
+            $update -> popCuponProductCategory = $popCuponProductCategory;
+        }
+        if($count != ""){
+            $update -> count = $count;
+        }
+        if($oldPrice != ""){
+            $update -> oldPrice = $oldPrice;
+        }
+        if($newPrice != ""){
+            $update -> newPrice = $newPrice;
+        }
+        if($sitesUrl != ""){
+            $update -> sitesUrl = $sitesUrl;
+        }
+        if($popCuponProductImg != null){
+            if($popCuponProductImg->getClientOriginalName() != ""){
+                //delete old image
+                $popCupon = AllCuponProduct::find($id);
+                $oldImg = $popCupon->imageUrl;
+                unlink("img/popCuponProductImg/$oldImg");
+                //delete old image end
+
+                $update -> imageUrl = $popCuponProductImg->getClientOriginalName();
+                $popCuponProductImg->move('img/popCuponProductImg',$popCuponProductImg->getClientOriginalName());
+            }
+        }
+
+        $update -> save();
         return back();
     }
     public function deleteAllCuponProduct(){

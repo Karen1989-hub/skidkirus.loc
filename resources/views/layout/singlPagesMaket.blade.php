@@ -485,7 +485,7 @@
                         </div>
                     </li>
                     
-                    <li><a class="link" href="{{route('getBlog')}}">Блог</a></li>
+                    <li><a class="link" href="#">Блог</a></li>
                     <li><a class="link" href="{{route('gethowWork')}}">Как работает Skidkirus</a></li>
                     <li>
                         <a class="link" href="#">Кешбэк</a>                        
@@ -833,7 +833,7 @@
                                     <a href="#">Вакансии</a>
                                 </li>
                                 <li>
-                                    <a href="{{route('getBlog')}}">Блог</a>
+                                    <a href="#">Блог</a>
                                 </li>
                             </ul>
                         </div>
@@ -854,7 +854,7 @@
                             <div class="menu_block_header">Партнерам</div>
                             <ul class="blaock_header_link_list">
                                 <li>
-                                    <a href="for-businees.html" >Для Вашего бизнеса</a>
+                                    <a href="#" >Для Вашего бизнеса</a>
 
                                 </li>
                                 <li>

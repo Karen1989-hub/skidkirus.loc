@@ -1014,7 +1014,7 @@
                                     Для звонка из Москвы<br>
                                     и регионов России
                                 </p>
-                                <a href="/company/contact_us" class="btn-contact">Связаться с нами</a>
+                                <a href="#" class="btn-contact">Связаться с нами</a>
                             </div>
 
                             <div class="menu_block">

@@ -84,9 +84,9 @@ Route::post('/updateAllShop','AllProdAdminController@updateAllShop')->name('upda
 Route::post('/deleteAllShop','AllProdAdminController@deleteAllShop')->name('deleteAllShop');
 //all cupon product
 Route::get('/getAllCuponProduct','AllProdAdminController@getAllCuponProduct')->name('getAllCuponProduct');
-Route::get('/setAllCuponProduct','AllProdAdminController@setAllCuponProduct')->name('setAllCuponProduct');
-Route::get('/updateAllCuponProduct','AllProdAdminController@updateAllCuponProduct')->name('updateAllCuponProduct');
-Route::get('/deleteAllCuponProduct','AllProdAdminController@deleteAllCuponProduct')->name('deleteAllCuponProduct');
+Route::post('/setAllCuponProduct','AllProdAdminController@setAllCuponProduct')->name('setAllCuponProduct');
+Route::post('/updateAllCuponProduct','AllProdAdminController@updateAllCuponProduct')->name('updateAllCuponProduct');
+Route::post('/deleteAllCuponProduct','AllProdAdminController@deleteAllCuponProduct')->name('deleteAllCuponProduct');
 
 //get tours category 
 Route::get('/getArmenianTours','PagesFilterController@getArmenianTours')->name('getArmenianTours');

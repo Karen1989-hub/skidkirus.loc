@@ -15,6 +15,7 @@ use App\AllHotel;
 use App\PopTour;
 use App\AllTours;
 use App\PopCuponProduct;
+use App\AllCuponProduct;
 use App\PopShop;
 use App\AllShop;
 
@@ -85,8 +86,9 @@ class HomeController extends Controller
 
     public function getAllCuponProductPage(){
         $PopCuponProduct =PopCuponProduct::all();
+        $allCuponProduct = allCuponProduct::all();
         //$allToursCount = count($allTours)+count($PopTour);
-        $arr = ['PopCuponProduct'=>$PopCuponProduct];
+        $arr = ['PopCuponProduct'=>$PopCuponProduct,'allCuponProduct'=>$allCuponProduct];
         return view('pages/allCuponProductPages',$arr);
     }
 
