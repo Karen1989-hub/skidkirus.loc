@@ -133,7 +133,7 @@
 
                         <div class="md-form">
                             <input type="text" name="country" id="materialLoginFormPassword" class="form-control">
-                            <label for="materialLoginFormPassword">страна</label>
+                            <label for="materialLoginFormPassword">город</label>
                         </div>
 
                         <div class="md-form">

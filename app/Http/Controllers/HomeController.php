@@ -94,9 +94,12 @@ class HomeController extends Controller
 
     public function getAllShopsPage(){
         $popShop = PopShop::all();
-        $getAllShopsPage = AllShop::all();
+        $allShopsPage = AllShop::all();
+        $allShopsCategory = null;
+        $popShopsCategory = null;
         //$allToursCount = count($allTours)+count($PopTour);
-        $arr = ['getAllShopsPage'=>$getAllShopsPage,'popShop'=>$popShop];
+        $arr = ['allShopsPage'=>$allShopsPage,'popShop'=>$popShop,
+            'allShopsCategory'=>$allShopsCategory,'popShopsCategory'=>$popShopsCategory];
         return view('pages/allShopPage',$arr);
     }
 

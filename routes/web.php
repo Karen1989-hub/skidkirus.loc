@@ -91,6 +91,31 @@ Route::post('/deleteAllCuponProduct','AllProdAdminController@deleteAllCuponProdu
 //get tours category 
 Route::get('/getArmenianTours','PagesFilterController@getArmenianTours')->name('getArmenianTours');
 Route::get('/getRussionTours','PagesFilterController@getRussianTours')->name('getRussionTours');
+Route::get('/getTurkeyTours','PagesFilterController@getTurkeyTours')->name('getTurkeyTours');
+Route::get('/getEuropeTours','PagesFilterController@getEuropeTours')->name('getEuropeTours');
+
+//get shop category
+Route::get('/getBOMBBARBrend','ShopsFilterController@getBOMBBARBrend')->name('getBOMBBARBrend');
+Route::get('/getMODIS_Brend','ShopsFilterController@getMODIS_Brend')->name('getMODIS_Brend');
+Route::get('/getFiNN_FLARE_Brend','ShopsFilterController@getFiNN_FLARE_Brend')->name('getFiNN_FLARE_Brend');
+Route::get('/getPampers_Brend','ShopsFilterController@getPampers_Brend')->name('getPampers_Brend');
+Route::get('/getLitres_Brend','ShopsFilterController@getLitres_Brend')->name('getLitres_Brend');
+Route::get('/getDomovoy_Brend','ShopsFilterController@getDomovoy_Brend')->name('getDomovoy_Brend');
+Route::get('/getBook24_Brend','ShopsFilterController@getBook24_Brend')->name('getBook24_Brend');
+Route::get('/getRayton_Brend','ShopsFilterController@getRayton_Brend')->name('getRayton_Brend');
+Route::get('/getRayton_Brend','ShopsFilterController@getRayton_Brend')->name('getRayton_Brend');
+Route::get('/getLinzmaster_Brend','ShopsFilterController@getLinzmaster_Brend')->name('getLinzmaster_Brend');
+Route::get('/getOrmatek_Brend','ShopsFilterController@getOrmatek_Brend')->name('getOrmatek_Brend');
+Route::get('/getM_Video_Brend','ShopsFilterController@getM_Video_Brend')->name('getM_Video_Brend');
+Route::get('/getTOY_RU_Brend','ShopsFilterController@getTOY_RU_Brend')->name('getTOY_RU_Brend');
+Route::get('/getFran_Brend','ShopsFilterController@getFran_Brend')->name('getFran_Brend');
+Route::get('/getSvaznoy_Brend','ShopsFilterController@getSvaznoy_Brend')->name('getSvaznoy_Brend');
+Route::get('/getBronickiyUvelir_Brend','ShopsFilterController@getBronickiyUvelir_Brend')->name('getBronickiyUvelir_Brend');
+Route::get('/getVseInstrumenti_Brend','ShopsFilterController@getVseInstrumenti_Brend')->name('getVseInstrumenti_Brend');
+Route::get('/getYves_Rocher_Brend','ShopsFilterController@getYves_Rocher_Brend')->name('getYves_Rocher_Brend');
+Route::get('/getPuma_Brend','ShopsFilterController@getPuma_Brend')->name('getPuma_Brend');
+Route::get('/getTheOutlet_Brend','ShopsFilterController@getTheOutlet_Brend')->name('getTheOutlet_Brend');
+Route::get('getSozvezdie_Brend','ShopsFilterController@getSozvezdie_Brend')->name('getSozvezdie_Brend');
 
 
 //get all products page

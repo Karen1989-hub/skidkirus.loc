@@ -29,4 +29,26 @@ class PagesFilterController extends Controller
             'allTours'=>$allTours, 'PopTour'=>$PopTour];
         return view('pages/allToursPage',$arr);
     }
+
+    public function getTurkeyTours(){
+        $allToursCategory = AllTours::where('toursCountry',"Turkey")->get();
+        $popToursCategory = PopTour::where('toursCountry',"Turkey")->get();
+        //dd($armPopTours);
+        $allTours = null;
+        $PopTour = null;
+        $arr = ['allToursCategory'=>$allToursCategory,'popToursCategory'=>$popToursCategory,
+            'allTours'=>$allTours, 'PopTour'=>$PopTour];
+        return view('pages/allToursPage',$arr);
+    }
+
+    public function getEuropeTours(){
+        $allToursCategory = AllTours::where('toursCountry',"Europe")->get();
+        $popToursCategory = PopTour::where('toursCountry',"Europe")->get();
+        //dd($armPopTours);
+        $allTours = null;
+        $PopTour = null;
+        $arr = ['allToursCategory'=>$allToursCategory,'popToursCategory'=>$popToursCategory,
+            'allTours'=>$allTours, 'PopTour'=>$PopTour];
+        return view('pages/allToursPage',$arr);
+    }
 }

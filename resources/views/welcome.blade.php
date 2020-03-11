@@ -257,171 +257,28 @@
                                     <div class="links">
                                         <ul>
                                             <a href="#">
-                                                <h3>Новогодние праздники</h3>
+                                                <h3>Россия</h3>
                                             </a>
+                                            <li><a href="{{route('getArmenianTours')}}">Москва</a></li>
                                         </ul>
                                         <ul>
                                             <a href="#">
-                                                <h3>Москва и Область</h3>
+                                                <h3>Армения</h3>
                                             </a>
-                                            <li><a href="#">Отели в Подмосковье на ближайшие выходные </a></li>
+                                            <li><a href="{{route('getArmenianTours')}}">Ереван</a></li>
                                         </ul>
                                         <ul>
                                             <a href="#">
-                                                <h3>Санкт-Петербург и область </h3>
+                                                <h3>Подмосковье</h3>
                                             </a>
                                         </ul>
-                                        <ul>
-                                            <a href="#">
-                                                <h3>Карелия </h3>
-                                            </a>
-                                        </ul>
-                                        <ul>
-                                            <a href="#">
-                                                <h3>Селигер </h3>
-                                            </a>
-                                        </ul>
-                                        <ul>
-                                            <a href="#">
-                                                <h3>Золотое кольцо </h3>
-                                            </a>
-                                            <li><a href="#">Углич</a></li>
-                                            <li><a href="#">Владимир</a></li>
-                                            <li><a href="#">Иваново</a></li>
-                                            <li><a href="#">Кострома</a></li>
-                                            <li><a href="#">Переславль-Залесский</a></li>
-                                            <li><a href="#">Ростов</a></li>
-                                            <li><a href="#">Сергиев Посад</a></li>
-                                            <li><a href="#">Суздаль</a></li>
-                                            <li><a href="#">Ярославль</a></li>
-                                            <li>
-                                                <a href="#"></a>
-                                            </li>
-                                        </ul>
+
+
                                     </div>
-                                    <div class="links">
-                                        <ul>
-                                            <a href="#">
-                                                <h3>Юг России</h3>
-                                            </a>
-                                            <li><a href="#">Адлер</a></li>
-                                            <li><a href="#">Анапа</a></li>
-                                            <li><a href="#">Кисловодск</a></li>
-                                            <li><a href="#">Геленджик</a></li>
-                                            <li><a href="#">Ессентуки</a></li>
-                                            <li><a href="#">Сочи</a></li>
-                                            <li><a href="#">Ставрополь</a></li>
-                                            <li><a href="#">Краснодар</a></li>
-                                            <li><a href="#">Майкоп</a></li>
-                                            <li><a href="#">Нальчик</a></li>
-                                            <li><a href="#">Пятигорск</a></li>
-                                            <li><a href="#">Ростов-на-Дону</a></li>
-                                            <li><a href="#">Элиста</a></li>
-                                            <li><a href="#">Кавказ</a></li>
-                                            <li><a href="#">Туапсе</a></li>
-                                        </ul>
-                                        <ul>
-                                            <a href="#">
-                                                <h3>Крым</h3>
-                                            </a>
-                                        </ul>
-                                        <ul>
-                                            <a href="#"><h3>Абхазия</h3></a>
-                                        </ul>
-                                    </div>
-                                    <div class="links">
-                                        <ul>
-                                            <a href="#">
-                                                <h3>Другие города</h3>
-                                            </a>
-                                            <li>
-                                                <a href="#"></a>
-                                            </li>
-                                            <li><a href="#">Архангельск</a></li>
-                                            <li><a href="#">Вологда</a></li>
-                                            <li><a href="#">Белгород</a></li>
-                                            <li><a href="#">Брянск</a></li>
-                                            <li><a href="#">Великий Новгород</a></li>
-                                            <li><a href="#">Воронеж</a></li>
-                                            <li><a href="#">Калининград</a></li>
-                                            <li><a href="#">Калуга</a></li>
-                                            <li><a href="#">Курск</a></li>
-                                            <li><a href="#">Липецк</a></li>
-                                            <li><a href="#">Орел</a></li>
-                                            <li><a href="#">Псков</a></li>
-                                            <li><a href="#">Рязань</a></li>
-                                            <li><a href="#">Смоленск</a></li>
-                                            <li><a href="#">Тамбов</a></li>
-                                            <li><a href="#">Тверь</a></li>
-                                            <li><a href="#">Тула</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="links">
-                                        <ul>
-                                            <a href="#">
-                                                <h3>Поволжье</h3>
-                                            </a>
-                                            <li><a href="#">Астрахань</a></li>
-                                            <li><a href="#">Волгоград</a></li>
-                                            <li><a href="#">Йошкар-Ола</a></li>
-                                            <li><a href="#">Казань</a></li>
-                                            <li><a href="#">Киров</a></li>
-                                            <li><a href="#">Нижний Новгород</a></li>
-                                            <li><a href="#">Самара</a></li>
-                                            <li><a href="#">Саранск</a></li>
-                                            <li><a href="#">Саратов</a></li>
-                                            <li><a href="#">Ульяновск</a></li>
-                                            <li><a href="#">Чебоксары</a></li>
-                                            <li><a href="#">Пенза</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="links">
-                                        <ul>
-                                            <a href="#">
-                                                <h3>Алтай</h3>
-                                            </a>
-                                        </ul>
-                                        <ul>
-                                            <a href="#">
-                                                <h3>Байкал</h3>
-                                            </a>
-                                        </ul>
-                                        <ul>
-                                            <a href="#">
-                                                <h3>Урал</h3>
-                                            </a>
-                                            <li><a href="#">Екатеринбург</a></li>
-                                            <li><a href="#">Ижевск</a></li>
-                                            <li><a href="#">Курган</a></li>
-                                            <li><a href="#">Магнитогорск</a></li>
-                                            <li><a href="#">Оренбург</a></li>
-                                            <li><a href="#">Пермь</a></li>
-                                            <li><a href="#">Уфа</a></li>
-                                            <li><a href="#">Челябинск</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="links">
-                                        <ul>
-                                            <a href="#">
-                                                <h3>Сибирь</h3>
-                                            </a>
-                                            <li><a href="#">Барнаул</a></li>
-                                            <li><a href="#">Иркутск</a></li>
-                                            <li><a href="#">Кемерово</a></li>
-                                            <li><a href="#">Красноярск</a></li>
-                                            <li><a href="#">Новокузнецк</a></li>
-                                            <li><a href="#">Новосибирск</a></li>
-                                            <li><a href="#">Омск</a></li>
-                                            <li><a href="#">Томск</a></li>
-                                            <li><a href="#">Тюмень</a></li>
-                                            <li><a href="#">Чита</a></li>
-                                        </ul>
-                                        <ul>
-                                            <a href="">
-                                                <h3>Популярные санатории </h3>
-                                            </a>
-                                        </ul>
-                                    </div>
+
+
+
+
                                 </div>
 
                             </li>
@@ -434,9 +291,8 @@
                                             <li><a href="{{route('getAllToursPage')}}">Все</a></li>
                                             <li><a href="{{route('getArmenianTours')}}">Армения</a></li>
                                             <li><a href="{{route('getRussionTours')}}">Россия</a></li>
-                                            <li><a href="#">Турция</a></li>
-                                            <li><a href="#">Европа</a></li>
-
+                                            <li><a href="{{route('getTurkeyTours')}}">Турция</a></li>
+                                            <li><a href="{{route('getEuropeTours')}}">Европа</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -447,39 +303,32 @@
                                 <div class="bottom__links bottom__links-hover">
                                     <div class="links">
                                         <ul>
-                                            <li><a href="#">Все бренды</a></li>
-                                            <li><a href="#">BOMBBAR</a></li>
-                                            <li><a href="#">MODIS</a></li>
-                                            <li><a href="#">FiNN FLARE</a></li>
-                                            <li><a href="#">Pampers</a></li>
-                                            <li><a href="#">ИЛЬ ДЕ БОТЭ</a></li>
-                                            <li><a href="#">Плеер.ру</a></li>
-                                            <li><a href="#">ЛитРес</a></li>
-                                            <li><a href="#">Домовой</a></li>
-                                            <li><a href="#">Book24</a></li>
-                                            <li><a href="#">Райтон</a></li>
-                                            <li><a href="#">Линзмастер</a></li>
-                                            <li><a href="#">Орматек</a></li>
-                                            <li><a href="#">Холодильник.РУ</a></li>
-                                            <li><a href="#">Матрас.ру</a></li>
+                                            <li><a href="{{route('getAllShopsPage')}}">Все бренды</a></li>
+                                            <li><a href="{{route('getBOMBBARBrend')}}">BOMBBAR</a></li>
+                                            <li><a href="{{route('getMODIS_Brend')}}">MODIS</a></li>
+                                            <li><a href="{{route('getFiNN_FLARE_Brend')}}">FiNN FLARE</a></li>
+                                            <li><a href="{{route('getPampers_Brend')}}">Pampers</a></li>
+                                            <li><a href="{{route('getLitres_Brend')}}">ЛитРес</a></li>
+                                            <li><a href="{{route('getDomovoy_Brend')}}">Домовой</a></li>
+                                            <li><a href="{{route('getBook24_Brend')}}">Book24</a></li>
+                                            <li><a href="{{route('getRayton_Brend')}}">Райтон</a></li>
+                                            <li><a href="{{route('getLinzmaster_Brend')}}">Линзмастер</a></li>
+                                            <li><a href="{{route('getOrmatek_Brend')}}">Орматек</a></li>
                                         </ul>
 
                                     </div>
                                     <div class="links">
                                         <ul>
-                                            <li><a href="#">М.Видео</a></li>
-                                            <li><a href="#">iHerb</a></li>
-                                            <li><a href="#">O’STIN</a></li>
-                                            <li><a href="#">TOY.RU</a></li>
-                                            <li><a href="#">Фран</a></li>
-                                            <li><a href="#">Связной</a></li>
-                                            <li><a href="#">Бронницкий ювелир</a></li>
-                                            <li><a href="#">Все инструменты</a></li>
-                                            <li><a href="#">Yves Rocher</a></li>
-                                            <li><a href="#">Puma</a></li>
-                                            <li><a href="#">re:Store</a></li>
-                                            <li><a href="#">TheOutlet.ru</a></li>
-                                            <li><a href="#">Созвездие красоты</a></li>
+                                            <li><a href="{{route('getM_Video_Brend')}}">М.Видео</a></li>
+                                            <li><a href="{{route('getTOY_RU_Brend')}}">TOY.RU</a></li>
+                                            <li><a href="{{route('getFran_Brend')}}">Фран</a></li>
+                                            <li><a href="{{route('getSvaznoy_Brend')}}">Связной</a></li>
+                                            <li><a href="{{route('getBronickiyUvelir_Brend')}}">Бронницкий ювелир</a></li>
+                                            <li><a href="{{route('getVseInstrumenti_Brend')}}">Все инструменты</a></li>
+                                            <li><a href="{{route('getYves_Rocher_Brend')}}">Yves Rocher</a></li>
+                                            <li><a href="{{route('getPuma_Brend')}}">Puma</a></li>
+                                            <li><a href="{{route('getTheOutlet_Brend')}}">TheOutlet.ru</a></li>
+                                            <li><a href="{{route('getSozvezdie_Brend')}}">Созвездие красоты</a></li>
                                         </ul>
                                     </div>
                                 </div>

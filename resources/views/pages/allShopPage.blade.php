@@ -25,25 +25,51 @@
 
 
     <div class="cards__bg">
-    <div class="cards allTours" style="margin-bottom: 50px">
-            @foreach($popShop as $val)
-                
-                <a href="{{$val->sitesUrl}}"><img src="./img/popShop/{{$val->imageUrl}}">
-                    <div style="margin-left: 20px"><span>{{$val->name}}</span><br>
-                        {{$val->description}}</div>
+        <div class="cards allTours" style="margin-bottom: 50px">
+            @if($popShop != null)
+                @foreach($popShop as $val)
 
-                </a>
+                    <a href="{{$val->sitesUrl}}"><img src="./img/popShop/{{$val->imageUrl}}">
+                        <div style="margin-left: 20px"><span>{{$val->name}}</span><br>
+                            {{$val->description}}</div>
 
-            @endforeach
-            @foreach($getAllShopsPage as $val)
-                
-                <a href="{{$val->sitesUrl}}"><img src="./img/popShop/{{$val->imageUrl}}">
-                    <div style="margin-left: 20px"><span>{{$val->name}}</span><br>
-                        {{$val->description}}</div>
+                    </a>
 
-                </a>
+                @endforeach
+            @endif
+            @if($allShopsPage != null)
+                @foreach($allShopsPage as $val)
 
-            @endforeach
+                    <a href="{{$val->sitesUrl}}"><img src="./img/popShop/{{$val->imageUrl}}">
+                        <div style="margin-left: 20px"><span>{{$val->name}}</span><br>
+                            {{$val->description}}</div>
+
+                    </a>
+
+                @endforeach
+            @endif
+            @if($popShopsCategory != null)
+                @foreach($popShopsCategory as $val)
+
+                    <a href="{{$val->sitesUrl}}"><img src="./img/popShop/{{$val->imageUrl}}">
+                        <div style="margin-left: 20px"><span>{{$val->name}}</span><br>
+                            {{$val->description}}</div>
+
+                    </a>
+
+                @endforeach
+            @endif
+            @if($allShopsCategory != null)
+                @foreach($allShopsCategory as $val)
+
+                    <a href="{{$val->sitesUrl}}"><img src="./img/popShop/{{$val->imageUrl}}">
+                        <div style="margin-left: 20px"><span>{{$val->name}}</span><br>
+                            {{$val->description}}</div>
+
+                    </a>
+
+                @endforeach
+            @endif
         </div>
     </div>
 @endsection
