@@ -117,6 +117,9 @@ Route::get('/getPuma_Brend','ShopsFilterController@getPuma_Brend')->name('getPum
 Route::get('/getTheOutlet_Brend','ShopsFilterController@getTheOutlet_Brend')->name('getTheOutlet_Brend');
 Route::get('getSozvezdie_Brend','ShopsFilterController@getSozvezdie_Brend')->name('getSozvezdie_Brend');
 
+//get Hotel category
+Route::get('/getMosskow_hotels','HotelsFilterController@getMosskow_hotels')->name('getMosskow_hotels');
+
 
 //get all products page
 Route::get('/getAllSkidkisPage','HomeController@getAllSkidkisPage')->name('getAllSkidkisPage');

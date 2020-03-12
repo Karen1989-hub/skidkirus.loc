@@ -26,24 +26,45 @@
 
 <div class="cards__bg">
                     <section class="slider">
-                        @foreach($popHotel as $val)
-                            
-                            <a href="{{$val->sitesUrl}}"><img src="./img/popHotelImg/{{$val->popHotelImg}}">
-                                <div style="margin-left: 20px"><span>{{$val->name}}</span><br>
-                                    {{$val->description}}</div>
+                        @if($popHotel != null)
+                                @foreach($popHotel as $val)
 
-                            </a>
+                                    <a href="{{$val->sitesUrl}}"><img src="./img/popHotelImg/{{$val->popHotelImg}}">
+                                        <div style="margin-left: 20px"><span>{{$val->name}}</span><br>
+                                            {{$val->description}}</div>
 
-                        @endforeach 
-                        @foreach($allHotel as $val)
-                            
-                            <a href="{{$val->sitesUrl}}"><img src="./img/popHotelImg/{{$val->popHotelImg}}">
-                                <div style="margin-left: 20px"><span>{{$val->name}}</span><br>
-                                    {{$val->description}}</div>
+                                    </a>
 
-                            </a>
+                                @endforeach
+                            @endif
+                            @if($allHotel != null)
+                                @foreach($allHotel as $val)
 
-                        @endforeach
+                                    <a href="{{$val->sitesUrl}}"><img src="./img/popHotelImg/{{$val->popHotelImg}}">
+                                        <div style="margin-left: 20px"><span>{{$val->name}}</span><br>
+                                            {{$val->description}}</div>
+
+                                    </a>
+
+                                @endforeach
+                            @endif
+                            @if($popHotelcategory != null)
+                                @foreach($popHotelcategory as $val)
+                                    <a href="{{$val->sitesUrl}}"><img src="./img/popHotelImg/{{$val->popHotelImg}}">
+                                        <div style="margin-left: 20px"><span>{{$val->name}}</span><br>
+                                            {{$val->description}}</div>
+
+                                    </a>
+                                @endforeach
+                            @endif
+                            @if($allHotelcategory != null)
+                                @foreach($allHotelcategory as $val)
+                                    <a href="{{$val->sitesUrl}}"><img src="./img/popHotelImg/{{$val->popHotelImg}}">
+                                        <div style="margin-left: 20px"><span>{{$val->name}}</span><br>
+                                            {{$val->description}}</div>
+                                    </a>
+                                @endforeach
+                            @endif
                     </section>
                 </div>
 @endsection

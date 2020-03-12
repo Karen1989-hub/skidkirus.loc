@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="55ea3ffd-cea8-4cec-8f4c-f782e579d332" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PagesFilterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PagesFilterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/adminPages/allHotels.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/adminPages/allHotels.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout/singlPagesMaket.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/singlPagesMaket.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/allShopPage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/allShopPage.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/allToursPage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/allToursPage.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/setPopHotel.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/setPopHotel.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/allHotelsPage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/allHotelsPage.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -110,7 +104,7 @@
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdminController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="445">
-              <caret line="99" column="22" lean-forward="true" selection-start-line="99" selection-start-column="22" selection-end-line="99" selection-end-column="22" />
+              <caret line="99" column="22" selection-start-line="99" selection-start-column="22" selection-end-line="99" selection-end-column="22" />
               <folding>
                 <element signature="e#40#56#0#PHP" expanded="true" />
               </folding>
@@ -121,8 +115,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ShopsFilterController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
+            <state relative-caret-position="668">
               <caret line="201" column="20" selection-start-line="201" selection-start-column="20" selection-end-line="201" selection-end-column="38" />
+              <folding>
+                <element signature="e#40#68#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HotelsFilterController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
               <folding>
                 <element signature="e#40#68#0#PHP" expanded="true" />
               </folding>
@@ -133,8 +139,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1006">
-              <caret line="117" column="101" selection-start-line="117" selection-start-column="101" selection-end-line="117" selection-end-column="101" />
+            <state relative-caret-position="345">
+              <caret line="120" column="83" lean-forward="true" selection-start-line="120" selection-start-column="83" selection-end-line="120" selection-end-column="100" />
               <folding>
                 <element signature="e#7#389#0#PHP" expanded="true" />
               </folding>
@@ -145,17 +151,30 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="276" column="42" lean-forward="true" selection-start-line="256" selection-start-column="35" selection-end-line="276" selection-end-column="42" />
+            <state relative-caret-position="270">
+              <caret line="261" column="83" selection-start-line="261" selection-start-column="83" selection-end-line="261" selection-end-column="83" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/layout/singlPagesMaket.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="334" column="59" selection-start-line="334" selection-start-column="59" selection-end-line="334" selection-end-column="59" />
+            <state relative-caret-position="175">
+              <caret line="313" column="16" selection-start-line="313" selection-start-column="16" selection-end-line="313" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/pages/allHotelsPage.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="59" column="49" selection-start-line="59" selection-start-column="49" selection-end-line="59" selection-end-column="49" />
+              <folding>
+                <element signature="e#937#962#0#HTML" expanded="true" />
+                <element signature="e#1463#1488#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -163,7 +182,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
+            <state relative-caret-position="2175">
               <caret line="101" column="51" selection-start-line="101" selection-start-column="51" selection-end-line="101" selection-end-column="51" />
             </state>
           </provider>
@@ -195,7 +214,6 @@
         <option value="$PROJECT_DIR$/resources/views/adminPages/allTours.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/PagesFilter.php" />
         <option value="$PROJECT_DIR$/app/PopHotel.php" />
-        <option value="$PROJECT_DIR$/resources/views/pages/allHotelsPage.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/hawWork.blade.php" />
         <option value="$PROJECT_DIR$/public/style/for-businees.css" />
         <option value="$PROJECT_DIR$/resources/views/pages/forBisnes.blade.php" />
@@ -219,9 +237,11 @@
         <option value="$PROJECT_DIR$/resources/views/pages/allShopPage.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ShopsFilterController.php" />
+        <option value="$PROJECT_DIR$/resources/views/layout/singlPagesMaket.blade.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/layout/singlPagesMaket.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/pages/allHotelsPage.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/HotelsFilterController.php" />
       </list>
     </option>
   </component>
@@ -311,7 +331,7 @@
       <path value="$PROJECT_DIR$/vendor/symfony/translation" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="25" />
     <option name="y" value="-25" />
     <option name="width" value="1920" />
@@ -522,16 +542,18 @@
       <workItem from="1583734873458" duration="17313000" />
       <workItem from="1583765685009" duration="37000" />
       <workItem from="1583912680072" duration="14778000" />
+      <workItem from="1584003870329" duration="3277000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74513000" />
+    <option name="totallyTimeSpent" value="77790000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18830334" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19087404" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -636,13 +658,6 @@
     <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1582395037593" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/style/blog.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11500">
-          <caret line="460" column="24" selection-start-line="460" selection-start-column="24" selection-end-line="460" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/popShop.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2100">
@@ -718,13 +733,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="9" column="63" selection-start-line="9" selection-start-column="63" selection-end-line="9" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/allHotelsPage.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="43" column="11" lean-forward="true" selection-end-line="43" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -926,17 +934,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="101" column="51" selection-start-line="101" selection-start-column="51" selection-end-line="101" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/pages/allShopPage.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="695">
           <caret line="55" column="55" lean-forward="true" selection-start-line="55" selection-start-column="55" selection-end-line="55" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2175">
+          <caret line="101" column="51" selection-start-line="101" selection-start-column="51" selection-end-line="101" selection-end-column="51" />
         </state>
       </provider>
     </entry>
@@ -953,7 +961,7 @@
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdminController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="445">
-          <caret line="99" column="22" lean-forward="true" selection-start-line="99" selection-start-column="22" selection-end-line="99" selection-end-column="22" />
+          <caret line="99" column="22" selection-start-line="99" selection-start-column="22" selection-end-line="99" selection-end-column="22" />
           <folding>
             <element signature="e#40#56#0#PHP" expanded="true" />
           </folding>
@@ -962,7 +970,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ShopsFilterController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
+        <state relative-caret-position="668">
           <caret line="201" column="20" selection-start-line="201" selection-start-column="20" selection-end-line="201" selection-end-column="38" />
           <folding>
             <element signature="e#40#68#0#PHP" expanded="true" />
@@ -972,8 +980,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1006">
-          <caret line="117" column="101" selection-start-line="117" selection-start-column="101" selection-end-line="117" selection-end-column="101" />
+        <state relative-caret-position="345">
+          <caret line="120" column="83" lean-forward="true" selection-start-line="120" selection-start-column="83" selection-end-line="120" selection-end-column="100" />
           <folding>
             <element signature="e#7#389#0#PHP" expanded="true" />
           </folding>
@@ -982,15 +990,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="276" column="42" lean-forward="true" selection-start-line="256" selection-start-column="35" selection-end-line="276" selection-end-column="42" />
+        <state relative-caret-position="270">
+          <caret line="261" column="83" selection-start-line="261" selection-start-column="83" selection-end-line="261" selection-end-column="83" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layout/singlPagesMaket.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="334" column="59" selection-start-line="334" selection-start-column="59" selection-end-line="334" selection-end-column="59" />
+        <state relative-caret-position="175">
+          <caret line="313" column="16" selection-start-line="313" selection-start-column="16" selection-end-line="313" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/allHotelsPage.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="59" column="49" selection-start-line="59" selection-start-column="49" selection-end-line="59" selection-end-column="49" />
+          <folding>
+            <element signature="e#937#962#0#HTML" expanded="true" />
+            <element signature="e#1463#1488#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HotelsFilterController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <folding>
+            <element signature="e#40#68#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -259,7 +259,7 @@
                                             <a href="#">
                                                 <h3>Россия</h3>
                                             </a>
-                                            <li><a href="{{route('getArmenianTours')}}">Москва</a></li>
+                                            <li><a href="{{route('getMosskow_hotels')}}">Москва</a></li>
                                         </ul>
                                         <ul>
                                             <a href="#">
