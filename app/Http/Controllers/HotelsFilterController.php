@@ -9,8 +9,8 @@ use App\PopHotel;
 class HotelsFilterController extends Controller
 {
     public function getMosskow_hotels(){
-        $popHotelcategory = PopHotel::where('')
-        $allHotelcategory =
+        $popHotelcategory = PopHotel::where('country','Моссква')->get();
+        $allHotelcategory = AllHotel::where('country','Ереван')->get();
         $popHotel = null;
         $allHotel = null;
 
