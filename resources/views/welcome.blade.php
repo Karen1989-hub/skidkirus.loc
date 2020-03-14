@@ -211,43 +211,7 @@
                                             <li><a href="#">Другое</a></li>
                                         </ul>
                                     </div>
-                                    <div class="links">
-                                        <ul>
-                                            <a href="#">
-                                                <h3>Акции в Подмосковье</h3>
-                                            </a>
-                                            <li><a href="#">Балашиха</a></li>
-                                            <li><a href="#">Видное</a></li>
-                                            <li><a href="#">Дзержинский</a></li>
-                                            <li><a href="#">Дмитров</a></li>
-                                            <li><a href="#">Домодедово</a></li>
-                                            <li><a href="#">Железнодорожный</a></li>
-                                            <li><a href="#">Жуковский</a></li>
-                                            <li><a href="#">Ивантеевка</a></li>
-                                            <li><a href="#">Истра</a></li>
-                                            <li><a href="#">Королев</a></li>
-                                            <li><a href="#">Красногорск</a></li>
-                                            <li><a href="#">Лобня</a></li>
-                                            <li><a href="#">Люберцы</a></li>
-                                            <li><a href="#">Мытищи</a></li>
-                                            <li><a href="#">Наро-Фоминск</a></li>
-                                            <li><a href="#">Ногинск</a></li>
-                                            <li><a href="#">Одинцово</a></li>
-                                            <li><a href="#">Орехово-Зуево</a></li>
-                                            <li><a href="#">Подольск</a></li>
-                                            <li><a href="#">Пушкино</a></li>
-                                            <li><a href="#">Раменское</a></li>
-                                            <li><a href="#">Реутов</a></li>
-                                            <li><a href="#">Сергиев Посад</a></li>
-                                            <li><a href="#">Серпухов</a></li>
-                                            <li><a href="#">Солнечногорск</a></li>
-                                            <li><a href="#">Троицк</a></li>
-                                            <li><a href="#">Химки</a></li>
-                                            <li><a href="#">Чехов</a></li>
-                                            <li><a href="#">Щербинка</a></li>
-                                            <li><a href="#">Электросталь</a></li>
-                                        </ul>
-                                    </div>
+
                                 </div>
                             </li>
                             <li>
@@ -265,7 +229,7 @@
                                             <a href="#">
                                                 <h3>Армения</h3>
                                             </a>
-                                            <li><a href="{{route('getArmenianTours')}}">Ереван</a></li>
+                                            <li><a href="{{route('getErevan_hotels')}}">Ереван</a></li>
                                         </ul>
                                         <ul>
                                             <a href="#">
@@ -340,98 +304,6 @@
                              <li>
                                 <a class="link" href="#">Кешбэк</a>
 
-                                <div class="bottom__links bottom__links-hover">
-
-                                    <div class="links">
-                                        <ul>
-                                            <a href="#">
-                                                <h3>Игры</h3>
-                                            </a>
-                                        </ul>
-                                        <ul>
-                                            <a href="#">
-                                                <h3>Путешествия</h3>
-                                            </a>
-                                            <li><a href="#">Бронирование отелей</a></li>
-                                            <li><a href="#">Заказ билетов</a></li>
-                                            <li><a href="#">Подбор тура</a></li>
-                                        </ul>
-                                        <ul>
-                                            <a href="#">
-                                                <h3>Для детей</h3>
-                                            </a>
-                                        </ul>
-                                        <ul>
-                                            <a href="#">
-                                                <h3>Для дома</h3>
-                                            </a>
-                                            <li><a href="#">Для дома</a></li>
-                                            <li><a href="#">Для сада</a></li>
-                                            <li><a href="#">Мебель</a></li>
-                                            <li><a href="#">Зоомагазины</a></li>
-                                        </ul>
-                                        <ul>
-                                            <a href="#">
-                                                <h3>Еда</h3>
-                                            </a>
-                                        </ul>
-                                    </div>
-                                    <div class="links">
-                                        <ul>
-                                            <a href="#">
-                                                <h3>Развлечения</h3>
-                                            </a>
-                                            <li><a href="#">Книги</a></li>
-                                            <li><a href="#">Товары для творчества</a></li>
-                                            <li><a href="#">Спорт</a></li>
-                                            <li><a href="#">Товары для взрослых</a></li>
-                                            <li><a href="#">Развлечения</a></li>
-                                            <li><a href="#">Подарки и цветы</a></li>
-                                            <li><a href="#">Концерты</a></li>
-                                        </ul>
-                                        <ul>
-                                            <a href="#">
-                                                <h3>Одежда, обувь, аксессуары</h3>
-                                            </a>
-                                            <li><a href="#">дежда</a></li>
-                                            <li><a href="#">Ювелирные украшения</a></li>
-                                            <li><a href="#">Обувь</a></li>
-                                            <li><a href="#">Аксессуары</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="links">
-                                        <ul>
-                                            <a href="#">
-                                                <h3>Услуги</h3>
-                                            </a>
-                                            <li><a href="#">Образование</a></li>
-                                            <li><a href="#">Хостинг</a></li>
-                                            <li><a href="#">Провайдер</a></li>
-                                            <li><a href="#">Страхование</a></li>
-                                            <li><a href="#">Кредиты и займы</a></li>
-                                        </ul>
-                                        <ul>
-                                            <a href="#">
-                                                <h3>Авто</h3>
-                                            </a>
-                                        </ul>
-                                        <ul>
-                                            <a href="#">
-                                                <h3>Красота & Здоровье</h3>
-                                            </a>
-                                        </ul>
-                                        <ul>
-                                            <a href="#">
-                                                <h3>Электроника и техника</h3>
-                                            </a>
-                                            <li><a href="#">Софт и игры</a></li>
-                                            <li><a href="#">Техника для дома</a></li>
-                                            <li><a href="#">Телефоны и планшеты</a></li>
-                                            <li><a href="#">Компьютеры и ноутбуки</a></li>
-                                            <li><a href="#">Фото и видео</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
                             </li>
                             <li>
                                 <a class="link" href="#">Товары по купонам</a>

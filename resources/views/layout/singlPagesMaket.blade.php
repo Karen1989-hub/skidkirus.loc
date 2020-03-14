@@ -212,43 +212,6 @@
                                     <li><a href="#">Другое</a></li>
                                 </ul>
                             </div>
-                            <div class="links">
-                                <ul>
-                                    <a href="#">
-                                        <h3>Акции в Подмосковье</h3>
-                                    </a>
-                                    <li><a href="#">Балашиха</a></li>
-                                    <li><a href="#">Видное</a></li>
-                                    <li><a href="#">Дзержинский</a></li>
-                                    <li><a href="#">Дмитров</a></li>
-                                    <li><a href="#">Домодедово</a></li>
-                                    <li><a href="#">Железнодорожный</a></li>
-                                    <li><a href="#">Жуковский</a></li>
-                                    <li><a href="#">Ивантеевка</a></li>
-                                    <li><a href="#">Истра</a></li>
-                                    <li><a href="#">Королев</a></li>
-                                    <li><a href="#">Красногорск</a></li>
-                                    <li><a href="#">Лобня</a></li>
-                                    <li><a href="#">Люберцы</a></li>
-                                    <li><a href="#">Мытищи</a></li>
-                                    <li><a href="#">Наро-Фоминск</a></li>
-                                    <li><a href="#">Ногинск</a></li>
-                                    <li><a href="#">Одинцово</a></li>
-                                    <li><a href="#">Орехово-Зуево</a></li>
-                                    <li><a href="#">Подольск</a></li>
-                                    <li><a href="#">Пушкино</a></li>
-                                    <li><a href="#">Раменское</a></li>
-                                    <li><a href="#">Реутов</a></li>
-                                    <li><a href="#">Сергиев Посад</a></li>
-                                    <li><a href="#">Серпухов</a></li>
-                                    <li><a href="#">Солнечногорск</a></li>
-                                    <li><a href="#">Троицк</a></li>
-                                    <li><a href="#">Химки</a></li>
-                                    <li><a href="#">Чехов</a></li>
-                                    <li><a href="#">Щербинка</a></li>
-                                    <li><a href="#">Электросталь</a></li>
-                                </ul>
-                            </div>
                         </div>
                     </li>
                     <li>
@@ -259,13 +222,13 @@
                                     <a href="#">
                                         <h3>Россия</h3>
                                     </a>
-                                    <li><a href="{{route('getArmenianTours')}}">Москва</a></li>
+                                    <li><a href="{{route('getMosskow_hotels')}}">Москва</a></li>
                                 </ul>
                                 <ul>
                                     <a href="#">
                                         <h3>Армения</h3>
                                     </a>
-                                    <li><a href="{{route('getArmenianTours')}}">Ереван</a></li>
+                                    <li><a href="{{route('getErevan_hotels')}}">Ереван</a></li>
                                 </ul>
                                 <ul>
                                     <a href="#">

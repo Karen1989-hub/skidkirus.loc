@@ -10,11 +10,23 @@ class HotelsFilterController extends Controller
 {
     public function getMosskow_hotels(){
         $popHotelcategory = PopHotel::where('country','Моссква')->get();
+        $allHotelcategory = AllHotel::where('country','Моссква')->get();
+        $popHotel = null;
+        $allHotel = null;
+
+        $arr = ['popHotel'=>$popHotel,'allHotel'=>$allHotel,
+            'popHotelcategory'=>$popHotelcategory,'allHotelcategory'=>$allHotelcategory];
+        return view('pages/allHotelsPage',$arr);
+    }
+
+    public function getErevan_hotels(){
+        $popHotelcategory = PopHotel::where('country','Ереван')->get();
         $allHotelcategory = AllHotel::where('country','Ереван')->get();
         $popHotel = null;
         $allHotel = null;
 
-        $arr = ['popHotel'=>$popHotel,'allHotel'=>$allHotel];
+        $arr = ['popHotel'=>$popHotel,'allHotel'=>$allHotel,
+            'popHotelcategory'=>$popHotelcategory,'allHotelcategory'=>$allHotelcategory];
         return view('pages/allHotelsPage',$arr);
     }
 }

@@ -119,7 +119,7 @@ Route::get('getSozvezdie_Brend','ShopsFilterController@getSozvezdie_Brend')->nam
 
 //get Hotel category
 Route::get('/getMosskow_hotels','HotelsFilterController@getMosskow_hotels')->name('getMosskow_hotels');
-
+Route::get('/getErevan_hotels','HotelsFilterController@getErevan_hotels')->name('getErevan_hotels');
 
 //get all products page
 Route::get('/getAllSkidkisPage','HomeController@getAllSkidkisPage')->name('getAllSkidkisPage');
