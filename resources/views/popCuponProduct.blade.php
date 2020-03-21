@@ -31,7 +31,22 @@
             <a href="{{route('getAllCuponProduct')}}"><div>Все Товары по купонам</div></a>
             <a href="{{route('getAllShop')}}"><div>Все магазины</div></a>                 
                     </div>
+                    <div class="big" id="null2">
+            <div class="menuHeading2">Услуги</div>
+            <a href="#"><div>Красота</div></a>
+            <a href="{{route('getAllSites')}}"><div>Рестораны и кафе</div></a>
+            <a href="{{route('getAllRestoran')}}"><div>Строительство</div></a>
+            <a href="{{route('getAllHotel')}}"><div>Ремонт</div></a>
+            <a href="{{route('getAllTours')}}"><div>Авто</div></a>
+            <a href="{{route('getAllCuponProduct')}}"><div>Питание</div></a>
+            <a href="{{route('getAllShop')}}"><div>Евент</div></a>
+            <a href="{{route('getAllShop')}}"><div>Одежда и аксессуары</div></a> 
+            <a href="{{route('getAllShop')}}"><div>Дети</div></a> 
+            <a href="{{route('getAllShop')}}"><div>Разное</div></a> 
+            <a href="{{route('getAllShop')}}"><div>Техника</div></a>             
+        </div>
                 </div>
+                
             </div>
 
         </div>
@@ -162,7 +177,7 @@
 
                         <select name="popCuponProductCategory" class="custom-select" >
                             <option selected>все категории товара</option>
-                            <option value="Furniture">Мебель и ремонт</option>
+                            <option value="furniture">Мебель и ремонт</option>
                             <option value="forHome">Товары для дома</option>
                             <option value="Electronics">Бытовая техника и электроника</option>
                             <option value="Health">Здоровье</option>

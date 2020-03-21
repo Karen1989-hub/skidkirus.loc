@@ -132,86 +132,20 @@
                     <li>
                         <a class="link" href="#">Услуги</a>                        
                         <div class="bottom__links bottom__links-hover">
-                            <div class="links">
-                                <ul>
-                                    <a href="#">
-                                        <h3>Красота</h3>
-                                    </a>
-                                    <li><a href="#">Уход за волосами</a></li>
-                                    <li><a href="#">Барбершопы</a></li>
-                                    <li><a href="#">Эпиляция</a></li>
-                                    <li><a href="#">Косметология</a></li>
-                                    <li><a href="#">SPA, массаж</a></li>
-                                    <li><a href="#">Маникюр, педикюр</a></li>
-                                    <li><a href="#">Коррекция фигуры</a></li>
-                                    <li><a href="#">Другое</a></li>
-                                </ul>
-                                <ul>
-                                    <a href="#">
-                                        <h3>Здоровые</h3>
-                                    </a>
-                                    <li><a href="#">Стоматология</a></li>
-                                    <li><a href="#">Диагностика, обследование</a></li>
-                                    <li><a href="#">Коррекция зрения</a></li>
-                                    <li><a href="#">Другое</a></li>
-                                </ul>
-                                <ul>
-                                    <a href="#">
-                                        <h3>Ресеоран и кафе</h3>
-                                    </a>
-                                    <li><a href="#">Стоматология</a></li>
-                                    <li><a href="#">Диагностика, обследование</a></li>
-                                    <li><a href="#">Коррекция зрения</a></li>
-                                    <li><a href="#">Другое</a></li>
-                                </ul>
-                            </div>
-                            <div class="links">
-                                <ul>
-                                    <a href="#">
-                                        <h3>Развлечения</h3>
-                                    </a>
-                                    <li><a href="#">Квесты </a></li>
-                                    <li><a href="#">Экскурсии и выставки</a></li>
-                                    <li><a href="#">Другое</a></li>
-                                </ul>
-                                <ul>
-                                    <a href="#">
-                                        <h3>Обучение</h3>
-                                    </a>
-                                    <li><a href="#">Иностранные языки </a></li>
-                                    <li><a href="#">Профессиональное образование</a></li>
-                                    <li><a href="#">Другое</a></li>
-                                </ul>
-                                <ul>
-                                    <a href="#">
-                                        <h3>Авто</h3>
-                                    </a>
-                                    <li><a href="#">Шиномонтаж </a></li>
-                                    <li><a href="#">Другое</a></li>
-                                </ul>
-                                <ul>
-                                    <a href="#">
-                                        <h3>Фитнес</h3>
-                                    </a>
-                                </ul>
-                                <ul>
-                                    <a href="#">
-                                        <h3></h3>
-                                    </a>
-                                </ul>
-                                <ul>
-                                    <a href="#">
-                                        <h3>Дети</h3>
-                                    </a>
-                                </ul>
-                                <ul>
-                                    <a href="#">
-                                        <h3>Разное</h3>
-                                    </a>
-                                    <li><a href="#">Фотосессии </a></li>
-                                    <li><a href="#">Другое</a></li>
-                                </ul>
-                            </div>
+                            <div class="links">                             
+                            <ul>                                           
+                                            <li><a href="#">Красота</a></li>
+                                            <li><a href="#">Здоровые</a></li> 
+                                            <li><a href="#">Ресеоран и кафе</a></li>
+                                            <li><a href="#">Развлечения</a></li>
+                                            <li><a href="#">Обучение</a></li>
+                                            <li><a href="#">Авто</a></li>
+                                            <li><a href="#">Фитнес</a></li>
+                                            <li><a href="#">Концерты</a></li>    
+                                            <li><a href="#">Дети</a></li>   
+                                            <li><a href="#">Разное</a></li>                                                                                     
+                                        </ul>                                
+                            </div>                          
                         </div>
                     </li>
                     <li>
@@ -231,7 +165,7 @@
                                     <li><a href="{{route('getErevan_hotels')}}">Ереван</a></li>
                                 </ul>
                                 <ul>
-                                    <a href="#">
+                                    <a href="{{route('getPodmoskowe_hotels')}}">
                                         <h3>Подмосковье</h3>
                                     </a>
                                 </ul>
@@ -303,18 +237,18 @@
                         <div class="bottom__links bottom__links-hover">
                             <div class="links">
                                 <ul>
-                                    <li><a href="#">Мебель и ремонт</a></li>
-                                    <li><a href="#">Товары для дома</a></li>
-                                    <li><a href="#">Бытовая техника и электроника</a></li>
-                                    <li><a href="#">Здоровье</a></li>
-                                    <li><a href="#">Продукты питания</a></li>
-                                    <li><a href="#">Красота</a></li>
-                                    <li><a href="#">Обувь и одежда</a></li>
-                                    <li><a href="#">Товары для детей</a></li>
-                                    <li><a href="#">Сувенирная продукция</a></li>
-                                    <li><a href="#">Цветы</a></li>
-                                    <li><a href="#">Воздушные шары</a></li>
-                                    <li><a href="#">18+</a></li>
+                                    <li><a href="{{route('getFurnicher_cupon')}}">Мебель и ремонт</a></li>
+                                    <li><a href="{{route('getForHome_cupon')}}">Товары для дома</a></li>
+                                    <li><a href="{{route('getElectronics_cupon')}}">Бытовая техника и электроника</a></li>
+                                    <li><a href="{{route('getHealth_cupon')}}">Здоровье</a></li>
+                                    <li><a href="{{route('getFood_cupon')}}">Продукты питания</a></li>
+                                    <li><a href="{{route('getBeauty_cupon')}}">Красота</a></li>
+                                    <li><a href="{{route('getClothes_cupon')}}">Обувь и одежда</a></li>
+                                    <li><a href="{{route('getForChildren_cupon')}}">Товары для детей</a></li>
+                                    <li><a href="{{route('getSuvenirs_cupon')}}">Сувенирная продукция</a></li>
+                                    <li><a href="{{route('getFlowers_cupon')}}">Цветы</a></li>
+                                    <li><a href="{{route('getBalloons_cupon')}}">Воздушные шары</a></li>
+                                    <li><a href="{{route('getPlus18_cupon')}}">18+</a></li>
                                 </ul>
                             </div>
                         </div>

@@ -38,7 +38,7 @@
         @foreach($Skidki as $val)
             <div class="main__content card_content">
                 <div class="card__img">
-                    <a href="@if($val->sitesUrl != "" && $val->sitesUrl!=null)
+                    <a href="@if($val->sitesUrl != '' && $val->sitesUrl!=null)
                     {{$val->sitesUrl}}
                     @else
                         #
@@ -50,12 +50,12 @@
                     </div>
                 @endif
                 <p>
-                    <a href="@if($val->sitesUrl != "" && $val->sitesUrl!=null)
+                    <a href="@if($val->sitesUrl != '' && $val->sitesUrl!=null)
                     {{$val->sitesUrl}}
                     @endif  " class="tur__location">{{$val->name}}</a>
                 </p>
                 <div class="card__title">
-                    <a href="@if($val->sitesUrl != "" && $val->sitesUrl!=null)
+                    <a href="@if($val->sitesUrl != '' && $val->sitesUrl!=null)
                     {{$val->sitesUrl}}
                     @endif  ">{{$val->description}}</a>
                 </div>
@@ -65,7 +65,7 @@
             @foreach($allSkidki as $val)
                 <div class="main__content card_content">
                     <div class="card__img">
-                        <a href="@if($val->sitesUrl != "" && $val->sitesUrl!=null)
+                        <a href="@if($val->sitesUrl != '' && $val->sitesUrl!=null)
                         {{$val->sitesUrl}}
                         @else
                             #
@@ -77,12 +77,12 @@
                         </div>
                     @endif
                     <p>
-                        <a href="@if($val->sitesUrl != "" && $val->sitesUrl!=null)
+                        <a href="@if($val->sitesUrl != '' && $val->sitesUrl!=null)
                         {{$val->sitesUrl}}
                         @endif  " class="tur__location">{{$val->name}}</a>
                     </p>
                     <div class="card__title">
-                        <a href="@if($val->sitesUrl != "" && $val->sitesUrl!=null)
+                        <a href="@if($val->sitesUrl != '' && $val->sitesUrl!=null)
                         {{$val->sitesUrl}}
                         @endif  ">{{$val->description}}</a>
                     </div>

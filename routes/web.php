@@ -120,6 +120,21 @@ Route::get('getSozvezdie_Brend','ShopsFilterController@getSozvezdie_Brend')->nam
 //get Hotel category
 Route::get('/getMosskow_hotels','HotelsFilterController@getMosskow_hotels')->name('getMosskow_hotels');
 Route::get('/getErevan_hotels','HotelsFilterController@getErevan_hotels')->name('getErevan_hotels');
+Route::get('/getPodmoskowe_hotels','HotelsFilterController@getPodmoskowe_hotels')->name('getPodmoskowe_hotels');
+
+//get Cupons_Product category
+Route::get('/getFurnicher_cupon','CuponsProdFilterController@getFurnicher_cupon')->name('getFurnicher_cupon');
+Route::get('/getForHome_cupon','CuponsProdFilterController@getForHome_cupon')->name('getForHome_cupon');
+Route::get('/getElectronics_cupon','CuponsProdFilterController@getElectronics_cupon')->name('getElectronics_cupon');
+Route::get('/getHealth_cupon','CuponsProdFilterController@getHealth_cupon')->name('getHealth_cupon');
+Route::get('/getFood_cupon','CuponsProdFilterController@getFood_cupon')->name('getFood_cupon');
+Route::get('/getBeauty_cupon','CuponsProdFilterController@getBeauty_cupon')->name('getBeauty_cupon');
+Route::get('/getClothes_cupon','CuponsProdFilterController@getClothes_cupon')->name('getClothes_cupon');
+Route::get('/getForChildren_cupon','CuponsProdFilterController@getForChildren_cupon')->name('getForChildren_cupon');
+Route::get('/getSuvenirs_cupon','CuponsProdFilterController@getSuvenirs_cupon')->name('getSuvenirs_cupon');
+Route::get('/getFlowers_cupon','CuponsProdFilterController@getFlowers_cupon')->name('getFlowers_cupon');
+Route::get('/getBalloons_cupon','CuponsProdFilterController@getBalloons_cupon')->name('getBalloons_cupon');
+Route::get('/getPlus18_cupon','CuponsProdFilterController@getPlus18_cupon')->name('getPlus18_cupon');
 
 //get all products page
 Route::get('/getAllSkidkisPage','HomeController@getAllSkidkisPage')->name('getAllSkidkisPage');

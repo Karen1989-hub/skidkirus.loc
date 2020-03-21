@@ -24,54 +24,106 @@
     {{--    go home page end--}}
 
 
-    <div class="cards__bg">
-        <div class="cards allTours" style="margin-bottom: 50px">
-            @if($popShop != null)
-                @foreach($popShop as $val)
+    
+    <div class="cards allTours" style="margin-bottom: 50px">
+    @if($popShop != null)
+        @foreach($popShop as $val)
+            <div class="main__content card_content">
+                <div class="card__img">
+                    <a href="@if($val->sitesUrl != '' && $val->sitesUrl!=null)
+                    {{$val->sitesUrl}}
+                    @else
+                        #
+                @endif"><img src="./img/popShop/{{$val->imageUrl}}" alt=""></a>
+                </div>               
+                <p>
+                    <a href="@if($val->sitesUrl != '' && $val->sitesUrl!=null)
+                    {{$val->sitesUrl}}
+                    @endif  " class="tur__location">{{$val->name}}</a>
+                </p>
+                <div class="card__title" style="width:200px">
+                    <a href="@if($val->sitesUrl != '' && $val->sitesUrl!=null)
+                    {{$val->sitesUrl}}
+                    @endif  ">{{$val->description}}</a>
+                </div>
+            </div>
+        @endforeach
+        @endif
 
-                    <a href="{{$val->sitesUrl}}"><img src="./img/popShop/{{$val->imageUrl}}">
-                        <div style="margin-left: 20px"><span>{{$val->name}}</span><br>
-                            {{$val->description}}</div>
+        @if($allShopsPage != null)
+        @foreach($allShopsPage as $val)
+            <div class="main__content card_content">
+                <div class="card__img">
+                    <a href="@if($val->sitesUrl != '' && $val->sitesUrl!=null)
+                    {{$val->sitesUrl}}
+                    @else
+                        #
+                @endif"><img src="./img/popShop/{{$val->imageUrl}}" alt=""></a>
+                </div>               
+                <p>
+                    <a href="@if($val->sitesUrl != '' && $val->sitesUrl!=null)
+                    {{$val->sitesUrl}}
+                    @endif  " class="tur__location">{{$val->name}}</a>
+                </p>
+                <div class="card__title" style="width:200px">
+                    <a href="@if($val->sitesUrl != '' && $val->sitesUrl!=null)
+                    {{$val->sitesUrl}}
+                    @endif  ">{{$val->description}}</a>
+                </div>
+            </div>
+        @endforeach
+        @endif
 
-                    </a>
+        @if($popShopsCategory != null)
+        @foreach($popShopsCategory as $val)
+            <div class="main__content card_content">
+                <div class="card__img">
+                    <a href="@if($val->sitesUrl != '' && $val->sitesUrl!=null)
+                    {{$val->sitesUrl}}
+                    @else
+                        #
+                @endif"><img src="./img/popShop/{{$val->imageUrl}}" alt=""></a>
+                </div>               
+                <p>
+                    <a href="@if($val->sitesUrl != '' && $val->sitesUrl!=null)
+                    {{$val->sitesUrl}}
+                    @endif  " class="tur__location">{{$val->name}}</a>
+                </p>
+                <div class="card__title" style="width:200px">
+                    <a href="@if($val->sitesUrl != '' && $val->sitesUrl!=null)
+                    {{$val->sitesUrl}}
+                    @endif  ">{{$val->description}}</a>
+                </div>
+            </div>
+        @endforeach
+        @endif
 
-                @endforeach
-            @endif
-            @if($allShopsPage != null)
-                @foreach($allShopsPage as $val)
-
-                    <a href="{{$val->sitesUrl}}"><img src="./img/popShop/{{$val->imageUrl}}">
-                        <div style="margin-left: 20px"><span>{{$val->name}}</span><br>
-                            {{$val->description}}</div>
-
-                    </a>
-
-                @endforeach
-            @endif
-            @if($popShopsCategory != null)
-                @foreach($popShopsCategory as $val)
-
-                    <a href="{{$val->sitesUrl}}"><img src="./img/popShop/{{$val->imageUrl}}">
-                        <div style="margin-left: 20px"><span>{{$val->name}}</span><br>
-                            {{$val->description}}</div>
-
-                    </a>
-
-                @endforeach
-            @endif
-            @if($allShopsCategory != null)
-                @foreach($allShopsCategory as $val)
-
-                    <a href="{{$val->sitesUrl}}"><img src="./img/popShop/{{$val->imageUrl}}">
-                        <div style="margin-left: 20px"><span>{{$val->name}}</span><br>
-                            {{$val->description}}</div>
-
-                    </a>
-
-                @endforeach
-            @endif
+        @if($allShopsCategory != null)
+        @foreach($allShopsCategory as $val)
+            <div class="main__content card_content">
+                <div class="card__img">
+                    <a href="@if($val->sitesUrl != '' && $val->sitesUrl!=null)
+                    {{$val->sitesUrl}}
+                    @else
+                        #
+                @endif"><img src="./img/popShop/{{$val->imageUrl}}" alt=""></a>
+                </div>               
+                <p>
+                    <a href="@if($val->sitesUrl != '' && $val->sitesUrl!=null)
+                    {{$val->sitesUrl}}
+                    @endif  " class="tur__location">{{$val->name}}</a>
+                </p>
+                <div class="card__title" style="width:200px">
+                    <a href="@if($val->sitesUrl != '' && $val->sitesUrl!=null)
+                    {{$val->sitesUrl}}
+                    @endif  ">{{$val->description}}</a>
+                </div>
+            </div>
+        @endforeach
+        @endif           
+           
         </div>
-    </div>
+    
 @endsection
 
 @section('footer')

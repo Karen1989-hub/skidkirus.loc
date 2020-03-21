@@ -29,4 +29,15 @@ class HotelsFilterController extends Controller
             'popHotelcategory'=>$popHotelcategory,'allHotelcategory'=>$allHotelcategory];
         return view('pages/allHotelsPage',$arr);
     }
+
+    public function getPodmoskowe_hotels(){
+        $popHotelcategory = PopHotel::where('country','Подмосковье')->get();
+        $allHotelcategory = AllHotel::where('country','Подмосковье')->get();
+        $popHotel = null;
+        $allHotel = null;
+
+        $arr = ['popHotel'=>$popHotel,'allHotel'=>$allHotel,
+            'popHotelcategory'=>$popHotelcategory,'allHotelcategory'=>$allHotelcategory];
+        return view('pages/allHotelsPage',$arr);
+    }
 }

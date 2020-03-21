@@ -24,15 +24,14 @@
     {{--    go home page end--}}
 
 
-<div class="cards__bg">
-                    <section class="slider">
+    <div class="cards__bg">
+        <div class="cards allTours" style="margin-bottom: 50px">
                         @if($popHotel != null)
                                 @foreach($popHotel as $val)
 
                                     <a href="{{$val->sitesUrl}}"><img src="./img/popHotelImg/{{$val->popHotelImg}}">
                                         <div style="margin-left: 20px"><span>{{$val->name}}</span><br>
                                             {{$val->description}}</div>
-
                                     </a>
 
                                 @endforeach
@@ -65,7 +64,7 @@
                                     </a>
                                 @endforeach
                             @endif
-                    </section>
+                    </div>
                 </div>
 @endsection
 

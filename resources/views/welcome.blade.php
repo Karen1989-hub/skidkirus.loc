@@ -132,85 +132,22 @@
 
                                 <div class="bottom__links bottom__links-hover">
                                     <div class="links">
-                                        <ul>
-                                            <a>
-                                                <h3>Красота</h3>
-                                            </a>
-                                            <li><a href="#">Уход за волосами</a></li>
-                                            <li><a href="#">Барбершопы</a></li>
-                                            <li><a href="#">Эпиляция</a></li>
-                                            <li><a href="#">Косметология</a></li>
-                                            <li><a href="#">SPA, массаж</a></li>
-                                            <li><a href="#">Маникюр, педикюр</a></li>
-                                            <li><a href="#">Коррекция фигуры</a></li>
-                                            <li><a href="#">Другое</a></li>
-                                        </ul>
-                                        <ul>
-                                            <a href="#">
-                                                <h3>Здоровые</h3>
-                                            </a>
-                                            <li><a href="#">Стоматология</a></li>
-                                            <li><a href="#">Диагностика, обследование</a></li>
-                                            <li><a href="#">Коррекция зрения</a></li>
-                                            <li><a href="#">Другое</a></li>
-                                        </ul>
-                                        <ul>
-                                            <a href="#">
-                                                <h3>Ресеоран и кафе</h3>
-                                            </a>
-                                            <li><a href="#">Стоматология</a></li>
-                                            <li><a href="#">Диагностика, обследование</a></li>
-                                            <li><a href="#">Коррекция зрения</a></li>
-                                            <li><a href="#">Другое</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="links">
-                                        <ul>
-                                            <a href="#">
-                                                <h3>Развлечения</h3>
-                                            </a>
-                                            <li><a href="#">Квесты </a></li>
-                                            <li><a href="#">Экскурсии и выставки</a></li>
-                                            <li><a href="#">Другое</a></li>
-                                        </ul>
-                                        <ul>
-                                            <a href="#">
-                                                <h3>Обучение</h3>
-                                            </a>
-                                            <li><a href="#">Иностранные языки </a></li>
-                                            <li><a href="#">Профессиональное образование</a></li>
-                                            <li><a href="#">Другое</a></li>
-                                        </ul>
-                                        <ul>
-                                            <a href="#">
-                                                <h3>Авто</h3>
-                                            </a>
-                                            <li><a href="#">Шиномонтаж </a></li>
-                                            <li><a href="#">Другое</a></li>
-                                        </ul>
-                                        <ul>
-                                            <a href="#">
-                                                <h3>Фитнес</h3>
-                                            </a>
-                                        </ul>
-                                        <ul>
-                                            <a href="#">
-                                                <h3></h3>
-                                            </a>
-                                        </ul>
-                                        <ul>
-                                            <a href="#">
-                                                <h3>Дети</h3>
-                                            </a>
-                                        </ul>
-                                        <ul>
-                                            <a href="#">
-                                                <h3>Разное</h3>
-                                            </a>
-                                            <li><a href="#">Фотосессии </a></li>
-                                            <li><a href="#">Другое</a></li>
-                                        </ul>
-                                    </div>
+                                        <ul>                                           
+                                            <li><a href="#">Красота</a></li>
+                                            <li><a href="#">Рестораны и кафе</a></li> 
+                                            <li><a href="#">Строительство</a></li>
+                                            <li><a href="#">Ремонт</a></li>
+                                            <li><a href="#">Авто</a></li>
+                                            <li><a href="#">Питание</a></li>
+                                            <li><a href="#">Евент</a></li>
+                                            <li><a href="#">Одежда и аксессуары</a></li>    
+                                            <li><a href="#">Дети</a></li>   
+                                            <li><a href="#">Разное</a></li>    
+                                            <li><a href="#">Техника</a></li>                                                                                   
+                                        </ul>                             
+                                      
+                                
+                                    </div>                                  
 
                                 </div>
                             </li>
@@ -232,7 +169,7 @@
                                             <li><a href="{{route('getErevan_hotels')}}">Ереван</a></li>
                                         </ul>
                                         <ul>
-                                            <a href="#">
+                                            <a href="{{route('getPodmoskowe_hotels')}}">
                                                 <h3>Подмосковье</h3>
                                             </a>
                                         </ul>
@@ -311,18 +248,18 @@
                                 <div class="bottom__links bottom__links-hover">
                                     <div class="links">
                                         <ul>
-                                            <li><a href="{{route('f1')}}">Мебель и ремонт</a></li>
-                                            <li><a href="#">Товары для дома</a></li>
-                                            <li><a href="#">Бытовая техника и электроника</a></li>
-                                            <li><a href="#">Здоровье</a></li>
-                                            <li><a href="#">Продукты питания</a></li>
-                                            <li><a href="#">Красота</a></li>
-                                            <li><a href="#">Обувь и одежда</a></li>
-                                            <li><a href="#">Товары для детей</a></li>
-                                            <li><a href="#">Сувенирная продукция</a></li>
-                                            <li><a href="#">Цветы</a></li>
-                                            <li><a href="#">Воздушные шары</a></li>
-                                            <li><a href="#">18+</a></li>
+                                            <li><a href="{{route('getFurnicher_cupon')}}">Мебель и ремонт</a></li>
+                                            <li><a href="{{route('getForHome_cupon')}}">Товары для дома</a></li>
+                                            <li><a href="{{route('getElectronics_cupon')}}">Бытовая техника и электроника</a></li>
+                                            <li><a href="{{route('getHealth_cupon')}}">Здоровье</a></li>
+                                            <li><a href="{{route('getFood_cupon')}}">Продукты питания</a></li>
+                                            <li><a href="{{route('getBeauty_cupon')}}">Красота</a></li>
+                                            <li><a href="{{route('getClothes_cupon')}}">Обувь и одежда</a></li>
+                                            <li><a href="{{route('getForChildren_cupon')}}">Товары для детей</a></li>
+                                            <li><a href="{{route('getSuvenirs_cupon')}}">Сувенирная продукция</a></li>
+                                            <li><a href="{{route('getFlowers_cupon')}}">Цветы</a></li>
+                                            <li><a href="{{route('getBalloons_cupon')}}">Воздушные шары</a></li>
+                                            <li><a href="{{route('getPlus18_cupon')}}">18+</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -344,83 +281,35 @@
                     <ul>
                         <li class="left__links">
                             <img src="./img/icons/1.png" alt="">
-                            <a href="">Красота</a>
-                            <ul class="left__submenue">
-
-                                <li><a href="insta.html">Уход за волосами</a></li>
-                                <li><a href="#">Барбершопы</a></li>
-                                <li><a href="#">Эпиляция</a></li>
-                                <li><a href="#">Косметология</a></li>
-                                <li><a href="#">SPA, массаж</a></li>
-                                <li><a href="#">Маникюр, педикюр</a></li>
-                                <li><a href="#">Коррекция фигуры</a></li>
-                                <li><a href="#">Другое</a></li>
-                            </ul>
-                        </li>
-                        <li class="left__links">
-                            <img src="./img/icons/2.png" alt="">
-                            <a href="#">Здоровье</a>
-                            <ul class="left__submenue">
-
-                                <li><a href="#">Стоматология</a></li>
-                                <li><a href="#">Диагностика, обследование</a></li>
-                                <li><a href="#">Коррекция зрения</a></li>
-                                <li><a href="#">Другое</a></li>
-                            </ul>
-                        </li>
+                            <a href="">Красота</a>                            
+                        </li>                        
                         <li class="left__links">
                             <img src="./img/icons/3.png" alt="">
-                            <a href="#">Рестораны и кафе</a>
-
-                            <ul class="left__submenue">
-
-                                <li><a href="#">Рестораны</a></li>
-                                <li><a href="#">Доставка еды</a></li>
-                                <li><a href="#">Банкеты</a></li>
-                                <li><a href="#">Новые рестораны на Skidkirus</a></li>
-                            </ul>
+                            <a href="#">Рестораны и кафе</a>                            
                         </li>
                         <li class="left__links">
                             <img src="./img/icons/4.png" alt="">
-                            <a href="#">Развлечения</a>
-                            <ul class="left__submenue">
-                                <li><a href="#">Квесты</a></li>
-                                <li><a href="#">Экскурсии и выставки</a></li>
-                                <li><a href="#">Другое</a></li>
-
-                            </ul>
-
-
-
+                            <a href="#">Строительство</a>                     
                         </li>
                         <li class="left__links">
                             <img src="./img/icons/5.png" alt="">
-                            <a href="#">Обучение</a>
-                            <ul class="left__submenue">
-                                <li><a href="#">Иностранные языки</a></li>
-                                <li><a href="#">Профессиональное образование</a></li>
-                                <li><a href="#">Другое</a></li>
-
-                            </ul>
+                            <a href="#">Ремонт</a>                           
                         </li>
                         <li class="left__links">
                             <img src="./img/icons/6.png" alt="">
-                            <a href="#">Авто</a>
-                            <ul class="left__submenue">
-
-                                <li><a href="#">ПШиномонтаж</a></li>
-                                <li><a href="#">Другое</a></li>
-
-                            </ul>
-
+                            <a href="#">Авто</a>                       
+                        </li>
+                        <li class="left__links">
+                            <img src="./img/icons/3.png" alt="">
+                            <a href="#">Питание</a>                            
                         </li>
                         <li class="left__links">
                             <img src="./img/icons/7.png" alt="">
-                            <a href="#">Фитнес</a>
+                            <a href="#">Евент</a>
                         </li>
                         <li class="left__links">
                             <img src="./img/icons/8.png" alt="">
-                            <a href="#">Концерты</a>
+                            <a href="#">Одежда и аксессуары</a>
                         </li>
                         <li class="left__links">
                             <img src="./img/icons/9.png" alt="">
@@ -428,17 +317,11 @@
                         </li>
                         <li class="left__links">
                             <img src="./img/icons/10.png" alt="">
-                            <a href="#">Разное</a>
-                            <ul class="left__submenue">
-
-                                <li><a href="#">Фотосессии</a></li>
-                                <li><a href="#">Другое</a></li>
-
-                            </ul>
+                            <a href="#">Разное</a>                            
                         </li>
                         <li class="left__links">
                             <img src="./img/icons/11.png" alt="">
-                            <a href="#">Акции в Подмосковье</a>
+                            <a href="#">Техника</a>
                         </li>
                     </ul>
                     <div class="burger "><img src="./img/burger.svg" alt=""></div>
@@ -456,7 +339,7 @@
                 <!-- navbar end -->
                 <div class="contanier__menue-title hotel__title">
                     <a href="{{route('getAllSkidkisPage')}}" id="menue__title">Скидки</a>
-                    <a href="{{route('getAllSkidkisPage')}}" id="menue__title-info">ВСЕ (555)</a>
+                    <a href="{{route('getAllSkidkisPage')}}" id="menue__title-info">ВСЕ </a>
                 </div>
                 <div class="cards w-75">
                     <!-- card start -->
@@ -502,7 +385,7 @@
 
                     <div class="contanier__menue-title hotel__title">
                         <a href="{{route('getAllSitesPage')}}" id="menue__title">Сайты</a>
-                        <a href="{{route('getAllSitesPage')}}" id="menue__title-info">ВСЕ (555)</a>
+                        <a href="{{route('getAllSitesPage')}}" id="menue__title-info">ВСЕ </a>
                     </div>
                       <!-- Swiper -->
                       <div class="swiper-container">
@@ -579,7 +462,7 @@
                     <div class="cards__bg-title">
                         <div class="contanier__menue-title bg__title">
                             <a href="{{route('getAllRestoranPage')}}" id="menue__title">Популярные рестораны </a>
-                            <a href="{{route('getAllRestoranPage')}}" id="menue__title-info">ВСЕ (268)</a>
+                            <a href="{{route('getAllRestoranPage')}}" id="menue__title-info">ВСЕ </a>
                         </div>
                     </div>
                     <div class="cards services">
@@ -620,7 +503,7 @@
 
                 <div class="contanier__menue-title hotel__title">
                     <a href="{{route('getAllHotelPage')}}" id="menue__title">Отели</a>
-                    <a href="{{route('getAllHotelPage')}}" id="menue__title-info">ВСЕ (555)</a>
+                    <a href="{{route('getAllHotelPage')}}" id="menue__title-info">ВСЕ </a>
                 </div>
                 <div class="cards__bg">
                     <section class="slider">
@@ -640,7 +523,7 @@
 
                 <div class="contanier__menue-title tur__title">
                     <a href="{{route('getAllToursPage')}}" id="menue__title">Туры</a>
-                    <a href="{{route('getAllToursPage')}}" id="menue__title-info">ВСЕ (555)</a>
+                    <a href="{{route('getAllToursPage')}}" id="menue__title-info">ВСЕ </a>
                 </div>
 
                 <div class="cards tur w-75">
@@ -657,17 +540,13 @@
                             </div>
                         </div>
                     </div>
-                    @endforeach
-                    {{--                    end--}}
-
-
-
+                    @endforeach             
                 </div>
 
 
                 <div class="contanier__menue-title">
                     <a href="{{route('getAllCuponProductPage')}}" id="menue__title">Товары по купонам </a>
-                    <a href="{{route('getAllCuponProductPage')}}" id="menue__title-info">ВСЕ (999)</a>
+                    <a href="{{route('getAllCuponProductPage')}}" id="menue__title-info">ВСЕ </a>
                 </div>
 
                 <div class="cards w-75">
@@ -708,7 +587,7 @@
                 <div class="cards__bg cards__bg-stores">
                     <div class="contanier__menue-title">
                         <a href="{{route('getAllShopsPage')}}" id="menue__title">Популярные магазины </a>
-                        <a href="{{route('getAllShopsPage')}}" id="menue__title-info">ВСЕ (999)</a>
+                        <a href="{{route('getAllShopsPage')}}" id="menue__title-info">ВСЕ </a>
                     </div>
                     <section class="slider">
                         @foreach($popShop as $val)

@@ -35,6 +35,7 @@
     {{--  reklamniy  baner end--}}
 
     <div class="cards allTours" style="margin-bottom: 50px">
+    @if($PopCuponProduct != null)
         @foreach($PopCuponProduct as $val)
             <div class="main__content card_content">
                 <div class="card__img">
@@ -61,8 +62,9 @@
                 </div>
             </div>
         @endforeach
-{{--      astex nnuynne linelu inch verevin@ bayc bolori hamar     --}}
-            @foreach($allCuponProduct as $val)
+    @endif
+        @if($AllCuponProduct != null)
+            @foreach($AllCuponProduct as $val)
             <div class="main__content card_content">
                 <div class="card__img">
                     <a href="@if($val->sitesUrl != '' && $val->sitesUrl!=null)
@@ -88,6 +90,64 @@
                 </div>
             </div>
         @endforeach
+    @endif
+        <!--  -->
+    @if($popCuponProductCategory != null)
+        @foreach($popCuponProductCategory as $val)
+            <div class="main__content card_content">
+                <div class="card__img">
+                    <a href="@if($val->sitesUrl != '' && $val->sitesUrl!=null)
+                    {{$val->sitesUrl}}
+                    @else
+                        #
+@endif"><img src="./img/popCuponProductImg/{{$val->imageUrl}}" alt=""></a>
+                </div>
+                @if($val->discount != null)
+                    <div class="card__discount big">
+                        <a href="#">{{$val->discount}}%</a>
+                    </div>
+                @endif
+                <p>
+                    <a href="@if($val->sitesUrl != '' && $val->sitesUrl!=null)
+                    {{$val->sitesUrl}}
+                    @endif  " class="tur__location">{{$val->name}}</a>
+                </p>
+                <div class="card__title">
+                    <a href="@if($val->sitesUrl != '' && $val->sitesUrl!=null)
+                    {{$val->sitesUrl}}
+                    @endif  ">{{$val->description}}</a>
+                </div>
+            </div>
+        @endforeach
+    @endif
+        @if($allCuponProductCategory)
+            @foreach($allCuponProductCategory as $val)
+            <div class="main__content card_content">
+                <div class="card__img">
+                    <a href="@if($val->sitesUrl != '' && $val->sitesUrl!=null)
+                    {{$val->sitesUrl}}
+                    @else
+                        #
+@endif"><img src="./img/popCuponProductImg/{{$val->imageUrl}}" alt=""></a>
+                </div>
+                @if($val->discount != null)
+                    <div class="card__discount big">
+                        <a href="#">{{$val->discount}}%</a>
+                    </div>
+                @endif
+                <p>
+                    <a href="@if($val->sitesUrl != '' && $val->sitesUrl!=null)
+                    {{$val->sitesUrl}}
+                    @endif  " class="tur__location">{{$val->name}}</a>
+                </p>
+                <div class="card__title">
+                    <a href="@if($val->sitesUrl != '' && $val->sitesUrl!=null)
+                    {{$val->sitesUrl}}
+                    @endif  ">{{$val->description}}</a>
+                </div>
+            </div>
+        @endforeach
+    @endif
     </div>
 @endsection
 

@@ -533,8 +533,11 @@ class AdminController extends Controller
         $id = $request->input('id');
 
         $delete = PopCuponProduct::find($id);
-        unlink("img/popCuponProductImg/$delete->imageUrl");
-        $delete -> delete();
+        if($delete != null){
+            unlink("img/popCuponProductImg/$delete->imageUrl");
+            $delete -> delete();
+        }
+        
 
         return back();
     }

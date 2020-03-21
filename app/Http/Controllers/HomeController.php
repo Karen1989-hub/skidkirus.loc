@@ -78,17 +78,23 @@ class HomeController extends Controller
 
     public function getAllHotelPage(){
         $popHotel = PopHotel::all();  
-        $allHotel = AllHotel::all();     
+        $allHotel = AllHotel::all();    
+        $popHotelcategory = null;
+        $allHotelcategory = null; 
         //$allToursCount = count($allTours)+count($PopTour);
-        $arr = ['popHotel'=>$popHotel,'allHotel'=>$allHotel];
+        $arr = ['popHotel'=>$popHotel,'allHotel'=>$allHotel,
+    'popHotelcategory'=>$popHotelcategory,'allHotelcategory'=>$allHotelcategory];
         return view('pages/allHotelsPage',$arr);
     }
 
     public function getAllCuponProductPage(){
         $PopCuponProduct =PopCuponProduct::all();
-        $allCuponProduct = allCuponProduct::all();
+        $AllCuponProduct = allCuponProduct::all();
+        $popCuponProductCategory = null;
+        $allCuponProductCategory = null;
         //$allToursCount = count($allTours)+count($PopTour);
-        $arr = ['PopCuponProduct'=>$PopCuponProduct,'allCuponProduct'=>$allCuponProduct];
+        $arr = ['PopCuponProduct'=>$PopCuponProduct,'AllCuponProduct'=>$AllCuponProduct,
+    'popCuponProductCategory'=>$popCuponProductCategory,'allCuponProductCategory'=>$allCuponProductCategory];
         return view('pages/allCuponProductPages',$arr);
     }
 

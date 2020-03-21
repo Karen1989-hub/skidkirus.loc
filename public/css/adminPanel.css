@@ -101,11 +101,11 @@
     height: 400px!important;
     transition-duration: 0.5s;
 }
-.menuHeading{
-    background: #DEDEDE;
-    cursor: pointer;
+#height2{
+    height: 600px!important;
+    transition-duration: 0.5s;
 }
-.menuHeading1{
+.menuHeading , .menuHeading1 , .menuHeading2{
     background: #DEDEDE;
     cursor: pointer;
 }
