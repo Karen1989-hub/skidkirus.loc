@@ -34,7 +34,7 @@
         </div>
         <div class="big" id="null2">
             <div class="menuHeading2">Услуги</div>
-            <a href="#"><div class="activPage">Красота</div></a>
+            <a href="{{route('getBeauty')}}"><div class="activPage">Красота</div></a>
             <a href="{{route('getAllSites')}}"><div>Рестораны и кафе</div></a>
             <a href="{{route('getAllRestoran')}}"><div>Строительство</div></a>
             <a href="{{route('getAllHotel')}}"><div>Ремонт</div></a>
@@ -129,7 +129,7 @@
   <div class="card-body px-lg-5 pt-0 formBg">
 
     <!-- Form -->
-    <form class="text-center" style="color: #757575;" action="{{route('setSkidki')}}" method="post" enctype='multipart/form-data'>
+    <form class="text-center" style="color: #757575;" action="{{route('setBeauty')}}" method="post" enctype='multipart/form-data'>
     @csrf
       <div class="md-form">
         <input type="text" name="name" id="materialLoginFormPassword" class="form-control">

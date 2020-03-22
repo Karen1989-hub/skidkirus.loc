@@ -88,6 +88,13 @@ Route::post('/setAllCuponProduct','AllProdAdminController@setAllCuponProduct')->
 Route::post('/updateAllCuponProduct','AllProdAdminController@updateAllCuponProduct')->name('updateAllCuponProduct');
 Route::post('/deleteAllCuponProduct','AllProdAdminController@deleteAllCuponProduct')->name('deleteAllCuponProduct');
 
+//admins beauty
+Route::get('/getBeauty','ServicesController@getBeauty')->name('getBeauty');
+Route::post('/setBeauty','ServicesController@setBeauty')->name('setBeauty');
+Route::post('/updateBeauty','ServicesController@updateBeauty')->name('updateBeauty');
+Route::post('/deleteBeauty','ServicesController@deleteBeauty')->name('deleteBeauty');
+
+
 //get tours category 
 Route::get('/getArmenianTours','PagesFilterController@getArmenianTours')->name('getArmenianTours');
 Route::get('/getRussionTours','PagesFilterController@getRussianTours')->name('getRussionTours');
