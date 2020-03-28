@@ -134,16 +134,17 @@
                         <div class="bottom__links bottom__links-hover">
                             <div class="links">                             
                             <ul>                                           
-                                            <li><a href="#">Красота</a></li>
-                                            <li><a href="#">Здоровые</a></li> 
-                                            <li><a href="#">Ресеоран и кафе</a></li>
-                                            <li><a href="#">Развлечения</a></li>
-                                            <li><a href="#">Обучение</a></li>
+                                            <li><a href="{{route('getBeautysPage')}}">Красота</a></li>
+                                            <li><a href="{{route('getServicRestoranPage')}}">Рестораны и кафе</a></li> 
+                                            <li><a href="{{route('getServicConstructionPage')}}">Строительство</a></li>
+                                            <li><a href="#">Ремонт</a></li>
                                             <li><a href="#">Авто</a></li>
-                                            <li><a href="#">Фитнес</a></li>
-                                            <li><a href="#">Концерты</a></li>    
+                                            <li><a href="#">Питание</a></li>
+                                            <li><a href="#">Евент</a></li>
+                                            <li><a href="#">Одежда и аксессуары</a></li>    
                                             <li><a href="#">Дети</a></li>   
-                                            <li><a href="#">Разное</a></li>                                                                                     
+                                            <li><a href="#">Разное</a></li>    
+                                            <li><a href="#">Техника</a></li>                                                                                         
                                         </ul>                                
                             </div>                          
                         </div>

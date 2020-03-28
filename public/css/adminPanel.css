@@ -73,6 +73,10 @@
     height: 50px;
     overflow: hidden;
 }
+
+.inpError{
+    color: red!important;
+}
 /* left admin menu styles*/
 .big{
     width: 100%;
@@ -102,7 +106,7 @@
     transition-duration: 0.5s;
 }
 #height2{
-    height: 600px!important;
+    height: 200px!important;
     transition-duration: 0.5s;
 }
 .menuHeading , .menuHeading1 , .menuHeading2{

@@ -32,9 +32,9 @@
                 </div>
                 <div class="big" id="null2">
             <div class="menuHeading2">Услуги</div>
-            <a href="#"><div>Красота</div></a>
-            <a href="{{route('getAllSites')}}"><div>Рестораны и кафе</div></a>
-            <a href="{{route('getAllRestoran')}}"><div>Строительство</div></a>
+            <a href="{{route('getBeauty')}}"><div>Красота</div></a>
+            <a href="{{route('getServicRestorans')}}"><div>Рестораны и кафе</div></a>
+            <a href="{{route('getServicConstruction')}}"><div>Строительство</div></a>
             <a href="{{route('getAllHotel')}}"><div>Ремонт</div></a>
             <a href="{{route('getAllTours')}}"><div>Авто</div></a>
             <a href="{{route('getAllCuponProduct')}}"><div>Питание</div></a>
@@ -50,7 +50,7 @@
 
         <!-- controler panel -->
         <div class="col-sm-8 col-lg-9 border">
-            <h2>Популярные магазины</h2>
+            <h2>Все магазины</h2>
 
             <!-- Material form login -->
             <div class="cards">

@@ -35,6 +35,7 @@ Route::post('/deletePopRestoran','AdminController@deletePopRestoran')->name('del
 Route::get('/getPopHotel',"AdminController@getPopHotel")->name('getPopHotel');
 Route::post('/setPopHotel','AdminController@setPopHotel')->name('setPopHotel');
 Route::post('/updatePopHotel','AdminController@updatePopHotel')->name('updatePopHotel');
+Route::post('/deletePopHotel','AdminController@deletePopHotel')->name('deletePopHotel');
 //popturs
 Route::get('/getPopTours','AdminController@getPopTours')->name('getPopTours');
 Route::post('/setPopTours','AdminController@setPopTours')->name('setPopTours');
@@ -93,6 +94,16 @@ Route::get('/getBeauty','ServicesController@getBeauty')->name('getBeauty');
 Route::post('/setBeauty','ServicesController@setBeauty')->name('setBeauty');
 Route::post('/updateBeauty','ServicesController@updateBeauty')->name('updateBeauty');
 Route::post('/deleteBeauty','ServicesController@deleteBeauty')->name('deleteBeauty');
+//admin getServicRestorans
+Route::get('/getServicRestorans','ServicesController@getServicRestorans')->name('getServicRestorans');
+Route::post('/setServicRestorans','ServicesController@setServicRestorans')->name('setServicRestorans');
+Route::post('/updateServicRestorans','ServicesController@updateServicRestorans')->name('updateServicRestorans');
+Route::post('/deleteServicRestorans','ServicesController@deleteServicRestorans')->name('deleteServicRestorans');
+//admin getServicConstruction
+Route::get('/getServicConstruction','ServicesController@getServicConstruction')->name('getServicConstruction');
+Route::post('/setServicConstruction','ServicesController@setServicConstruction')->name('setServicConstruction');
+Route::post('/updateServicConstruction','ServicesController@updateServicConstruction')->name('updateServicConstruction');
+Route::post('/deleteServicConstruction','ServicesController@deleteServicConstruction')->name('deleteServicConstruction');
 
 
 //get tours category 
@@ -143,7 +154,7 @@ Route::get('/getFlowers_cupon','CuponsProdFilterController@getFlowers_cupon')->n
 Route::get('/getBalloons_cupon','CuponsProdFilterController@getBalloons_cupon')->name('getBalloons_cupon');
 Route::get('/getPlus18_cupon','CuponsProdFilterController@getPlus18_cupon')->name('getPlus18_cupon');
 
-//get all products page
+//get all products page 
 Route::get('/getAllSkidkisPage','HomeController@getAllSkidkisPage')->name('getAllSkidkisPage');
 Route::get('/getAllSitesPage','HomeController@getAllSitesPage')->name('getAllSitesPage');
 Route::get('/getAllRestoranPage','HomeController@getAllRestoranPage')->name('getAllRestoranPage');
@@ -151,7 +162,9 @@ Route::get('/getAllHotelPage','HomeController@getAllHotelPage')->name('getAllHot
 Route::get('/getAllToursPage','HomeController@getAllToursPage')->name('getAllToursPage');
 Route::get('/getAllShopsPage','HomeController@getAllShopsPage')->name('getAllShopsPage');
 Route::get('/getAllCuponProductPage','HomeController@getAllCuponProductPage')->name('getAllCuponProductPage');
-
+Route::get('/getBeautysPage','HomeController@getBeautysPage')->name('getBeautysPage');
+Route::get('/getServicRestoranPage','HomeController@getServicRestoranPage')->name('getServicRestoranPage');
+Route::get('/getServicConstructionPage','HomeController@getServicConstructionPage')->name('getServicConstructionPage');
 
 //blog
 Route::get('/getBlog','HomeController@getBlog')->name('getBlog');

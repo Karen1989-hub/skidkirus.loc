@@ -18,6 +18,9 @@ use App\PopCuponProduct;
 use App\AllCuponProduct;
 use App\PopShop;
 use App\AllShop;
+use App\Beauty;
+use App\ServicRestoran;
+use App\ServicConstruction;
 
 class HomeController extends Controller
 {
@@ -44,13 +47,6 @@ class HomeController extends Controller
             'popToursCategory'=>$popToursCategory];
         return view('pages/allToursPage',$arr);
     }
-    //get turs category
-//    public function getArmenianTurs(){
-//        $allArmenianTours = AllTours::where('toursCountry','');
-//        $PopArmenianTour
-//        return view('pages/allToursPage',$arr);
-//    }
-    //get turs category end
 
     public function getAllSkidkisPage(){
         $Skidki = Skidki::all();
@@ -108,6 +104,40 @@ class HomeController extends Controller
             'allShopsCategory'=>$allShopsCategory,'popShopsCategory'=>$popShopsCategory];
         return view('pages/allShopPage',$arr);
     }
+
+//Services pages start
+
+    public function getBeautysPage(){
+        $beautys = Beauty::all();
+
+        $arr = ['beautys'=>$beautys];
+        return view('pages/servicesPages/beauty',$arr);
+    }
+    
+    public function getServicRestoranPage(){
+        $servicRestoran = ServicRestoran::all();
+
+        $arr = ['servicRestoran'=>$servicRestoran];
+        return view('pages/servicesPages/servicRestoran',$arr);
+    }
+
+    public function getServicConstructionPage(){
+        $servicConstruction = ServicConstruction::all();
+
+        $arr = ['servicConstruction'=>$servicConstruction];
+        return view('pages/servicesPages/servicConstruction',$arr);
+    }
+
+
+//Services pages end
+
+
+
+
+
+
+
+
 
     public function getBlog(){
         return view('pages/blog');

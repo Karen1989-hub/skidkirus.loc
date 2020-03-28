@@ -132,10 +132,10 @@
 
                                 <div class="bottom__links bottom__links-hover">
                                     <div class="links">
-                                        <ul>                                           
-                                            <li><a href="#">Красота</a></li>
-                                            <li><a href="#">Рестораны и кафе</a></li> 
-                                            <li><a href="#">Строительство</a></li>
+                                        <ul>                                      
+                                            <li><a href="{{route('getBeautysPage')}}">Красота</a></li>
+                                            <li><a href="{{route('getServicRestoranPage')}}">Рестораны и кафе</a></li> 
+                                            <li><a href="{{route('getServicConstructionPage')}}">Строительство</a></li>
                                             <li><a href="#">Ремонт</a></li>
                                             <li><a href="#">Авто</a></li>
                                             <li><a href="#">Питание</a></li>

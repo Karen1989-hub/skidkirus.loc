@@ -486,7 +486,12 @@ class AllProdAdminController extends Controller
         $update -> save();
         return back();
     }
-    public function deleteAllCuponProduct(){
+    public function deleteAllCuponProduct(Request $request){
+        $id = $request->input('id');
+
+        $delete = AllCuponProduct::find($id);
+        unlink("img/popCuponProductImg/$delete->imageUrl");
+        $delete -> delete();
         return back();
     }
 

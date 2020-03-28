@@ -35,8 +35,8 @@
         <div class="big" id="null2">
             <div class="menuHeading2">Услуги</div>
             <a href="{{route('getBeauty')}}"><div class="activPage">Красота</div></a>
-            <a href="{{route('getAllSites')}}"><div>Рестораны и кафе</div></a>
-            <a href="{{route('getAllRestoran')}}"><div>Строительство</div></a>
+            <a href="{{route('getServicRestorans')}}"><div>Рестораны и кафе</div></a>
+            <a href="{{route('getServicConstruction')}}"><div>Строительство</div></a>
             <a href="{{route('getAllHotel')}}"><div>Ремонт</div></a>
             <a href="{{route('getAllTours')}}"><div>Авто</div></a>
             <a href="{{route('getAllCuponProduct')}}"><div>Питание</div></a>
@@ -54,7 +54,7 @@
 
 <!-- controler panel -->
 <div class="col-sm-8 col-lg-9 border">
-<h2>Топ скидки</h2>
+<h2>Красота</h2>
 
     <!-- Material form login -->
     <div class="cards">
@@ -66,10 +66,10 @@
                         <div class="slide"><img src="img/beautysImg/{{$val->nameImg}}" alt=""></div>
                     </div>
                     <div class="col-sm-12 col-lg-6">
-                        <button type="button" class="btn btn-success">Изменить</button>
+                        <button type="button" class="btn btn-success servicesUpdate">Изменить</button>
                         <form action="{{route('deleteBeauty')}}" method="post">
                             @csrf
-                            <input type="hidden" name="id" value="{{$val->id}}">
+                            <input type="hidden" name="id" value="{{$val->id}}"> 
                             <button type="submit" class="btn btn-danger">Удалить</button>
                         </form>
 
@@ -84,16 +84,26 @@
                             <div class="col-lg-6 col-sm-12">
                                 <span>описание</span>
                                 <input type="text" class="form-control" placeholder="{{$val->description}}" name="description">
+                                @if($errors->has('description'))
+                                <span class='inpError'>{{$errors->first('description')}}</span>
+                                 @endif   
                             </div>
                             <div class="col-lg-6 col-sm-12">
                                 <span>имя</span>
                                 <input type="text" class="form-control" placeholder="{{$val->name}}" name="name">
+                                @if($errors->has('name'))
+                             <span class='inpError'>{{$errors->first('name')}}</span>
+                              @endif    
                             </div>
+                           
                             
                            
                             <div class="col-lg-6 col-sm-12">
                                 <span>адрес сайта</span>
                                 <input type="text" class="form-control" placeholder="{{$val->sitesUrl}}" name="sitesUrl">
+                                @if($errors->has('sitesUrl'))
+                                 <span class='inpError'>{{$errors->first('sitesUrl')}}</span>
+                                 @endif  
                             </div>
                             <div class="col-lg-6 col-sm-12">
                                
@@ -102,7 +112,7 @@
                                         <span class="input-group-text" id="inputGroupFileAddon01">Загрузить</span>
                                     </div>
                                     <div class="custom-file">
-                                        <input type="file" name="imgName2" class="custom-file-input" id="inputGroupFile01"
+                                        <input type="file" name="nameImg" class="custom-file-input" id="inputGroupFile01"
                                                aria-describedby="inputGroupFileAddon01">
                                         <label class="custom-file-label" for="inputGroupFile01">Выберите файл</label>
                                     </div>
@@ -132,18 +142,27 @@
     <form class="text-center" style="color: #757575;" action="{{route('setBeauty')}}" method="post" enctype='multipart/form-data'>
     @csrf
       <div class="md-form">
-        <input type="text" name="name" id="materialLoginFormPassword" class="form-control">
         <label for="materialLoginFormPassword">имя</label>
+        <input type="text" name="name" id="materialLoginFormPassword" class="form-control">
+        @if($errors->has('name'))
+            <span class='inpError'>{{$errors->first('name')}}</span>
+        @endif    
       </div>
-
+          
       <div class="md-form">
-        <input type="text" name="description" id="materialLoginFormPassword" class="form-control">
         <label for="materialLoginFormPassword">описание</label>
+        <input type="text" name="description" id="materialLoginFormPassword" class="form-control">
+        @if($errors->has('description'))
+            <span class='inpError'>{{$errors->first('description')}}</span>
+        @endif   
       </div>        
 
       <div class="md-form">
-        <input type="text" name="sitesUrl" id="materialLoginFormPassword" class="form-control">
         <label for="materialLoginFormPassword">URL сайта</label>
+        <input type="text" name="sitesUrl" id="materialLoginFormPassword" class="form-control">
+        @if($errors->has('sitesUrl'))
+            <span class='inpError'>{{$errors->first('sitesUrl')}}</span>
+        @endif   
       </div>
 
 
@@ -153,11 +172,15 @@
          <span class="input-group-text" id="inputGroupFileAddon01">Загрузить</span>
         </div>
          <div class="custom-file">
-         <input type="file" name="imgName" class="custom-file-input" id="inputGroupFile01"
-           aria-describedby="inputGroupFileAddon01">
          <label class="custom-file-label" for="inputGroupFile01">Выберите файл</label>
-            </div>
+         <input type="file" name="nameImg" class="custom-file-input" id="inputGroupFile01"
+           aria-describedby="inputGroupFileAddon01">     
+                       
+            </div>            
       </div>
+      @if($nameImgError != null)
+      <strong class='inpError'>{{$nameImgError}}</strong>
+      @endif
 
 
       <!-- Sign in button -->
