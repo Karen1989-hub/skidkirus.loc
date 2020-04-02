@@ -12,7 +12,7 @@
             <div class="nav">
                 <div class="big" id="null">
                     <div class="menuHeading">Топ объявление</div>
-                    <a href="{{route('adminPage')}}"><div>Скидки</div></a>
+                    <a href="{{route('adminPage')}}"><div>Инстаграм</div></a>
                     <a href="{{route('setSitsPage')}}"><div>Сайты</div></a>
                     <a href="{{route('getPopularRestoran')}}"><div>Популярные рестораны</div></a>
                     <a href="{{route('getPopHotel')}}"><div>Отели</div></a>
@@ -22,7 +22,7 @@
                 </div>
                 <div class="big" id="null1">
                     <div class="menuHeading1">Другие объявление</div>
-                    <a href="{{route('getAllSkidkis')}}"><div>Все Скидки</div></a>
+                    <a href="{{route('getAllSkidkis')}}"><div>Все Инстаграм</div></a>
             <a href="{{route('getAllSites')}}"><div>Все Сайты</div></a>
             <a href="{{route('getAllRestoran')}}"><div>Все рестораны</div></a>
             <a href="{{route('getAllHotel')}}"><div>Все Отели</div></a>

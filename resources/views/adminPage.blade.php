@@ -14,7 +14,7 @@
     <div class="nav">
         <div class="big" id="null">
             <div class="menuHeading">Топ объявление</div>
-            <a href="{{route('adminPage')}}"><div class="activPage">Скидки</div></a>
+            <a href="{{route('adminPage')}}"><div class="activPage">Инстаграм</div></a>
             <a href="{{route('setSitsPage')}}"><div>Сайты</div></a>
             <a href="{{route('getPopularRestoran')}}"><div>Популярные рестораны</div></a>
             <a href="{{route('getPopHotel')}}"><div>Отели</div></a>
@@ -24,7 +24,7 @@
         </div>
         <div class="big" id="null1">
             <div class="menuHeading1">Другие объявление</div>
-            <a href="{{route('getAllSkidkis')}}"><div>Все Скидки</div></a>
+            <a href="{{route('getAllSkidkis')}}"><div>Все Инстаграм</div></a>
             <a href="{{route('getAllSites')}}"><div>Все Сайты</div></a>
             <a href="{{route('getAllRestoran')}}"><div>Все рестораны</div></a>
             <a href="{{route('getAllHotel')}}"><div>Все Отели</div></a>
@@ -54,7 +54,7 @@
 
 <!-- controler panel -->
 <div class="col-sm-8 col-lg-9 border">
-<h2>Топ скидки</h2>
+<h2>Топ инстаграм объявления</h2>
 
     <!-- Material form login -->
     <div class="cards">

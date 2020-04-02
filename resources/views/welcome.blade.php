@@ -35,12 +35,10 @@
                 <nav class="header__menue">
 
                     <div class="middle__menue">
-                        <form action="" method="get" class="middle__form">
-                            <input type="text" class="middle__search" placeholder="Search" />
+                        <form action="{{route('searchPages')}}" method="get" class="middle__form">
+                            <input type="text" name="name" class="middle__search" placeholder="Search" />
 
-                            <button><img src="./img/white-search-icon.svg" alt="" /></button>
-
-
+                            <button type="submit"><img src="./img/white-search-icon.svg" alt="" /></button>
                         </form>
                         <a class="login fancybox" href="#one"> Вход </a>
                         <div id="one" style="display:none">
@@ -338,7 +336,7 @@
 
                 <!-- navbar end -->
                 <div class="contanier__menue-title hotel__title">
-                    <a href="{{route('getAllSkidkisPage')}}" id="menue__title">Скидки</a>
+                    <a href="{{route('getAllSkidkisPage')}}" id="menue__title">Переход на инстаграм</a>
                     <a href="{{route('getAllSkidkisPage')}}" id="menue__title-info">ВСЕ </a>
                 </div>
                 <div class="cards w-75">
@@ -384,7 +382,7 @@
 
 
                     <div class="contanier__menue-title hotel__title">
-                        <a href="{{route('getAllSitesPage')}}" id="menue__title">Сайты</a>
+                        <a href="{{route('getAllSitesPage')}}" id="menue__title">Переход на сайты</a>
                         <a href="{{route('getAllSitesPage')}}" id="menue__title-info">ВСЕ </a>
                     </div>
                       <!-- Swiper -->
@@ -622,11 +620,7 @@
                                 <ul class="blaock_header_link_list">
                                     <li>
                                         <a href="{{route('gethowWork')}}">Как работает Skidkirus</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#">Вакансии</a>
-                                    </li>
+                                    </li>                                   
                                     <li>
                                         <a href="#">Блог</a>
                                     </li>
@@ -650,19 +644,12 @@
                                 <ul class="blaock_header_link_list">
                                     <li>
                                         <a href="#" >Для Вашего бизнеса</a>
-
-                                    </li>
-                                    <li>
-                                        <a href="#">Франчайзинг</a>
-
-                                    </li>
+                                    </li>                                   
                                     <li>
                                         <a href="#">Партнёрская программа</a>
-
                                     </li>
                                     <li>
                                         <a href="#">Все акции</a>
-
                                     </li>
 
                                 </ul>
@@ -672,24 +659,12 @@
                     <div class=" footer_info footer_info_blog">
                         <div class="frst_sect">
                             <div class="footer_info_left">
-                                <p class="copyright"> © 2015-2020  </p>
-                                <ul class="links">
-                                    <li><a href="#">Обработка персональных данных</a></li>
-                                    <li><a href="#">Пользовательское соглашение</a></li>
-                                    <li><a href="#">Публичная оферта</a></li>
-                                </ul>
+                                <p class="copyright"> © 2015-2020 skidkirus.ru </p>                                
                             </div>
 
-                            <div class="footer_info_center">
+                            <div class="footer_info_center">                           
 
-                                <div class="icons_info">
-                                    <i class="fas fa-shield-alt"></i>
-
-                                    <i class="fas fa-lock"></i>
-                                </div>
-
-
-                                <p class="text"> Гарантия, поддержка<br>24 часа и возврат средств </p>
+                               
                             </div>
                         </div>
                         <div class="footer_info_right">

@@ -173,6 +173,8 @@ Route::get('/gethowWork','HomeController@gethowWork')->name('gethowWork');
 //for bisnes
 Route::get('/getForBisnes','HomeController@getForBisnes')->name('getForBisnes');
 
+//search
+Route::get('/searchPages','SearchController@searchPages')->name('searchPages');
 
 
 Route::get('/f1','AllProdAdminController@f1')->name('f1');
